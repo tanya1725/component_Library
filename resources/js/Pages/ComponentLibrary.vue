@@ -15,6 +15,7 @@
           <button class="btn btn-register">Register</button>
         </div>
       </header>
+      
   
       <div class="main-content">
         <nav class="sidebar">
