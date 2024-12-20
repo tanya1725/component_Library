@@ -22916,10 +22916,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=script&lang=js":
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=script&lang=js ***!
-  \*****************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=script&setup=true&lang=js":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \***************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22927,131 +22927,93 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {
-    return {
-      selectedComponent: 'Button',
-      components: ['Button', 'Label', 'Input', 'Checkbox'],
-      componentVariations: {
-        Button: [{
-          name: 'Basic',
-          html: '<button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Basic Button</button>'
-        }, {
-          name: 'With Saturation',
-          html: "\n      <div class=\"flex-container\">\n        <button class=\"px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600\">Default</button>\n        <button class=\"px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600\">Secondary</button>\n        <button class=\"px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600\">Destructive</button>\n        <button class=\"px-4 py-2 border border-gray-300 rounded hover:bg-gray-100\">Outline</button>\n        <button class=\"px-4 py-2 text-blue-500 hover:underline\">Link</button>\n      </div>\n    "
-        }, {
-          name: 'With Icon',
-          html: "\n      <div class=\"flex-container\">\n        <button class=\"px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 flex items-center\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-4 w-4 mr-2\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path><polyline points=\"22,6 12,13 2,6\"></polyline></svg>\n          Login with Email\n        </button>\n        <button class=\"px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 flex items-center\">\n          <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-4 w-4 mr-2\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"12\" y1=\"5\" x2=\"12\" y2=\"19\"></line><line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line></svg>\n          Add New\n        </button>\n      </div>\n    "
-        }, {
-          name: 'With Dropdown',
-          html: "\n        <div class=\"relative inline-block text-left\">\n          <button @click=\"toggleDropdown\" class=\"px-4 py-2 border border-gray-300 rounded hover:bg-gray-100 flex items-center\">\n            Options\n            <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-4 w-4 ml-2\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"></polyline></svg>\n          </button>\n          <div v-if=\"dropdownOpen\" class=\"origin-top-left absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5\">\n            <div class=\"py-1\" role=\"menu\" aria-orientation=\"vertical\" aria-labelledby=\"options-menu\">\n              <a href=\"#\" class=\"block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900\" role=\"menuitem\">Option 1</a>\n              <a href=\"#\" class=\"block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900\" role=\"menuitem\">Option 2</a>\n              <a href=\"#\" class=\"block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900\" role=\"menuitem\">Option 3</a>\n            </div>\n          </div>\n        </div>\n      "
-        }],
-        Label: [{
-          name: 'Default',
-          html: '<label>Default Label</label>'
-        }, {
-          name: 'Bold',
-          html: '<label class="label-bold">Bold Label</label>'
-        }, {
-          name: 'Required',
-          html: '<label class="label-required">Required Label</label>'
-        }],
-        Input: [{
-          name: 'Input with inline leading add-on and trailing dropdown',
-          html: "\n        <div class=\"flex\">\n          <span class=\"inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            http://\n          </span>\n          <input type=\"text\" class=\"flex-1 block w-full rounded-none sm:text-sm border-gray-300\" placeholder=\"www.example.com\">\n          <select class=\"inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            <option>.com</option>\n            <option>.org</option>\n            <option>.net</option>\n          </select>\n        </div>\n      "
-        }, {
-          name: 'Input with label',
-          html: "\n        <div>\n          <label for=\"email\" class=\"block text-sm font-medium text-gray-700\">Email</label>\n          <input type=\"email\" id=\"email\" class=\"mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50\" placeholder=\"you@example.com\">\n        </div>\n      "
-        }, {
-          name: 'Input with label and help text',
-          html: "\n        <div>\n          <label for=\"username\" class=\"block text-sm font-medium text-gray-700\">Username</label>\n          <input type=\"text\" id=\"username\" class=\"mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50\" placeholder=\"johndoe\">\n          <p class=\"mt-2 text-sm text-gray-500\">This will be your public display name.</p>\n        </div>\n      "
-        }, {
-          name: 'Input with validation error',
-          html: "\n        <div>\n          <label for=\"email-error\" class=\"block text-sm font-medium text-red-700\">Email</label>\n          <input type=\"email\" id=\"email-error\" class=\"mt-1 block w-full rounded-md border-red-300 text-red-900 placeholder-red-300 focus:border-red-500 focus:ring-red-500\" placeholder=\"you@example.com\" value=\"invalid-email\">\n          <p class=\"mt-2 text-sm text-red-600\">Please enter a valid email address.</p>\n        </div>\n      "
-        }, {
-          name: 'Input with disabled state',
-          html: "\n        <div>\n          <label for=\"disabled-input\" class=\"block text-sm font-medium text-gray-500\">Disabled input</label>\n          <input type=\"text\" id=\"disabled-input\" class=\"mt-1 bg-gray-100 block w-full rounded-md border-gray-300 text-gray-500 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50\" disabled value=\"Disabled input\">\n        </div>\n      "
-        }, {
-          name: 'Input with hidden label',
-          html: "\n        <div>\n          <label for=\"hidden-label\" class=\"sr-only\">Email</label>\n          <input type=\"email\" id=\"hidden-label\" class=\"block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50\" placeholder=\"Enter your email\">\n        </div>\n      "
-        }, {
-          name: 'Input with corner hint',
-          html: "\n        <div>\n          <div class=\"flex justify-between\">\n            <label for=\"password\" class=\"block text-sm font-medium text-gray-700\">Password</label>\n            <span class=\"text-sm text-gray-500\">Max. 12 characters</span>\n          </div>\n          <input type=\"password\" id=\"password\" class=\"mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50\">\n        </div>\n      "
-        }, {
-          name: 'Input with leading icon',
-          html: "\n        <div class=\"relative rounded-md shadow-sm\">\n          <div class=\"absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none\">\n            <svg class=\"h-5 w-5 text-gray-400\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\">\n              <path d=\"M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z\" />\n              <path d=\"M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z\" />\n            </svg>\n          </div>\n          <input type=\"email\" class=\"block w-full pl-10 sm:text-sm border-gray-300 rounded-md\" placeholder=\"you@example.com\">\n        </div>\n      "
-        }, {
-          name: 'Input with trailing icon',
-          html: "\n        <div class=\"relative rounded-md shadow-sm\">\n          <input type=\"text\" class=\"block w-full pr-10 sm:text-sm border-gray-300 rounded-md\" placeholder=\"Search\">\n          <div class=\"absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none\">\n            <svg class=\"h-5 w-5 text-gray-400\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\">\n              <path fill-rule=\"evenodd\" d=\"M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z\" clip-rule=\"evenodd\" />\n            </svg>\n          </div>\n        </div>\n      "
-        }, {
-          name: 'Input with add-on',
-          html: "\n        <div class=\"flex rounded-md shadow-sm\">\n          <span class=\"inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            https://\n          </span>\n          <input type=\"text\" class=\"flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300\" placeholder=\"www.example.com\">\n        </div>\n      "
-        }, {
-          name: 'Input with inline add-on',
-          html: "\n        <div class=\"flex rounded-md shadow-sm\">\n          <input type=\"text\" class=\"flex-1 block w-full rounded-none rounded-l-md sm:text-sm border-gray-300\" placeholder=\"miguel\">\n          <span class=\"inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            @example.com\n          </span>\n        </div>\n      "
-        }, {
-          name: 'Input with inline leading and trailing add-ons',
-          html: "\n        <div class=\"flex rounded-md shadow-sm\">\n          <span class=\"inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            $\n          </span>\n          <input type=\"text\" class=\"flex-1 block w-full rounded-none sm:text-sm border-gray-300\" placeholder=\"0.00\">\n          <span class=\"inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            USD\n          </span>\n        </div>\n      "
-        }, {
-          name: 'Input with inline leading dropdown',
-          html: "\n        <div class=\"flex rounded-md shadow-sm\">\n          <select class=\"inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            <option>https://</option>\n            <option>http://</option>\n          </select>\n          <input type=\"text\" class=\"flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300\" placeholder=\"www.example.com\">\n        </div>\n      "
-        }, {
-          name: 'Input with leading icon and trailing button',
-          html: "\n        <div class=\"relative rounded-md shadow-sm\">\n          <div class=\"absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none\">\n            <svg class=\"h-5 w-5 text-gray-400\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\">\n              <path fill-rule=\"evenodd\" d=\"M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z\" clip-rule=\"evenodd\" />\n            </svg>\n          </div>\n          <input type=\"text\" class=\"block w-full pl-10 pr-12 sm:text-sm border-gray-300 rounded-md\" placeholder=\"Search\">\n          <div class=\"absolute inset-y-0 right-0 flex items-center\">\n            <button type=\"button\" class=\"inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-r-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\">\n              Search\n            </button>\n          </div>\n        </div>\n      "
-        }, {
-          name: 'Inputs with shared borders',
-          html: "\n        <div class=\"isolate -space-y-px rounded-md shadow-sm\">\n          <div class=\"relative border border-gray-300 rounded-md rounded-b-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600\">\n            <label for=\"name\" class=\"block text-xs font-medium text-gray-700\">Name</label>\n            <input type=\"text\" id=\"name\" class=\"block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm\" placeholder=\"Jane Smith\">\n          </div>\n          <div class=\"relative border border-gray-300 rounded-md rounded-t-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600\">\n            <label for=\"job-title\" class=\"block text-xs font-medium text-gray-700\">Job Title</label>\n            <input type=\"text\" id=\"job-title\" class=\"block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm\" placeholder=\"Software Engineer\">\n          </div>\n        </div>\n      "
-        }, {
-          name: 'Input with inset label',
-          html: "\n        <div class=\"relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600\">\n          <label for=\"name\" class=\"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900\">Name</label>\n          <input type=\"text\" id=\"name\" class=\"block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm\" placeholder=\"Jane Smith\">\n        </div>\n      "
-        }, {
-          name: 'Inputs with inset labels and shared borders',
-          html: "\n        <div class=\"isolate -space-y-px rounded-md shadow-sm\">\n          <div class=\"relative border border-gray-300 rounded-md rounded-b-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600\">\n            <label for=\"first-name\" class=\"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900\">First name</label>\n            <input type=\"text\" id=\"first-name\" class=\"block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm\" placeholder=\"Jane\">\n          </div>\n          <div class=\"relative border border-gray-300 rounded-md rounded-t-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600\">\n            <label for=\"last-name\" class=\"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900\">Last name</label>\n            <input type=\"text\" id=\"last-name\" class=\"block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm\" placeholder=\"Smith\">\n          </div>\n        </div>\n      "
-        }, {
-          name: 'Input with overlapping label',
-          html: "\n        <div class=\"relative\">\n          <input type=\"text\" id=\"floating-input\" class=\"block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer\" placeholder=\" \" />\n          <label for=\"floating-input\" class=\"absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1\">Floating label</label>\n        </div>\n      "
-        }, {
-          name: 'Input with pill shape',
-          html: "\n        <input type=\"text\" class=\"mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-full shadow-sm placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500\" placeholder=\"Enter text here\">\n      "
-        }, {
-          name: 'Input with gray background and bottom border',
-          html: "\n        <input type=\"text\" class=\"mt-1 block w-full px-3 py-2 bg-gray-100 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black\" placeholder=\"Enter text here\">\n      "
-        }, {
-          name: 'Input with keyboard shortcut',
-          html: "\n        <div class=\"flex rounded-md shadow-sm\">\n          <input type=\"text\" class=\"flex-1 block w-full rounded-none rounded-l-md sm:text-sm border-gray-300\" placeholder=\"Enter command\">\n          <span class=\"inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            \u2318K\n          </span>\n        </div>\n      "
-        }],
-        Checkbox: [{
-          name: 'Default',
-          html: '<input type="checkbox" id="defaultCheck"><label for="defaultCheck">Default Checkbox</label>'
-        }, {
-          name: 'Checked',
-          html: '<input type="checkbox" id="checkedCheck" checked><label for="checkedCheck">Checked Checkbox</label>'
-        }, {
-          name: 'Disabled',
-          html: '<input type="checkbox" id="disabledCheck" disabled><label for="disabledCheck">Disabled Checkbox</label>'
-        }]
-      },
-      activeTab: 'preview'
+  __name: 'ButtonComponent',
+  setup: function setup(__props, _ref) {
+    var __expose = _ref.expose;
+    __expose();
+    var showCode = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
+    var variations = [{
+      name: 'Primary',
+      html: '<button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Primary Button</button>'
+    }, {
+      name: 'Secondary',
+      html: '<button class="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">Secondary Button</button>'
+    }, {
+      name: 'Outline',
+      html: '<button class="px-4 py-2 border border-blue-500 text-blue-500 rounded hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Outline Button</button>'
+    }];
+    var toggleCode = function toggleCode(index) {
+      showCode.value[index] = !showCode.value[index];
     };
-  },
-  computed: {
-    currentVariations: function currentVariations() {
-      return this.componentVariations[this.selectedComponent] || [];
-    }
-  },
-  methods: {
-    selectComponent: function selectComponent(component) {
-      this.selectedComponent = component;
-    }
-  },
-  mounted: function mounted() {
-    this.$nextTick(function () {
-      document.querySelectorAll('.btn').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          return alert('Button clicked!');
-        });
-      });
+    var __returned__ = {
+      showCode: showCode,
+      variations: variations,
+      toggleCode: toggleCode,
+      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
     });
+    return __returned__;
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js ***!
+  \****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _ButtonComponent_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ButtonComponent.vue */ "./resources/js/Pages/ButtonComponent.vue");
+/* harmony import */ var _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./InputComponent.vue */ "./resources/js/Pages/InputComponent.vue");
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  __name: 'ComponentLibrary',
+  setup: function setup(__props, _ref) {
+    var __expose = _ref.expose;
+    __expose();
+    var selectedComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)('Button');
+    var components = ['Button', 'Input'];
+    var componentMap = {
+      Button: _ButtonComponent_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+      Input: _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
+    };
+    var currentComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
+      return componentMap[selectedComponent.value];
+    });
+    var selectComponent = function selectComponent(component) {
+      selectedComponent.value = component;
+    };
+    var __returned__ = {
+      selectedComponent: selectedComponent,
+      components: components,
+      componentMap: componentMap,
+      currentComponent: currentComponent,
+      selectComponent: selectComponent,
+      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref,
+      computed: vue__WEBPACK_IMPORTED_MODULE_0__.computed,
+      ButtonComponent: _ButtonComponent_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+      InputComponent: _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
   }
 });
 
@@ -23082,6 +23044,117 @@ __webpack_require__.r(__webpack_exports__);
       get Head() {
         return _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Head;
       }
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/InputComponent.vue?vue&type=script&setup=true&lang=js":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/InputComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \**************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  __name: 'InputComponent',
+  setup: function setup(__props, _ref) {
+    var __expose = _ref.expose;
+    __expose();
+    var showCode = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
+    var variations = [{
+      name: 'Input with inline leading add-on and trailing dropdown',
+      html: "\n        <div class=\"flex\">\n          <span class=\"inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            http://\n          </span>\n          <input type=\"text\" class=\"flex-1 block w-full rounded-none sm:text-sm border-gray-300\" placeholder=\"www.example.com\">\n          <select class=\"inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            <option>.com</option>\n            <option>.org</option>\n            <option>.net</option>\n          </select>\n        </div>\n      "
+    }, {
+      name: 'Input with label',
+      html: "\n        <div>\n          <label for=\"email\" class=\"block text-sm font-medium text-gray-700\">Email</label>\n          <input type=\"email\" id=\"email\" class=\"mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50\" placeholder=\"you@example.com\">\n        </div>\n      "
+    }, {
+      name: 'Input with label and help text',
+      html: "\n        <div>\n          <label for=\"username\" class=\"block text-sm font-medium text-gray-700\">Username</label>\n          <input type=\"text\" id=\"username\" class=\"mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50\" placeholder=\"johndoe\">\n          <p class=\"mt-2 text-sm text-gray-500\">This will be your public display name.</p>\n        </div>\n      "
+    }, {
+      name: 'Input with validation error',
+      html: "\n        <div>\n          <label for=\"email-error\" class=\"block text-sm font-medium text-red-700\">Email</label>\n          <input type=\"email\" id=\"email-error\" class=\"mt-1 block w-full rounded-md border-red-300 text-red-900 placeholder-red-300 focus:border-red-500 focus:ring-red-500\" placeholder=\"you@example.com\" value=\"invalid-email\">\n          <p class=\"mt-2 text-sm text-red-600\">Please enter a valid email address.</p>\n        </div>\n      "
+    }, {
+      name: 'Input with disabled state',
+      html: "\n        <div>\n          <label for=\"disabled-input\" class=\"block text-sm font-medium text-gray-500\">Disabled input</label>\n          <input type=\"text\" id=\"disabled-input\" class=\"mt-1 bg-gray-100 block w-full rounded-md border-gray-300 text-gray-500 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50\" disabled value=\"Disabled input\">\n        </div>\n      "
+    }, {
+      name: 'Input with hidden label',
+      html: "\n        <div>\n          <label for=\"hidden-label\" class=\"sr-only\">Email</label>\n          <input type=\"email\" id=\"hidden-label\" class=\"block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50\" placeholder=\"Enter your email\">\n        </div>\n      "
+    }, {
+      name: 'Input with corner hint',
+      html: "\n        <div>\n          <div class=\"flex justify-between\">\n            <label for=\"password\" class=\"block text-sm font-medium text-gray-700\">Password</label>\n            <span class=\"text-sm text-gray-500\">Max. 12 characters</span>\n          </div>\n          <input type=\"password\" id=\"password\" class=\"mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50\">\n        </div>\n      "
+    }, {
+      name: 'Input with leading icon',
+      html: "\n        <div class=\"relative rounded-md shadow-sm\">\n          <div class=\"absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none\">\n            <svg class=\"h-5 w-5 text-gray-400\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\">\n              <path d=\"M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z\" />\n              <path d=\"M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z\" />\n            </svg>\n          </div>\n          <input type=\"email\" class=\"block w-full pl-10 sm:text-sm border-gray-300 rounded-md\" placeholder=\"you@example.com\">\n        </div>\n      "
+    }, {
+      name: 'Input with trailing icon',
+      html: "\n        <div class=\"relative rounded-md shadow-sm\">\n          <input type=\"text\" class=\"block w-full pr-10 sm:text-sm border-gray-300 rounded-md\" placeholder=\"Search\">\n          <div class=\"absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none\">\n            <svg class=\"h-5 w-5 text-gray-400\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\">\n              <path fill-rule=\"evenodd\" d=\"M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z\" clip-rule=\"evenodd\" />\n            </svg>\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Input with add-on',
+      html: "\n        <div class=\"flex rounded-md shadow-sm\">\n          <span class=\"inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            https://\n          </span>\n          <input type=\"text\" class=\"flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300\" placeholder=\"www.example.com\">\n        </div>\n      "
+    }, {
+      name: 'Input with inline add-on',
+      html: "\n        <div class=\"flex rounded-md shadow-sm\">\n          <input type=\"text\" class=\"flex-1 block w-full rounded-none rounded-l-md sm:text-sm border-gray-300\" placeholder=\"miguel\">\n          <span class=\"inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            @example.com\n          </span>\n        </div>\n      "
+    }, {
+      name: 'Input with inline leading and trailing add-ons',
+      html: "\n        <div class=\"flex rounded-md shadow-sm\">\n          <span class=\"inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            $\n          </span>\n          <input type=\"text\" class=\"flex-1 block w-full rounded-none sm:text-sm border-gray-300\" placeholder=\"0.00\">\n          <span class=\"inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            USD\n          </span>\n        </div>\n      "
+    }, {
+      name: 'Input with inline leading dropdown',
+      html: "\n        <div class=\"flex rounded-md shadow-sm\">\n          <select class=\"inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            <option>https://</option>\n            <option>http://</option>\n          </select>\n          <input type=\"text\" class=\"flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300\" placeholder=\"www.example.com\">\n        </div>\n      "
+    }, {
+      name: 'Input with leading icon and trailing button',
+      html: "\n        <div class=\"relative rounded-md shadow-sm\">\n          <div class=\"absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none\">\n            <svg class=\"h-5 w-5 text-gray-400\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\">\n              <path fill-rule=\"evenodd\" d=\"M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z\" clip-rule=\"evenodd\" />\n            </svg>\n          </div>\n          <input type=\"text\" class=\"block w-full pl-10 pr-12 sm:text-sm border-gray-300 rounded-md\" placeholder=\"Search\">\n          <div class=\"absolute inset-y-0 right-0 flex items-center\">\n            <button type=\"button\" class=\"inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-r-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\">\n              Search\n            </button>\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Inputs with shared borders',
+      html: "\n        <div class=\"isolate -space-y-px rounded-md shadow-sm\">\n          <div class=\"relative border border-gray-300 rounded-md rounded-b-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600\">\n            <label for=\"name\" class=\"block text-xs font-medium text-gray-700\">Name</label>\n            <input type=\"text\" id=\"name\" class=\"block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm\" placeholder=\"Jane Smith\">\n          </div>\n          <div class=\"relative border border-gray-300 rounded-md rounded-t-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600\">\n            <label for=\"job-title\" class=\"block text-xs font-medium text-gray-700\">Job Title</label>\n            <input type=\"text\" id=\"job-title\" class=\"block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm\" placeholder=\"Software Engineer\">\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Input with inset label',
+      html: "\n        <div class=\"relative border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600\">\n          <label for=\"name\" class=\"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900\">Name</label>\n          <input type=\"text\" id=\"name\" class=\"block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm\" placeholder=\"Jane Smith\">\n        </div>\n      "
+    }, {
+      name: 'Inputs with inset labels and shared borders',
+      html: "\n        <div class=\"isolate -space-y-px rounded-md shadow-sm\">\n          <div class=\"relative border border-gray-300 rounded-md rounded-b-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600\">\n            <label for=\"first-name\" class=\"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900\">First name</label>\n            <input type=\"text\" id=\"first-name\" class=\"block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm\" placeholder=\"Jane\">\n          </div>\n          <div class=\"relative border border-gray-300 rounded-md rounded-t-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600\">\n            <label for=\"last-name\" class=\"absolute -top-2 left-2 -mt-px inline-block px-1 bg-white text-xs font-medium text-gray-900\">Last name</label>\n            <input type=\"text\" id=\"last-name\" class=\"block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm\" placeholder=\"Smith\">\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Input with overlapping label',
+      html: "\n        <div class=\"relative\">\n          <input type=\"text\" id=\"floating-input\" class=\"block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer\" placeholder=\" \" />\n          <label for=\"floating-input\" class=\"absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1\">Floating label</label>\n        </div>\n      "
+    }, {
+      name: 'Input with pill shape',
+      html: "\n        <input type=\"text\" class=\"mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-full shadow-sm placeholder-gray-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500\" placeholder=\"Enter text here\">\n      "
+    }, {
+      name: 'Input with gray background and bottom border',
+      html: "\n        <input type=\"text\" class=\"mt-1 block w-full px-3 py-2 bg-gray-100 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black\" placeholder=\"Enter text here\">\n      "
+    }, {
+      name: 'Input with keyboard shortcut',
+      html: "\n        <div class=\"flex rounded-md shadow-sm\">\n          <input type=\"text\" class=\"flex-1 block w-full rounded-none rounded-l-md sm:text-sm border-gray-300\" placeholder=\"Enter command\">\n          <span class=\"inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-gray-500 text-sm\">\n            \u2318K\n          </span>\n        </div>\n      "
+    }, {
+      name: 'Text',
+      html: '<input type="text" placeholder="Text Input" class="border rounded p-2">'
+    }, {
+      name: 'Password',
+      html: '<input type="password" placeholder="Password Input" class="border rounded p-2">'
+    }, {
+      name: 'Number',
+      html: '<input type="number" placeholder="Number Input" class="border rounded p-2">'
+    }];
+    var toggleCode = function toggleCode(index) {
+      showCode.value[index] = !showCode.value[index];
+    };
+    var __returned__ = {
+      showCode: showCode,
+      variations: variations,
+      toggleCode: toggleCode,
+      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -24123,10 +24196,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2&scoped=true":
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2&scoped=true ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=template&id=191739d2":
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=template&id=191739d2 ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -24137,64 +24210,98 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "component-library"
+  "class": "space-y-4"
 };
 var _hoisted_2 = {
-  "class": "main-content"
+  "class": "p-4 bg-gray-50 border-b"
 };
 var _hoisted_3 = {
-  "class": "sidebar"
+  "class": "text-lg font-semibold text-gray-800"
+};
+var _hoisted_4 = {
+  "class": "p-4"
+};
+var _hoisted_5 = {
+  "class": "mb-4"
+};
+var _hoisted_6 = ["innerHTML"];
+var _hoisted_7 = ["onClick"];
+var _hoisted_8 = {
+  "class": "mt-4"
+};
+var _hoisted_9 = {
+  "class": "p-4 bg-gray-800 rounded-md overflow-x-auto"
+};
+var _hoisted_10 = {
+  "class": "text-sm text-white"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.variations, function (variation, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      key: index,
+      "class": "bg-white rounded-lg shadow-md w-full"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "p-4 bg-gray-50 rounded-md",
+      innerHTML: variation.html
+    }, null, 8 /* PROPS */, _hoisted_6)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $setup.toggleCode(index);
+      },
+      "class": "px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.showCode[index] ? 'Hide Code' : 'Show Code'), 9 /* TEXT, PROPS */, _hoisted_7)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", _hoisted_9, [_cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("              ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("code", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.html), 1 /* TEXT */), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("\n            "))])], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.showCode[index]]])])]);
+  }), 64 /* STABLE_FRAGMENT */))]);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2 ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "flex h-screen bg-gray-100 font-sans"
+};
+var _hoisted_2 = {
+  "class": "w-64 bg-white shadow-md"
+};
+var _hoisted_3 = {
+  "class": "mt-4"
 };
 var _hoisted_4 = ["onClick"];
 var _hoisted_5 = {
-  "class": "content"
+  "class": "flex-1 overflow-x-hidden overflow-y-auto bg-gray-100"
 };
 var _hoisted_6 = {
-  "class": "variations"
+  "class": "container mx-auto px-6 py-8"
 };
 var _hoisted_7 = {
-  "class": "tabs"
-};
-var _hoisted_8 = ["innerHTML"];
-var _hoisted_9 = {
-  key: 1
+  "class": "text-3xl font-bold text-gray-800 mb-6"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" New Header Component "), _cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<header class=\"site-header\" data-v-844c20b2><div class=\"header-left\" data-v-844c20b2><div class=\"logo\" data-v-844c20b2>ComponentHub</div><nav class=\"main-nav\" data-v-844c20b2><a href=\"#\" class=\"nav-link\" data-v-844c20b2>Home</a><a href=\"#\" class=\"nav-link\" data-v-844c20b2>About Us</a><a href=\"#\" class=\"nav-link\" data-v-844c20b2>Components</a></nav></div><div class=\"header-right\" data-v-844c20b2><button class=\"btn btn-login\" data-v-844c20b2>Login</button><button class=\"btn btn-register\" data-v-844c20b2>Register</button></div></header>", 1)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_3, [_cache[2] || (_cache[2] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Components", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.components, function (component) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
-      key: component
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Sidebar "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("aside", _hoisted_2, [_cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "p-4"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
+    "class": "text-2xl font-bold text-gray-800"
+  }, "Components")], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.components, function (component) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+      key: component,
+      "class": "mb-2"
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
       onClick: function onClick($event) {
-        return $options.selectComponent(component);
+        return $setup.selectComponent(component);
       },
-      "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)({
-        active: $data.selectedComponent === component
-      })
+      "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(['w-full text-left px-4 py-2 text-sm font-medium transition-colors duration-150 ease-in-out', $setup.selectedComponent === component ? 'bg-blue-500 text-white' : 'text-gray-600 hover:bg-gray-100'])
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(component), 11 /* TEXT, CLASS, PROPS */, _hoisted_4)]);
-  }), 128 /* KEYED_FRAGMENT */))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.selectedComponent) + " Variations", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.currentVariations, function (variation, index) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
-      key: index,
-      "class": "variation"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-      onClick: _cache[0] || (_cache[0] = function ($event) {
-        return $data.activeTab = 'preview';
-      }),
-      "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)({
-        active: $data.activeTab === 'preview'
-      })
-    }, "Preview", 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-      onClick: _cache[1] || (_cache[1] = function ($event) {
-        return $data.activeTab = 'code';
-      }),
-      "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)({
-        active: $data.activeTab === 'code'
-      })
-    }, "Code", 2 /* CLASS */)]), $data.activeTab === 'preview' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
-      key: 0,
-      "class": "preview",
-      innerHTML: variation.html
-    }, null, 8 /* PROPS */, _hoisted_8)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("pre", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("code", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.html), 1 /* TEXT */)]))]);
-  }), 128 /* KEYED_FRAGMENT */))])])])]);
+  }), 64 /* STABLE_FRAGMENT */))])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Main Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.selectedComponent) + " Variations", 1 /* TEXT */), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)((0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveDynamicComponent)($setup.currentComponent)))])])]);
 }
 
 /***/ }),
@@ -24234,6 +24341,64 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }),
     _: 1 /* STABLE */
   })], 64 /* STABLE_FRAGMENT */);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/InputComponent.vue?vue&type=template&id=a2794688":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/InputComponent.vue?vue&type=template&id=a2794688 ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "space-y-4"
+};
+var _hoisted_2 = {
+  "class": "p-4 bg-gray-50 border-b"
+};
+var _hoisted_3 = {
+  "class": "text-lg font-semibold text-gray-800"
+};
+var _hoisted_4 = {
+  "class": "p-4"
+};
+var _hoisted_5 = {
+  "class": "mb-4"
+};
+var _hoisted_6 = ["innerHTML"];
+var _hoisted_7 = ["onClick"];
+var _hoisted_8 = {
+  "class": "mt-4"
+};
+var _hoisted_9 = {
+  "class": "p-4 bg-gray-800 rounded-md overflow-x-auto"
+};
+var _hoisted_10 = {
+  "class": "text-sm text-white"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.variations, function (variation, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      key: index,
+      "class": "bg-white rounded-lg shadow-md w-full"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "p-4 bg-gray-50 rounded-md",
+      innerHTML: variation.html
+    }, null, 8 /* PROPS */, _hoisted_6)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $setup.toggleCode(index);
+      },
+      "class": "px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.showCode[index] ? 'Hide Code' : 'Show Code'), 9 /* TEXT, PROPS */, _hoisted_7)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", _hoisted_9, [_cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("              ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("code", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.html), 1 /* TEXT */), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("\n            "))])], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.showCode[index]]])])]);
+  }), 64 /* STABLE_FRAGMENT */))]);
 }
 
 /***/ }),
@@ -24558,30 +24723,6 @@ module.exports = function callBoundIntrinsic(name, allowMissing) {
 	}
 	return intrinsic;
 };
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&scoped=true&lang=css":
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&scoped=true&lang=css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n  /* Header Styles */\n\n/* Header Styles */\n.site-header[data-v-844c20b2] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  background-color: #f8f9fa;\n  padding: 15px 20px;\n  border-bottom: 1px solid #e9ecef;\n}\n.header-left[data-v-844c20b2] {\n  display: flex;\n  align-items: center;\n}\n.logo[data-v-844c20b2] {\n  font-size: 24px;\n  font-weight: bold;\n  margin-right: 30px;\n  color: #007bff;\n}\n.main-nav[data-v-844c20b2] {\n  display: flex;\n  gap: 20px;\n}\n.nav-link[data-v-844c20b2] {\n  text-decoration: none;\n  color: #495057;\n  transition: color 0.3s ease;\n}\n.nav-link[data-v-844c20b2]:hover {\n  color: #007bff;\n}\n.header-right[data-v-844c20b2] {\n  display: flex;\n  gap: 15px;\n}\n.btn-login[data-v-844c20b2], .btn-register[data-v-844c20b2] {\n  padding: 8px 15px;\n  border-radius: 4px;\n  cursor: pointer;\n  transition: background-color 0.3s ease;\n}\n.btn-login[data-v-844c20b2] {\n  background-color: transparent;\n  border: 1px solid #007bff;\n  color: #007bff;\n}\n.btn-register[data-v-844c20b2] {\n  background-color: #007bff;\n  color: white;\n  border: none;\n}\n\n/* Full Height Adjustments */\n.component-library[data-v-844c20b2] {\n  display: flex;\n  flex-direction: column;\n  height: 100vh;\n  font-family: Arial, sans-serif;\n}\n.main-content[data-v-844c20b2] {\n  display: flex;\n  flex-grow: 1;\n  overflow: hidden;\n}\n.sidebar[data-v-844c20b2] {\n  width: 300px;\n  background-color: #f0f0f0;\n  padding: 20px;\n  border-right: 1px solid #ccc;\n  overflow-y: auto;\n}\n.content[data-v-844c20b2] {\n  flex-grow: 1;\n  padding: 20px;\n  overflow-y: auto;\n}\n.sidebar h2[data-v-844c20b2] {\n  margin-top: 0;\n}\n.sidebar ul[data-v-844c20b2] {\n  list-style-type: none;\n  padding: 0;\n}\n.sidebar button[data-v-844c20b2] {\n  width: 100%;\n  text-align: left;\n  padding: 10px;\n  margin-bottom: 5px;\n  background: none;\n  border: none;\n  cursor: pointer;\n}\n.sidebar button.active[data-v-844c20b2] {\n  background-color: #ddd;\n  font-weight: bold;\n}\n.variations[data-v-844c20b2] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\n  gap: 20px;\n}\n.variation[data-v-844c20b2] {\n  border: 1px solid #ccc;\n  border-radius: 4px;\n  padding: 15px;\n}\n.preview[data-v-844c20b2] {\n  margin-bottom: 10px;\n  padding: 10px;\n  background-color: #f9f9f9;\n  border-radius: 4px;\n}\npre[data-v-844c20b2] {\n  background-color: #f0f0f0;\n  padding: 10px;\n  border-radius: 4px;\n  overflow-x: auto;\n}\n  \n  /* Custom component styles */\n.btn[data-v-844c20b2] {\n    padding: 10px 15px;\n    border: none;\n    border-radius: 4px;\n    cursor: pointer;\n}\n.btn-primary[data-v-844c20b2] {\n    background-color: #007bff;\n    color: white;\n}\n.btn-secondary[data-v-844c20b2] {\n    background-color: #6c757d;\n    color: white;\n}\n.label-bold[data-v-844c20b2] {\n    font-weight: bold;\n}\n.label-required[data-v-844c20b2]::after {\n    content: \" *\";\n    color: red;\n}\ninput[type=\"text\"][data-v-844c20b2],\n  input[type=\"password\"][data-v-844c20b2],\n  input[type=\"number\"][data-v-844c20b2] {\n    padding: 8px;\n    border: 1px solid #ccc;\n    border-radius: 4px;\n}\ninput[type=\"checkbox\"][data-v-844c20b2] {\n    margin-right: 5px;\n}\n.tabs[data-v-844c20b2] {\n    display: flex;\n    margin-bottom: 70px;\n}\n.tabs button[data-v-844c20b2] {\n    padding: 5px 10px;\n    border: 1px solid #ccc;\n    background-color: #f0f0f0;\n    cursor: pointer;\n}\n.tabs button.active[data-v-844c20b2] {\n    background-color: #fff;\n    border-bottom-color: #fff;\n}\n.tabs button[data-v-844c20b2]:first-child {\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n}\n.tabs button[data-v-844c20b2]:last-child {\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n}\n  ", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
@@ -49308,36 +49449,6 @@ module.exports = function getSideChannel() {
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&scoped=true&lang=css":
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&scoped=true&lang=css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_style_index_0_id_844c20b2_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&scoped=true&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&scoped=true&lang=css");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_style_index_0_id_844c20b2_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_style_index_0_id_844c20b2_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
-
-/***/ }),
-
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Welcome.vue?vue&type=style&index=0&id=317d1a6e&scoped=true&lang=css":
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Welcome.vue?vue&type=style&index=0&id=317d1a6e&scoped=true&lang=css ***!
@@ -50171,6 +50282,34 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/Pages/ButtonComponent.vue":
+/*!************************************************!*\
+  !*** ./resources/js/Pages/ButtonComponent.vue ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ButtonComponent_vue_vue_type_template_id_191739d2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ButtonComponent.vue?vue&type=template&id=191739d2 */ "./resources/js/Pages/ButtonComponent.vue?vue&type=template&id=191739d2");
+/* harmony import */ var _ButtonComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ButtonComponent.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/ButtonComponent.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_ButtonComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ButtonComponent_vue_vue_type_template_id_191739d2__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/ButtonComponent.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/ComponentLibrary.vue":
 /*!*************************************************!*\
   !*** ./resources/js/Pages/ComponentLibrary.vue ***!
@@ -50182,18 +50321,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _ComponentLibrary_vue_vue_type_template_id_844c20b2_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ComponentLibrary.vue?vue&type=template&id=844c20b2&scoped=true */ "./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2&scoped=true");
-/* harmony import */ var _ComponentLibrary_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ComponentLibrary.vue?vue&type=script&lang=js */ "./resources/js/Pages/ComponentLibrary.vue?vue&type=script&lang=js");
-/* harmony import */ var _ComponentLibrary_vue_vue_type_style_index_0_id_844c20b2_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&scoped=true&lang=css */ "./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&scoped=true&lang=css");
-/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _ComponentLibrary_vue_vue_type_template_id_844c20b2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ComponentLibrary.vue?vue&type=template&id=844c20b2 */ "./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2");
+/* harmony import */ var _ComponentLibrary_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ComponentLibrary.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-
-
-const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_ComponentLibrary_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ComponentLibrary_vue_vue_type_template_id_844c20b2_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-844c20b2"],['__file',"resources/js/Pages/ComponentLibrary.vue"]])
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_ComponentLibrary_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ComponentLibrary_vue_vue_type_template_id_844c20b2__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/ComponentLibrary.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -50222,6 +50358,34 @@ __webpack_require__.r(__webpack_exports__);
 
 ;
 const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Dashboard_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Dashboard_vue_vue_type_template_id_097ba13b__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Dashboard.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/InputComponent.vue":
+/*!***********************************************!*\
+  !*** ./resources/js/Pages/InputComponent.vue ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _InputComponent_vue_vue_type_template_id_a2794688__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./InputComponent.vue?vue&type=template&id=a2794688 */ "./resources/js/Pages/InputComponent.vue?vue&type=template&id=a2794688");
+/* harmony import */ var _InputComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./InputComponent.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/InputComponent.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_InputComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_InputComponent_vue_vue_type_template_id_a2794688__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/InputComponent.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -50533,18 +50697,34 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/ComponentLibrary.vue?vue&type=script&lang=js":
-/*!*************************************************************************!*\
-  !*** ./resources/js/Pages/ComponentLibrary.vue?vue&type=script&lang=js ***!
-  \*************************************************************************/
+/***/ "./resources/js/Pages/ButtonComponent.vue?vue&type=script&setup=true&lang=js":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/Pages/ButtonComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \***********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ButtonComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ComponentLibrary.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=script&lang=js");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ButtonComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ButtonComponent.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=script&setup=true&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js":
+/*!************************************************************************************!*\
+  !*** ./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ComponentLibrary.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js");
  
 
 /***/ }),
@@ -50561,6 +50741,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Dashboard_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Dashboard_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Dashboard.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Dashboard.vue?vue&type=script&setup=true&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/InputComponent.vue?vue&type=script&setup=true&lang=js":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/Pages/InputComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_InputComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_InputComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./InputComponent.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/InputComponent.vue?vue&type=script&setup=true&lang=js");
  
 
 /***/ }),
@@ -50869,18 +51065,34 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2&scoped=true":
-/*!*******************************************************************************************!*\
-  !*** ./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2&scoped=true ***!
-  \*******************************************************************************************/
+/***/ "./resources/js/Pages/ButtonComponent.vue?vue&type=template&id=191739d2":
+/*!******************************************************************************!*\
+  !*** ./resources/js/Pages/ButtonComponent.vue?vue&type=template&id=191739d2 ***!
+  \******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_template_id_844c20b2_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ButtonComponent_vue_vue_type_template_id_191739d2__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_template_id_844c20b2_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ComponentLibrary.vue?vue&type=template&id=844c20b2&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2&scoped=true");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ButtonComponent_vue_vue_type_template_id_191739d2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ButtonComponent.vue?vue&type=template&id=191739d2 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=template&id=191739d2");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2 ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_template_id_844c20b2__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_template_id_844c20b2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ComponentLibrary.vue?vue&type=template&id=844c20b2 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2");
 
 
 /***/ }),
@@ -50901,6 +51113,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/InputComponent.vue?vue&type=template&id=a2794688":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/Pages/InputComponent.vue?vue&type=template&id=a2794688 ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_InputComponent_vue_vue_type_template_id_a2794688__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_InputComponent_vue_vue_type_template_id_a2794688__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./InputComponent.vue?vue&type=template&id=a2794688 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/InputComponent.vue?vue&type=template&id=a2794688");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Welcome.vue?vue&type=template&id=317d1a6e&scoped=true":
 /*!**********************************************************************************!*\
   !*** ./resources/js/Pages/Welcome.vue?vue&type=template&id=317d1a6e&scoped=true ***!
@@ -50913,19 +51141,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Welcome_vue_vue_type_template_id_317d1a6e_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Welcome_vue_vue_type_template_id_317d1a6e_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Welcome.vue?vue&type=template&id=317d1a6e&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Welcome.vue?vue&type=template&id=317d1a6e&scoped=true");
-
-
-/***/ }),
-
-/***/ "./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&scoped=true&lang=css":
-/*!*********************************************************************************************************!*\
-  !*** ./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&scoped=true&lang=css ***!
-  \*********************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_style_index_0_id_844c20b2_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&scoped=true&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&scoped=true&lang=css");
 
 
 /***/ }),
@@ -51214,8 +51429,10 @@ var map = {
 	"./Auth/Register.vue": "./resources/js/Pages/Auth/Register.vue",
 	"./Auth/ResetPassword.vue": "./resources/js/Pages/Auth/ResetPassword.vue",
 	"./Auth/VerifyEmail.vue": "./resources/js/Pages/Auth/VerifyEmail.vue",
+	"./ButtonComponent.vue": "./resources/js/Pages/ButtonComponent.vue",
 	"./ComponentLibrary.vue": "./resources/js/Pages/ComponentLibrary.vue",
 	"./Dashboard.vue": "./resources/js/Pages/Dashboard.vue",
+	"./InputComponent.vue": "./resources/js/Pages/InputComponent.vue",
 	"./Welcome.vue": "./resources/js/Pages/Welcome.vue"
 };
 
