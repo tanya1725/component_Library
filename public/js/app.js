@@ -22978,6 +22978,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 /* harmony import */ var _ButtonComponent_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ButtonComponent.vue */ "./resources/js/Pages/ButtonComponent.vue");
 /* harmony import */ var _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./InputComponent.vue */ "./resources/js/Pages/InputComponent.vue");
+/* harmony import */ var _RadioComponent_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./RadioComponent.vue */ "./resources/js/Pages/RadioComponent.vue");
+
 
 
 
@@ -22987,10 +22989,11 @@ __webpack_require__.r(__webpack_exports__);
     var __expose = _ref.expose;
     __expose();
     var selectedComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)('Button');
-    var components = ['Button', 'Input'];
+    var components = ['Button', 'Input', 'Radio Groups'];
     var componentMap = {
       Button: _ButtonComponent_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-      Input: _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
+      Input: _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
+      'Radio Groups': _RadioComponent_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
     };
     var currentComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
       return componentMap[selectedComponent.value];
@@ -23007,7 +23010,8 @@ __webpack_require__.r(__webpack_exports__);
       ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref,
       computed: vue__WEBPACK_IMPORTED_MODULE_0__.computed,
       ButtonComponent: _ButtonComponent_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-      InputComponent: _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
+      InputComponent: _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
+      RadioComponent: _RadioComponent_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -23146,6 +23150,81 @@ __webpack_require__.r(__webpack_exports__);
     }, {
       name: 'Number',
       html: '<input type="number" placeholder="Number Input" class="border rounded p-2">'
+    }];
+    var toggleCode = function toggleCode(index) {
+      showCode.value[index] = !showCode.value[index];
+    };
+    var __returned__ = {
+      showCode: showCode,
+      variations: variations,
+      toggleCode: toggleCode,
+      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/RadioComponent.vue?vue&type=script&setup=true&lang=js":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/RadioComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \**************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  __name: 'RadioComponent',
+  setup: function setup(__props, _ref) {
+    var __expose = _ref.expose;
+    __expose();
+    var showCode = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
+    var variations = [{
+      name: 'Simple list',
+      html: "\n      <div class=\"space-y-2\">\n        <label class=\"flex items-center\">\n          <input type=\"radio\" name=\"simple-list\" value=\"option1\" class=\"form-radio h-4 w-4 text-blue-600\">\n          <span class=\"ml-2 text-gray-700\">Option 1</span>\n        </label>\n        <label class=\"flex items-center\">\n          <input type=\"radio\" name=\"simple-list\" value=\"option2\" class=\"form-radio h-4 w-4 text-blue-600\">\n          <span class=\"ml-2 text-gray-700\">Option 2</span>\n        </label>\n        <label class=\"flex items-center\">\n          <input type=\"radio\" name=\"simple-list\" value=\"option3\" class=\"form-radio h-4 w-4 text-blue-600\">\n          <span class=\"ml-2 text-gray-700\">Option 3</span>\n        </label>\n      </div>\n    "
+    }, {
+      name: 'Simple inline list',
+      html: "\n      <div class=\"flex space-x-4\">\n        <label class=\"flex items-center\">\n          <input type=\"radio\" name=\"inline-list\" value=\"option1\" class=\"form-radio h-4 w-4 text-blue-600\">\n          <span class=\"ml-2 text-gray-700\">Option 1</span>\n        </label>\n        <label class=\"flex items-center\">\n          <input type=\"radio\" name=\"inline-list\" value=\"option2\" class=\"form-radio h-4 w-4 text-blue-600\">\n          <span class=\"ml-2 text-gray-700\">Option 2</span>\n        </label>\n        <label class=\"flex items-center\">\n          <input type=\"radio\" name=\"inline-list\" value=\"option3\" class=\"form-radio h-4 w-4 text-blue-600\">\n          <span class=\"ml-2 text-gray-700\">Option 3</span>\n        </label>\n      </div>\n    "
+    }, {
+      name: 'List with description',
+      html: "\n      <div class=\"space-y-2\">\n        <label class=\"flex items-start\">\n          <input type=\"radio\" name=\"list-with-description\" value=\"option1\" class=\"form-radio h-4 w-4 text-blue-600 mt-1\">\n          <div class=\"ml-2\">\n            <span class=\"text-gray-700 font-medium\">Option 1</span>\n            <p class=\"text-gray-500 text-sm\">This is a description for Option 1</p>\n          </div>\n        </label>\n        <label class=\"flex items-start\">\n          <input type=\"radio\" name=\"list-with-description\" value=\"option2\" class=\"form-radio h-4 w-4 text-blue-600 mt-1\">\n          <div class=\"ml-2\">\n            <span class=\"text-gray-700 font-medium\">Option 2</span>\n            <p class=\"text-gray-500 text-sm\">This is a description for Option 2</p>\n          </div>\n        </label>\n        <label class=\"flex items-start\">\n          <input type=\"radio\" name=\"list-with-description\" value=\"option3\" class=\"form-radio h-4 w-4 text-blue-600 mt-1\">\n          <div class=\"ml-2\">\n            <span class=\"text-gray-700 font-medium\">Option 3</span>\n            <p class=\"text-gray-500 text-sm\">This is a description for Option 3</p>\n          </div>\n        </label>\n      </div>\n    "
+    }, {
+      name: 'List with inline description',
+      html: "\n      <div class=\"space-y-2\">\n        <label class=\"flex items-center\">\n          <input type=\"radio\" name=\"list-with-inline-description\" value=\"option1\" class=\"form-radio h-4 w-4 text-blue-600\">\n          <span class=\"ml-2 text-gray-700\">Option 1</span>\n          <span class=\"ml-2 text-gray-500 text-sm\">- Description for Option 1</span>\n        </label>\n        <label class=\"flex items-center\">\n          <input type=\"radio\" name=\"list-with-inline-description\" value=\"option2\" class=\"form-radio h-4 w-4 text-blue-600\">\n          <span class=\"ml-2 text-gray-700\">Option 2</span>\n          <span class=\"ml-2 text-gray-500 text-sm\">- Description for Option 2</span>\n        </label>\n        <label class=\"flex items-center\">\n          <input type=\"radio\" name=\"list-with-inline-description\" value=\"option3\" class=\"form-radio h-4 w-4 text-blue-600\">\n          <span class=\"ml-2 text-gray-700\">Option 3</span>\n          <span class=\"ml-2 text-gray-500 text-sm\">- Description for Option 3</span>\n        </label>\n      </div>\n    "
+    }, {
+      name: 'List with radio on right',
+      html: "\n      <div class=\"space-y-2\">\n        <label class=\"flex items-center justify-between\">\n          <span class=\"text-gray-700\">Option 1</span>\n          <input type=\"radio\" name=\"list-with-radio-right\" value=\"option1\" class=\"form-radio h-4 w-4 text-blue-600\">\n        </label>\n        <label class=\"flex items-center justify-between\">\n          <span class=\"text-gray-700\">Option 2</span>\n          <input type=\"radio\" name=\"list-with-radio-right\" value=\"option2\" class=\"form-radio h-4 w-4 text-blue-600\">\n        </label>\n        <label class=\"flex items-center justify-between\">\n          <span class=\"text-gray-700\">Option 3</span>\n          <input type=\"radio\" name=\"list-with-radio-right\" value=\"option3\" class=\"form-radio h-4 w-4 text-blue-600\">\n        </label>\n      </div>\n    "
+    }, {
+      name: 'Simple list with radio on right',
+      html: "\n      <div class=\"space-y-2\">\n        <label class=\"flex items-center justify-between\">\n          <div>\n            <span class=\"text-gray-700 font-medium\">Option 1</span>\n            <p class=\"text-gray-500 text-sm\">Description for Option 1</p>\n          </div>\n          <input type=\"radio\" name=\"simple-list-with-radio-right\" value=\"option1\" class=\"form-radio h-4 w-4 text-blue-600\">\n        </label>\n        <label class=\"flex items-center justify-between\">\n          <div>\n            <span class=\"text-gray-700 font-medium\">Option 2</span>\n            <p class=\"text-gray-500 text-sm\">Description for Option 2</p>\n          </div>\n          <input type=\"radio\" name=\"simple-list-with-radio-right\" value=\"option2\" class=\"form-radio h-4 w-4 text-blue-600\">\n        </label>\n        <label class=\"flex items-center justify-between\">\n          <div>\n            <span class=\"text-gray-700 font-medium\">Option 3</span>\n            <p class=\"text-gray-500 text-sm\">Description for Option 3</p>\n          </div>\n          <input type=\"radio\" name=\"simple-list-with-radio-right\" value=\"option3\" class=\"form-radio h-4 w-4 text-blue-600\">\n        </label>\n      </div>\n    "
+    }, {
+      name: 'Simple table',
+      html: "\n      <table class=\"min-w-full divide-y divide-gray-200\">\n        <thead class=\"bg-gray-50\">\n          <tr>\n            <th scope=\"col\" class=\"px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider\">Option</th>\n            <th scope=\"col\" class=\"px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider\">Description</th>\n            <th scope=\"col\" class=\"px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider\">Select</th>\n          </tr>\n        </thead>\n        <tbody class=\"bg-white divide-y divide-gray-200\">\n          <tr>\n            <td class=\"px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900\">Option 1</td>\n            <td class=\"px-6 py-4 whitespace-nowrap text-sm text-gray-500\">Description for Option 1</td>\n            <td class=\"px-6 py-4 whitespace-nowrap text-sm text-gray-500\">\n              <input type=\"radio\" name=\"simple-table\" value=\"option1\" class=\"form-radio h-4 w-4 text-blue-600\">\n            </td>\n          </tr>\n          <tr>\n            <td class=\"px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900\">Option 2</td>\n            <td class=\"px-6 py-4 whitespace-nowrap text-sm text-gray-500\">Description for Option 2</td>\n            <td class=\"px-6 py-4 whitespace-nowrap text-sm text-gray-500\">\n              <input type=\"radio\" name=\"simple-table\" value=\"option2\" class=\"form-radio h-4 w-4 text-blue-600\">\n            </td>\n          </tr>\n          <tr>\n            <td class=\"px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900\">Option 3</td>\n            <td class=\"px-6 py-4 whitespace-nowrap text-sm text-gray-500\">Description for Option 3</td>\n            <td class=\"px-6 py-4 whitespace-nowrap text-sm text-gray-500\">\n              <input type=\"radio\" name=\"simple-table\" value=\"option3\" class=\"form-radio h-4 w-4 text-blue-600\">\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    "
+    }, {
+      name: 'List with descriptions in panel',
+      html: "\n      <div class=\"bg-white shadow overflow-hidden sm:rounded-md\">\n        <ul class=\"divide-y divide-gray-200\">\n          <li>\n            <label class=\"px-4 py-4 sm:px-6 flex items-start\">\n              <input type=\"radio\" name=\"list-with-descriptions-in-panel\" value=\"option1\" class=\"form-radio h-4 w-4 text-blue-600 mt-1\">\n              <div class=\"ml-3\">\n                <p class=\"text-sm font-medium text-gray-900\">Option 1</p>\n                <p class=\"text-sm text-gray-500\">This is a detailed description for Option 1</p>\n              </div>\n            </label>\n          </li>\n          <li>\n            <label class=\"px-4 py-4 sm:px-6 flex items-start\">\n              <input type=\"radio\" name=\"list-with-descriptions-in-panel\" value=\"option2\" class=\"form-radio h-4 w-4 text-blue-600 mt-1\">\n              <div class=\"ml-3\">\n                <p class=\"text-sm font-medium text-gray-900\">Option 2</p>\n                <p class=\"text-sm text-gray-500\">This is a detailed description for Option 2</p>\n              </div>\n            </label>\n          </li>\n          <li>\n            <label class=\"px-4 py-4 sm:px-6 flex items-start\">\n              <input type=\"radio\" name=\"list-with-descriptions-in-panel\" value=\"option3\" class=\"form-radio h-4 w-4 text-blue-600 mt-1\">\n              <div class=\"ml-3\">\n                <p class=\"text-sm font-medium text-gray-900\">Option 3</p>\n                <p class=\"text-sm text-gray-500\">This is a detailed description for Option 3</p>\n              </div>\n            </label>\n          </li>\n        </ul>\n      </div>\n    "
+    }, {
+      name: 'Color picker',
+      html: "\n      <div class=\"flex space-x-3\">\n        <label class=\"flex items-center\">\n          <input type=\"radio\" name=\"color-picker\" value=\"red\" class=\"sr-only\">\n          <span class=\"h-8 w-8 bg-red-500 rounded-full border-2 border-transparent flex items-center justify-center cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500\">\n            <span class=\"sr-only\">Red</span>\n          </span>\n        </label>\n        <label class=\"flex items-center\">\n          <input type=\"radio\" name=\"color-picker\" value=\"green\" class=\"sr-only\">\n          <span class=\"h-8 w-8 bg-green-500 rounded-full border-2 border-transparent flex items-center justify-center cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500\">\n            <span class=\"sr-only\">Green</span>\n          </span>\n        </label>\n        <label class=\"flex items-center\">\n          <input type=\"radio\" name=\"color-picker\" value=\"blue\" class=\"sr-only\">\n          <span class=\"h-8 w-8 bg-blue-500 rounded-full border-2 border-transparent flex items-center justify-center cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500\">\n            <span class=\"sr-only\">Blue</span>\n          </span>\n        </label>\n      </div>\n    "
+    }, {
+      name: 'Cards',
+      html: "\n      <div class=\"grid grid-cols-1 gap-4 sm:grid-cols-3\">\n        <label class=\"relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none\">\n          <input type=\"radio\" name=\"cards\" value=\"option1\" class=\"sr-only\" aria-labelledby=\"option1-label\" aria-describedby=\"option1-description\">\n          <div class=\"flex-1 flex\">\n            <div class=\"flex flex-col\">\n              <span id=\"option1-label\" class=\"block text-sm font-medium text-gray-900\">Option 1</span>\n              <span id=\"option1-description\" class=\"mt-1 flex items-center text-sm text-gray-500\">This is the content for Option 1</span>\n            </div>\n          </div>\n          <div class=\"absolute -inset-px rounded-lg border-2 pointer-events-none\" aria-hidden=\"true\"></div>\n        </label>\n        <label class=\"relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none\">\n          <input type=\"radio\" name=\"cards\" value=\"option2\" class=\"sr-only\" aria-labelledby=\"option2-label\" aria-describedby=\"option2-description\">\n          <div class=\"flex-1 flex\">\n            <div class=\"flex flex-col\">\n              <span id=\"option2-label\" class=\"block text-sm font-medium text-gray-900\">Option 2</span>\n              <span id=\"option2-description\" class=\"mt-1 flex items-center text-sm text-gray-500\">This is the content for Option 2</span>\n            </div>\n          </div>\n          <div class=\"absolute -inset-px rounded-lg border-2 pointer-events-none\" aria-hidden=\"true\"></div>\n        </label>\n        <label class=\"relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none\">\n          <input type=\"radio\" name=\"cards\" value=\"option3\" class=\"sr-only\" aria-labelledby=\"option3-label\" aria-describedby=\"option3-description\">\n          <div class=\"flex-1 flex\">\n            <div class=\"flex flex-col\">\n              <span id=\"option3-label\" class=\"block text-sm font-medium text-gray-900\">Option 3</span>\n              <span id=\"option3-description\" class=\"mt-1 flex items-center text-sm text-gray-500\">This is the content for Option 3</span>\n            </div>\n          </div>\n          <div class=\"absolute -inset-px rounded-lg border-2 pointer-events-none\" aria-hidden=\"true\"></div>\n        </label>\n      </div>\n    "
+    }, {
+      name: 'Small cards',
+      html: "\n      <div class=\"flex flex-wrap gap-4\">\n        <label class=\"relative bg-white border rounded-md px-3 py-2 flex items-center cursor-pointer focus:outline-none\">\n          <input type=\"radio\" name=\"small-cards\" value=\"option1\" class=\"sr-only\" aria-labelledby=\"small-option1-label\">\n          <span id=\"small-option1-label\" class=\"block text-sm font-medium text-gray-900\">S</span>\n          <div class=\"absolute -inset-px rounded-md border-2 pointer-events-none\" aria-hidden=\"true\"></div>\n        </label>\n        <label class=\"relative bg-white border rounded-md px-3 py-2 flex items-center cursor-pointer focus:outline-none\">\n          <input type=\"radio\" name=\"small-cards\" value=\"option2\" class=\"sr-only\" aria-labelledby=\"small-option2-label\">\n          <span id=\"small-option2-label\" class=\"block text-sm font-medium text-gray-900\">M</span>\n          <div class=\"absolute -inset-px rounded-md border-2 pointer-events-none\" aria-hidden=\"true\"></div>\n        </label>\n        <label class=\"relative bg-white border rounded-md px-3 py-2 flex items-center cursor-pointer focus:outline-none\">\n          <input type=\"radio\" name=\"small-cards\" value=\"option3\" class=\"sr-only\" aria-labelledby=\"small-option3-label\">\n          <span id=\"small-option3-label\" class=\"block text-sm font-medium text-gray-900\">L</span>\n          <div class=\"absolute -inset-px rounded-md border-2 pointer-events-none\" aria-hidden=\"true\"></div>\n        </label>\n        <label class=\"relative bg-white border rounded-md px-3 py-2 flex items-center cursor-pointer focus:outline-none\">\n          <input type=\"radio\" name=\"small-cards\" value=\"option4\" class=\"sr-only\" aria-labelledby=\"small-option4-label\">\n          <span id=\"small-option4-label\" class=\"block text-sm font-medium text-gray-900\">XL</span>\n          <div class=\"absolute -inset-px rounded-md border-2 pointer-events-none\" aria-hidden=\"true\"></div>\n        </label>\n      </div>\n    "
+    }, {
+      name: 'Stacked cards',
+      html: "\n      <div class=\"space-y-4\">\n        <label class=\"relative block bg-white border rounded-lg shadow-sm px-6 py-4 cursor-pointer sm:flex sm:justify-between focus:outline-none\">\n          <input type=\"radio\" name=\"stacked-cards\" value=\"option1\" class=\"sr-only\" aria-labelledby=\"stacked-option1-label\" aria-describedby=\"stacked-option1-description-0 stacked-option1-description-1\">\n          <div class=\"flex items-center\">\n            <div class=\"text-sm\">\n              <p id=\"stacked-option1-label\" class=\"font-medium text-gray-900\">Basic Plan</p>\n              <div id=\"stacked-option1-description-0\" class=\"text-gray-500\">\n                <p class=\"sm:inline\">For individuals</p>\n              </div>\n            </div>\n          </div>\n          <div id=\"stacked-option1-description-1\" class=\"mt-2 flex text-sm sm:mt-0 sm:block sm:ml-4 sm:text-right\">\n            <div class=\"font-medium text-gray-900\">$9.99/mo</div>\n          </div>\n          <div class=\"absolute -inset-px rounded-lg border-2 pointer-events-none\" aria-hidden=\"true\"></div>\n        </label>\n        <label class=\"relative block bg-white border rounded-lg shadow-sm px-6 py-4 cursor-pointer sm:flex sm:justify-between focus:outline-none\">\n          <input type=\"radio\" name=\"stacked-cards\" value=\"option2\" class=\"sr-only\" aria-labelledby=\"stacked-option2-label\" aria-describedby=\"stacked-option2-description-0 stacked-option2-description-1\">\n          <div class=\"flex items-center\">\n            <div class=\"text-sm\">\n              <p id=\"stacked-option2-label\" class=\"font-medium text-gray-900\">Team Plan</p>\n              <div id=\"stacked-option2-description-0\" class=\"text-gray-500\">\n                <p class=\"sm:inline\">For small teams</p>\n              </div>\n            </div>\n          </div>\n          <div id=\"stacked-option2-description-1\" class=\"mt-2 flex text-sm sm:mt-0 sm:block sm:ml-4 sm:text-right\">\n            <div class=\"font-medium text-gray-900\">$49.99/mo</div>\n          </div>\n          <div class=\"absolute -inset-px rounded-lg border-2 pointer-events-none\" aria-hidden=\"true\"></div>\n        </label>\n        <label class=\"relative block bg-white border rounded-lg shadow-sm px-6 py-4 cursor-pointer sm:flex sm:justify-between focus:outline-none\">\n          <input type=\"radio\" name=\"stacked-cards\" value=\"option3\" class=\"sr-only\" aria-labelledby=\"stacked-option3-label\" aria-describedby=\"stacked-option3-description-0 stacked-option3-description-1\">\n          <div class=\"flex items-center\">\n            <div class=\"text-sm\">\n              <p id=\"stacked-option3-label\" class=\"font-medium text-gray-900\">Enterprise Plan</p>\n              <div id=\"stacked-option3-description-0\" class=\"text-gray-500\">\n                <p class=\"sm:inline\">For large organizations</p>\n              </div>\n            </div>\n          </div>\n          <div id=\"stacked-option3-description-1\" class=\"mt-2 flex text-sm sm:mt-0 sm:block sm:ml-4 sm:text-right\">\n            <div class=\"font-medium text-gray-900\">$99.99/mo</div>\n          </div>\n          <div class=\"absolute -inset-px rounded-lg border-2 pointer-events-none\" aria-hidden=\"true\"></div>\n        </label>\n      </div>\n    "
     }];
     var toggleCode = function toggleCode(index) {
       showCode.value[index] = !showCode.value[index];
@@ -24403,6 +24482,64 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/RadioComponent.vue?vue&type=template&id=4ccfb82b&scoped=true":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/RadioComponent.vue?vue&type=template&id=4ccfb82b&scoped=true ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "space-y-4"
+};
+var _hoisted_2 = {
+  "class": "p-4 bg-gray-50 border-b"
+};
+var _hoisted_3 = {
+  "class": "text-lg font-semibold text-gray-800"
+};
+var _hoisted_4 = {
+  "class": "p-4"
+};
+var _hoisted_5 = {
+  "class": "mb-4"
+};
+var _hoisted_6 = ["innerHTML"];
+var _hoisted_7 = ["onClick"];
+var _hoisted_8 = {
+  "class": "mt-4"
+};
+var _hoisted_9 = {
+  "class": "p-4 bg-gray-800 rounded-md overflow-x-auto"
+};
+var _hoisted_10 = {
+  "class": "text-sm text-white"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.variations, function (variation, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      key: index,
+      "class": "bg-white rounded-lg shadow-md w-full"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "p-4 bg-gray-50 rounded-md",
+      innerHTML: variation.html
+    }, null, 8 /* PROPS */, _hoisted_6)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $setup.toggleCode(index);
+      },
+      "class": "px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.showCode[index] ? 'Hide Code' : 'Show Code'), 9 /* TEXT, PROPS */, _hoisted_7)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", _hoisted_9, [_cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("            ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("code", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.html), 1 /* TEXT */), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("\n          "))])], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.showCode[index]]])])]);
+  }), 64 /* STABLE_FRAGMENT */))]);
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Welcome.vue?vue&type=template&id=317d1a6e&scoped=true":
 /*!************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Welcome.vue?vue&type=template&id=317d1a6e&scoped=true ***!
@@ -24723,6 +24860,30 @@ module.exports = function callBoundIntrinsic(name, allowMissing) {
 	}
 	return intrinsic;
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/RadioComponent.vue?vue&type=style&index=0&id=4ccfb82b&scoped=true&lang=css":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/RadioComponent.vue?vue&type=style&index=0&id=4ccfb82b&scoped=true&lang=css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n/* Add any additional styles here if needed */\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
@@ -49449,6 +49610,36 @@ module.exports = function getSideChannel() {
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/RadioComponent.vue?vue&type=style&index=0&id=4ccfb82b&scoped=true&lang=css":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/RadioComponent.vue?vue&type=style&index=0&id=4ccfb82b&scoped=true&lang=css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_RadioComponent_vue_vue_type_style_index_0_id_4ccfb82b_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./RadioComponent.vue?vue&type=style&index=0&id=4ccfb82b&scoped=true&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/RadioComponent.vue?vue&type=style&index=0&id=4ccfb82b&scoped=true&lang=css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_RadioComponent_vue_vue_type_style_index_0_id_4ccfb82b_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_RadioComponent_vue_vue_type_style_index_0_id_4ccfb82b_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Welcome.vue?vue&type=style&index=0&id=317d1a6e&scoped=true&lang=css":
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Welcome.vue?vue&type=style&index=0&id=317d1a6e&scoped=true&lang=css ***!
@@ -50394,6 +50585,37 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/Pages/RadioComponent.vue":
+/*!***********************************************!*\
+  !*** ./resources/js/Pages/RadioComponent.vue ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _RadioComponent_vue_vue_type_template_id_4ccfb82b_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RadioComponent.vue?vue&type=template&id=4ccfb82b&scoped=true */ "./resources/js/Pages/RadioComponent.vue?vue&type=template&id=4ccfb82b&scoped=true");
+/* harmony import */ var _RadioComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RadioComponent.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/RadioComponent.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _RadioComponent_vue_vue_type_style_index_0_id_4ccfb82b_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./RadioComponent.vue?vue&type=style&index=0&id=4ccfb82b&scoped=true&lang=css */ "./resources/js/Pages/RadioComponent.vue?vue&type=style&index=0&id=4ccfb82b&scoped=true&lang=css");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+
+
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_RadioComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_RadioComponent_vue_vue_type_template_id_4ccfb82b_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-4ccfb82b"],['__file',"resources/js/Pages/RadioComponent.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Welcome.vue":
 /*!****************************************!*\
   !*** ./resources/js/Pages/Welcome.vue ***!
@@ -50757,6 +50979,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_InputComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_InputComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./InputComponent.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/InputComponent.vue?vue&type=script&setup=true&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/RadioComponent.vue?vue&type=script&setup=true&lang=js":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/Pages/RadioComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_RadioComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_RadioComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./RadioComponent.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/RadioComponent.vue?vue&type=script&setup=true&lang=js");
  
 
 /***/ }),
@@ -51129,6 +51367,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/RadioComponent.vue?vue&type=template&id=4ccfb82b&scoped=true":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/Pages/RadioComponent.vue?vue&type=template&id=4ccfb82b&scoped=true ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_RadioComponent_vue_vue_type_template_id_4ccfb82b_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_RadioComponent_vue_vue_type_template_id_4ccfb82b_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./RadioComponent.vue?vue&type=template&id=4ccfb82b&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/RadioComponent.vue?vue&type=template&id=4ccfb82b&scoped=true");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Welcome.vue?vue&type=template&id=317d1a6e&scoped=true":
 /*!**********************************************************************************!*\
   !*** ./resources/js/Pages/Welcome.vue?vue&type=template&id=317d1a6e&scoped=true ***!
@@ -51141,6 +51395,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Welcome_vue_vue_type_template_id_317d1a6e_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Welcome_vue_vue_type_template_id_317d1a6e_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Welcome.vue?vue&type=template&id=317d1a6e&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Welcome.vue?vue&type=template&id=317d1a6e&scoped=true");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/RadioComponent.vue?vue&type=style&index=0&id=4ccfb82b&scoped=true&lang=css":
+/*!*******************************************************************************************************!*\
+  !*** ./resources/js/Pages/RadioComponent.vue?vue&type=style&index=0&id=4ccfb82b&scoped=true&lang=css ***!
+  \*******************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_RadioComponent_vue_vue_type_style_index_0_id_4ccfb82b_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./RadioComponent.vue?vue&type=style&index=0&id=4ccfb82b&scoped=true&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/RadioComponent.vue?vue&type=style&index=0&id=4ccfb82b&scoped=true&lang=css");
 
 
 /***/ }),
@@ -51433,6 +51700,7 @@ var map = {
 	"./ComponentLibrary.vue": "./resources/js/Pages/ComponentLibrary.vue",
 	"./Dashboard.vue": "./resources/js/Pages/Dashboard.vue",
 	"./InputComponent.vue": "./resources/js/Pages/InputComponent.vue",
+	"./RadioComponent.vue": "./resources/js/Pages/RadioComponent.vue",
 	"./Welcome.vue": "./resources/js/Pages/Welcome.vue"
 };
 
