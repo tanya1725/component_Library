@@ -3,7 +3,7 @@
     <!-- Sidebar -->
     <aside class="w-64 bg-white shadow-md">
       <div class="p-4">
-        <h1 class="text-2xl font-bold text-gray-800">Components</h1>
+        <h1 class="text-2xl font-bold text-gray-800">Components Hub</h1>
       </div>
       <nav class="mt-4">
         <ul>
