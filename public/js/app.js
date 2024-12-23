@@ -22979,6 +22979,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ButtonComponent_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ButtonComponent.vue */ "./resources/js/Pages/ButtonComponent.vue");
 /* harmony import */ var _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./InputComponent.vue */ "./resources/js/Pages/InputComponent.vue");
 /* harmony import */ var _RadioComponent_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./RadioComponent.vue */ "./resources/js/Pages/RadioComponent.vue");
+/* harmony import */ var _HeaderComponent_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./HeaderComponent.vue */ "./resources/js/Pages/HeaderComponent.vue");
+
 
 
 
@@ -22989,11 +22991,12 @@ __webpack_require__.r(__webpack_exports__);
     var __expose = _ref.expose;
     __expose();
     var selectedComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)('Button');
-    var components = ['Button', 'Input', 'Radio Groups'];
+    var components = ['Button', 'Input', 'Radio Groups', 'Header'];
     var componentMap = {
       Button: _ButtonComponent_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
       Input: _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-      'Radio Groups': _RadioComponent_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
+      'Radio Groups': _RadioComponent_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+      Header: _HeaderComponent_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
     };
     var currentComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
       return componentMap[selectedComponent.value];
@@ -23011,7 +23014,8 @@ __webpack_require__.r(__webpack_exports__);
       computed: vue__WEBPACK_IMPORTED_MODULE_0__.computed,
       ButtonComponent: _ButtonComponent_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
       InputComponent: _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-      RadioComponent: _RadioComponent_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
+      RadioComponent: _RadioComponent_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+      HeaderComponent: _HeaderComponent_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -23047,6 +23051,198 @@ __webpack_require__.r(__webpack_exports__);
       BreezeAuthenticatedLayout: _Layouts_Authenticated_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
       get Head() {
         return _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Head;
+      }
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=script&setup=true&lang=js":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \***************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/menu.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/x.js");
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  __name: 'HeaderComponent',
+  props: {
+    variant: {
+      type: String,
+      "default": 'default',
+      validator: function validator(value) {
+        return ['default', 'constrained', 'fullWidth'].includes(value);
+      }
+    },
+    background: {
+      type: String,
+      "default": 'light',
+      validator: function validator(value) {
+        return ['light', 'dark', 'brand'].includes(value);
+      }
+    },
+    height: {
+      type: String,
+      "default": 'default',
+      validator: function validator(value) {
+        return ['default', 'tall'].includes(value);
+      }
+    },
+    alignment: {
+      type: String,
+      "default": 'right',
+      validator: function validator(value) {
+        return ['left', 'center', 'right'].includes(value);
+      }
+    },
+    logoPosition: {
+      type: String,
+      "default": 'left',
+      validator: function validator(value) {
+        return ['left', 'center'].includes(value);
+      }
+    },
+    showCTA: {
+      type: Boolean,
+      "default": false
+    },
+    ctaText: {
+      type: String,
+      "default": 'Get started'
+    },
+    ctaStyle: {
+      type: String,
+      "default": 'primary',
+      validator: function validator(value) {
+        return ['primary', 'secondary', 'white'].includes(value);
+      }
+    },
+    companyName: {
+      type: String,
+      "default": 'Your Company'
+    },
+    logoSrc: {
+      type: String,
+      "default": '/placeholder.svg?height=32&width=32'
+    },
+    navigationLinks: {
+      type: Array,
+      "default": function _default() {
+        return [{
+          name: 'Dashboard',
+          href: '#',
+          current: true
+        }, {
+          name: 'Team',
+          href: '#',
+          current: false
+        }, {
+          name: 'Projects',
+          href: '#',
+          current: false
+        }, {
+          name: 'Calendar',
+          href: '#',
+          current: false
+        }];
+      }
+    }
+  },
+  setup: function setup(__props, _ref) {
+    var __expose = _ref.expose;
+    __expose();
+    var props = __props;
+    var mobileMenuOpen = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(false);
+    var containerStyles = {
+      "default": 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8',
+      constrained: 'max-w-5xl mx-auto px-4 sm:px-6 lg:px-8',
+      fullWidth: ''
+    };
+    var backgroundStyles = {
+      light: 'bg-white',
+      dark: 'bg-gray-800',
+      brand: 'bg-indigo-600'
+    };
+    var heightStyles = {
+      "default": 'h-16',
+      tall: 'h-20'
+    };
+    var logoStyles = {
+      left: '',
+      center: 'absolute left-1/2 transform -translate-x-1/2'
+    };
+    var navStyles = {
+      left: 'justify-start',
+      center: 'justify-center',
+      right: 'justify-end'
+    };
+    var ctaStyles = {
+      primary: 'text-white bg-indigo-600 hover:bg-indigo-700',
+      secondary: 'text-indigo-700 bg-indigo-100 hover:bg-indigo-200',
+      white: 'text-gray-700 bg-white hover:bg-gray-50'
+    };
+    var showCode = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
+    var variations = [{
+      name: 'Header with Centered Logo',
+      html: "\n      <header class=\"bg-white shadow\">\n        <div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">\n          <div class=\"flex justify-between items-center h-16\">\n            <div class=\"flex-1 flex justify-start\">\n              <div class=\"flex-shrink-0 flex items-center\">\n                <a href=\"#\" class=\"text-gray-800 text-xl font-bold\">Menu</a>\n              </div>\n            </div>\n            <div class=\"flex-1 flex justify-center\">\n              <div class=\"flex-shrink-0 flex items-center\">\n                <img class=\"h-8 w-auto\" src=\"/placeholder.svg?height=32&width=32\" alt=\"Logo\">\n              </div>\n            </div>\n            <div class=\"flex-1 flex justify-end\">\n              <div class=\"flex items-center\">\n                <button type=\"button\" class=\"bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\">\n                  <span class=\"sr-only\">View notifications</span>\n                  <svg class=\"h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" aria-hidden=\"true\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9\" />\n                  </svg>\n                </button>\n              </div>\n            </div>\n          </div>\n        </div>\n      </header>\n    "
+    }, {
+      name: 'Header with Bottom Border Navigation',
+      html: "\n      <header class=\"bg-white\">\n        <div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">\n          <div class=\"flex justify-between items-center h-16\">\n            <div class=\"flex-shrink-0 flex items-center\">\n              <img class=\"h-8 w-auto\" src=\"/placeholder.svg?height=32&width=32\" alt=\"Logo\">\n            </div>\n            <div class=\"hidden sm:ml-6 sm:flex sm:space-x-8\">\n              <a href=\"#\" class=\"border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                Dashboard\n              </a>\n              <a href=\"#\" class=\"border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                Team\n              </a>\n              <a href=\"#\" class=\"border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                Projects\n              </a>\n              <a href=\"#\" class=\"border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                Calendar\n              </a>\n            </div>\n            <div class=\"hidden sm:ml-6 sm:flex sm:items-center\">\n              <button type=\"button\" class=\"bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\">\n                <span class=\"sr-only\">View notifications</span>\n                <svg class=\"h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" aria-hidden=\"true\">\n                  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9\" />\n                </svg>\n              </button>\n            </div>\n          </div>\n        </div>\n      </header>\n    "
+    }, {
+      name: 'Header with Gradient Background',
+      html: "\n      <header class=\"bg-gradient-to-r from-purple-600 to-indigo-600\">\n        <nav class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">\n          <div class=\"flex items-center justify-between h-16\">\n            <div class=\"flex items-center\">\n              <div class=\"flex-shrink-0\">\n                <img class=\"h-8 w-8\" src=\"/placeholder.svg?height=32&width=32\" alt=\"Logo\">\n              </div>\n              <div class=\"hidden md:block\">\n                <div class=\"ml-10 flex items-baseline space-x-4\">\n                  <a href=\"#\" class=\"bg-indigo-700 text-white px-3 py-2 rounded-md text-sm font-medium\">Dashboard</a>\n                  <a href=\"#\" class=\"text-white hover:bg-indigo-500 hover:bg-opacity-75 px-3 py-2 rounded-md text-sm font-medium\">Team</a>\n                  <a href=\"#\" class=\"text-white hover:bg-indigo-500 hover:bg-opacity-75 px-3 py-2 rounded-md text-sm font-medium\">Projects</a>\n                  <a href=\"#\" class=\"text-white hover:bg-indigo-500 hover:bg-opacity-75 px-3 py-2 rounded-md text-sm font-medium\">Calendar</a>\n                </div>\n              </div>\n            </div>\n            <div class=\"hidden md:block\">\n              <div class=\"ml-4 flex items-center md:ml-6\">\n                <button class=\"bg-indigo-600 p-1 rounded-full text-indigo-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-600 focus:ring-white\">\n                  <span class=\"sr-only\">View notifications</span>\n                  <svg class=\"h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" aria-hidden=\"true\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9\" />\n                  </svg>\n                </button>\n              </div>\n            </div>\n            <div class=\"-mr-2 flex md:hidden\">\n              <button type=\"button\" class=\"bg-indigo-600 inline-flex items-center justify-center p-2 rounded-md text-indigo-200 hover:text-white hover:bg-indigo-500 hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-600 focus:ring-white\">\n                <span class=\"sr-only\">Open main menu</span>\n                <svg class=\"block h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" aria-hidden=\"true\">\n                  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16M4 18h16\" />\n                </svg>\n              </button>\n            </div>\n          </div>\n        </nav>\n      </header>\n    "
+    }, {
+      name: 'Simple Header',
+      html: "\n        <header class=\"bg-white shadow\">\n          <nav class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">\n            <div class=\"flex justify-between h-16\">\n              <div class=\"flex\">\n                <div class=\"flex-shrink-0 flex items-center\">\n                  <img class=\"h-8 w-auto\" src=\"/placeholder.svg?height=32&width=32\" alt=\"Logo\">\n                </div>\n                <div class=\"hidden sm:ml-6 sm:flex sm:space-x-8\">\n                  <a href=\"#\" class=\"border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                    Dashboard\n                  </a>\n                  <a href=\"#\" class=\"border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                    Team\n                  </a>\n                  <a href=\"#\" class=\"border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                    Projects\n                  </a>\n                  <a href=\"#\" class=\"border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                    Calendar\n                  </a>\n                </div>\n              </div>\n              <div class=\"hidden sm:ml-6 sm:flex sm:items-center\">\n                <button type=\"button\" class=\"bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\">\n                  <span class=\"sr-only\">View notifications</span>\n                  <svg class=\"h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" aria-hidden=\"true\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9\" />\n                  </svg>\n                </button>\n              </div>\n              <div class=\"-mr-2 flex items-center sm:hidden\">\n                <button type=\"button\" class=\"bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500\" aria-controls=\"mobile-menu\" aria-expanded=\"false\">\n                  <span class=\"sr-only\">Open main menu</span>\n                  <svg class=\"block h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" aria-hidden=\"true\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16M4 18h16\" />\n                  </svg>\n                </button>\n              </div>\n            </div>\n          </nav>\n        </header>\n      "
+    }, {
+      name: 'Header with Search',
+      html: "\n        <header class=\"bg-white shadow\">\n          <div class=\"max-w-7xl mx-auto px-2 sm:px-4 lg:px-8\">\n            <div class=\"flex justify-between h-16\">\n              <div class=\"flex px-2 lg:px-0\">\n                <div class=\"flex-shrink-0 flex items-center\">\n                  <img class=\"h-8 w-auto\" src=\"/placeholder.svg?height=32&width=32\" alt=\"Logo\">\n                </div>\n                <div class=\"hidden lg:ml-6 lg:flex lg:space-x-8\">\n                  <a href=\"#\" class=\"border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                    Dashboard\n                  </a>\n                  <a href=\"#\" class=\"border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                    Team\n                  </a>\n                  <a href=\"#\" class=\"border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                    Projects\n                  </a>\n                  <a href=\"#\" class=\"border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                    Calendar\n                  </a>\n                </div>\n              </div>\n              <div class=\"flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end\">\n                <div class=\"max-w-lg w-full lg:max-w-xs\">\n                  <label for=\"search\" class=\"sr-only\">Search</label>\n                  <div class=\"relative\">\n                    <div class=\"absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none\">\n                      <svg class=\"h-5 w-5 text-gray-400\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\">\n                        <path fill-rule=\"evenodd\" d=\"M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z\" clip-rule=\"evenodd\" />\n                      </svg>\n                    </div>\n                    <input id=\"search\" name=\"search\" class=\"block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm\" placeholder=\"Search\" type=\"search\">\n                  </div>\n                </div>\n              </div>\n              <div class=\"flex items-center lg:hidden\">\n                <button type=\"button\" class=\"inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500\" aria-controls=\"mobile-menu\" aria-expanded=\"false\">\n                  <span class=\"sr-only\">Open main menu</span>\n                  <svg class=\"block h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" aria-hidden=\"true\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16M4 18h16\" />\n                  </svg>\n                </button>\n              </div>\n            </div>\n          </div>\n        </header>\n      "
+    }, {
+      name: 'Header with CTA',
+      html: "\n        <header class=\"bg-indigo-600\">\n          <nav class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">\n            <div class=\"flex items-center justify-between h-16\">\n              <div class=\"flex items-center\">\n                <div class=\"flex-shrink-0\">\n                  <img class=\"h-8 w-8\" src=\"/placeholder.svg?height=32&width=32\" alt=\"Logo\">\n                </div>\n                <div class=\"hidden md:block\">\n                  <div class=\"ml-10 flex items-baseline space-x-4\">\n                    <a href=\"#\" class=\"bg-indigo-700 text-white px-3 py-2 rounded-md text-sm font-medium\">Dashboard</a>\n                    <a href=\"#\" class=\"text-white hover:bg-indigo-500 hover:bg-opacity-75 px-3 py-2 rounded-md text-sm font-medium\">Team</a>\n                    <a href=\"#\" class=\"text-white hover:bg-indigo-500 hover:bg-opacity-75 px-3 py-2 rounded-md text-sm font-medium\">Projects</a>\n                    <a href=\"#\" class=\"text-white hover:bg-indigo-500 hover:bg-opacity-75 px-3 py-2 rounded-md text-sm font-medium\">Calendar</a>\n                  </div>\n                </div>\n              </div>\n              <div class=\"hidden md:block\">\n                <div class=\"ml-4 flex items-center md:ml-6\">\n                  <a href=\"#\" class=\"inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50\">\n                    Sign up\n                  </a>\n                </div>\n              </div>\n              <div class=\"-mr-2 flex md:hidden\">\n                <button type=\"button\" class=\"bg-indigo-600 inline-flex items-center justify-center p-2 rounded-md text-indigo-200 hover:text-white hover:bg-indigo-500 hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-600 focus:ring-white\">\n                  <span class=\"sr-only\">Open main menu</span>\n                  <svg class=\"block h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" aria-hidden=\"true\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16M4 18h16\" />\n                  </svg>\n                </button>\n              </div>\n            </div>\n          </nav>\n        </header>\n      "
+    }, {
+      name: 'Header with Dropdown',
+      html: "\n        <header class=\"bg-white shadow\">\n          <nav class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">\n            <div class=\"flex justify-between h-16\">\n              <div class=\"flex\">\n                <div class=\"flex-shrink-0 flex items-center\">\n                  <img class=\"h-8 w-auto\" src=\"/placeholder.svg?height=32&width=32\" alt=\"Logo\">\n                </div>\n                <div class=\"hidden sm:ml-6 sm:flex sm:space-x-8\">\n                  <a href=\"#\" class=\"border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                    Dashboard\n                  </a>\n                  <a href=\"#\" class=\"border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                    Team\n                  </a>\n                  <a href=\"#\" class=\"border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                    Projects\n                  </a>\n                  <a href=\"#\" class=\"border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium\">\n                    Calendar\n                  </a>\n                </div>\n              </div>\n              <div class=\"hidden sm:ml-6 sm:flex sm:items-center\">\n                <div class=\"ml-3 relative\">\n                  <div>\n                    <button type=\"button\" class=\"bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\" id=\"user-menu-button\" aria-expanded=\"false\" aria-haspopup=\"true\">\n                      <span class=\"sr-only\">Open user menu</span>\n                      <img class=\"h-8 w-8 rounded-full\" src=\"/placeholder.svg?height=32&width=32\" alt=\"User avatar\">\n                    </button>\n                  </div>\n                  <div class=\"origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none\" role=\"menu\" aria-orientation=\"vertical\" aria-labelledby=\"user-menu-button\" tabindex=\"-1\">\n                    <a href=\"#\" class=\"block px-4 py-2 text-sm text-gray-700\" role=\"menuitem\" tabindex=\"-1\" id=\"user-menu-item-0\">Your Profile</a>\n                    <a href=\"#\" class=\"block px-4 py-2 text-sm text-gray-700\" role=\"menuitem\" tabindex=\"-1\" id=\"user-menu-item-1\">Settings</a>\n                    <a href=\"#\" class=\"block px-4 py-2 text-sm text-gray-700\" role=\"menuitem\" tabindex=\"-1\" id=\"user-menu-item-2\">Sign out</a>\n                  </div>\n                </div>\n              </div>\n              <div class=\"-mr-2 flex items-center sm:hidden\">\n                <button type=\"button\" class=\"inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500\" aria-controls=\"mobile-menu\" aria-expanded=\"false\">\n                  <span class=\"sr-only\">Open main menu</span>\n                  <svg class=\"block h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" aria-hidden=\"true\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16M4 18h16\" />\n                  </svg>\n                </button>\n              </div>\n            </div>\n          </nav>\n        </header>\n      "
+    }, {
+      name: 'Header with Dark Background',
+      html: "\n        <header class=\"bg-gray-800\">\n          <nav class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">\n            <div class=\"flex items-center justify-between h-16\">\n              <div class=\"flex items-center\">\n                <div class=\"flex-shrink-0\">\n                  <img class=\"h-8 w-8\" src=\"/placeholder.svg?height=32&width=32\" alt=\"Logo\">\n                </div>\n                <div class=\"hidden md:block\">\n                  <div class=\"ml-10 flex items-baseline space-x-4\">\n                    <a href=\"#\" class=\"bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium\">Dashboard</a>\n                    <a href=\"#\" class=\"text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium\">Team</a>\n                    <a href=\"#\" class=\"text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium\">Projects</a>\n                    <a href=\"#\" class=\"text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium\">Calendar</a>\n                  </div>\n                </div>\n              </div>\n              <div class=\"hidden md:block\">\n                <div class=\"ml-4 flex items-center md:ml-6\">\n                  <button class=\"bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white\">\n                    <span class=\"sr-only\">View notifications</span>\n                    <svg class=\"h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" aria-hidden=\"true\">\n                      <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9\" />\n                    </svg>\n                  </button>\n                </div>\n              </div>\n              <div class=\"-mr-2 flex md:hidden\">\n                <button type=\"button\" class=\"bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white\">\n                  <span class=\"sr-only\">Open main menu</span>\n                  <svg class=\"block h-6 w-6\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" aria-hidden=\"true\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16M4 18h16\" />\n                  </svg>\n                </button>\n              </div>\n            </div>\n          </nav>\n        </header>\n      "
+    }];
+    var toggleCode = function toggleCode(index) {
+      showCode.value[index] = !showCode.value[index];
+    };
+    var __returned__ = {
+      props: props,
+      mobileMenuOpen: mobileMenuOpen,
+      containerStyles: containerStyles,
+      backgroundStyles: backgroundStyles,
+      heightStyles: heightStyles,
+      logoStyles: logoStyles,
+      navStyles: navStyles,
+      ctaStyles: ctaStyles,
+      showCode: showCode,
+      variations: variations,
+      toggleCode: toggleCode,
+      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref,
+      get Menu() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__["default"];
+      },
+      get X() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"];
       }
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
@@ -24370,7 +24566,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "p-4"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
     "class": "text-2xl font-bold text-gray-800"
-  }, "Components")], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.components, function (component) {
+  }, "Components Hub")], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.components, function (component) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
       key: component,
       "class": "mb-2"
@@ -24420,6 +24616,64 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }),
     _: 1 /* STABLE */
   })], 64 /* STABLE_FRAGMENT */);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=template&id=ddb9eb52&scoped=true":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=template&id=ddb9eb52&scoped=true ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "space-y-4"
+};
+var _hoisted_2 = {
+  "class": "p-4 bg-gray-50 border-b"
+};
+var _hoisted_3 = {
+  "class": "text-lg font-semibold text-gray-800"
+};
+var _hoisted_4 = {
+  "class": "p-4"
+};
+var _hoisted_5 = {
+  "class": "mb-4"
+};
+var _hoisted_6 = ["innerHTML"];
+var _hoisted_7 = ["onClick"];
+var _hoisted_8 = {
+  "class": "mt-4"
+};
+var _hoisted_9 = {
+  "class": "p-4 bg-gray-800 rounded-md overflow-x-auto"
+};
+var _hoisted_10 = {
+  "class": "text-sm text-white"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.variations, function (variation, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      key: index,
+      "class": "bg-white rounded-lg shadow-md w-full"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "p-4 bg-gray-50 rounded-md",
+      innerHTML: variation.html
+    }, null, 8 /* PROPS */, _hoisted_6)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $setup.toggleCode(index);
+      },
+      "class": "px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.showCode[index] ? 'Hide Code' : 'Show Code'), 9 /* TEXT, PROPS */, _hoisted_7)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", _hoisted_9, [_cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("              ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("code", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.html), 1 /* TEXT */), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("\n            "))])], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.showCode[index]]])])]);
+  }), 64 /* STABLE_FRAGMENT */))]);
 }
 
 /***/ }),
@@ -24860,6 +25114,30 @@ module.exports = function callBoundIntrinsic(name, allowMissing) {
 	}
 	return intrinsic;
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n  /* Add any additional styles here if needed */\n  ", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
@@ -46876,6 +47154,219 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
+/***/ "./node_modules/lucide-vue-next/dist/esm/Icon.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/Icon.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Icon)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _shared_src_utils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shared/src/utils.js */ "./node_modules/lucide-vue-next/dist/esm/shared/src/utils.js");
+/* harmony import */ var _defaultAttributes_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./defaultAttributes.js */ "./node_modules/lucide-vue-next/dist/esm/defaultAttributes.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+
+const Icon = ({ size, strokeWidth = 2, absoluteStrokeWidth, color, iconNode, name, class: classes, ...props }, { slots }) => {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(
+    "svg",
+    {
+      ..._defaultAttributes_js__WEBPACK_IMPORTED_MODULE_1__["default"],
+      width: size || _defaultAttributes_js__WEBPACK_IMPORTED_MODULE_1__["default"].width,
+      height: size || _defaultAttributes_js__WEBPACK_IMPORTED_MODULE_1__["default"].height,
+      stroke: color || _defaultAttributes_js__WEBPACK_IMPORTED_MODULE_1__["default"].stroke,
+      "stroke-width": absoluteStrokeWidth ? Number(strokeWidth) * 24 / Number(size) : strokeWidth,
+      class: ["lucide", `lucide-${(0,_shared_src_utils_js__WEBPACK_IMPORTED_MODULE_2__.toKebabCase)(name ?? "icon")}`],
+      ...props
+    },
+    [...iconNode.map((child) => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(...child)), ...slots.default ? [slots.default()] : []]
+  );
+};
+
+
+//# sourceMappingURL=Icon.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ createLucideIcon)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _Icon_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Icon.js */ "./node_modules/lucide-vue-next/dist/esm/Icon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+const createLucideIcon = (iconName, iconNode) => (props, { slots }) => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(
+  _Icon_js__WEBPACK_IMPORTED_MODULE_1__["default"],
+  {
+    ...props,
+    iconNode,
+    name: iconName
+  },
+  slots
+);
+
+
+//# sourceMappingURL=createLucideIcon.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/defaultAttributes.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/defaultAttributes.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ defaultAttributes)
+/* harmony export */ });
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+var defaultAttributes = {
+  xmlns: "http://www.w3.org/2000/svg",
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  "stroke-width": 2,
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round"
+};
+
+
+//# sourceMappingURL=defaultAttributes.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/menu.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/menu.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Menu)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Menu = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("MenuIcon", [
+  ["line", { x1: "4", x2: "20", y1: "12", y2: "12", key: "1e0a9i" }],
+  ["line", { x1: "4", x2: "20", y1: "6", y2: "6", key: "1owob3" }],
+  ["line", { x1: "4", x2: "20", y1: "18", y2: "18", key: "yk5zj1" }]
+]);
+
+
+//# sourceMappingURL=menu.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/x.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/x.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ X)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const X = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("XIcon", [
+  ["path", { d: "M18 6 6 18", key: "1bl5f8" }],
+  ["path", { d: "m6 6 12 12", key: "d8bk6v" }]
+]);
+
+
+//# sourceMappingURL=x.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/shared/src/utils.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/shared/src/utils.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   toKebabCase: () => (/* binding */ toKebabCase)
+/* harmony export */ });
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+const toKebabCase = (string) => string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
+
+
+//# sourceMappingURL=utils.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/math-intrinsics/abs.js":
 /*!*********************************************!*\
   !*** ./node_modules/math-intrinsics/abs.js ***!
@@ -49610,6 +50101,36 @@ module.exports = function getSideChannel() {
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_HeaderComponent_vue_vue_type_style_index_0_id_ddb9eb52_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_HeaderComponent_vue_vue_type_style_index_0_id_ddb9eb52_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_HeaderComponent_vue_vue_type_style_index_0_id_ddb9eb52_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/RadioComponent.vue?vue&type=style&index=0&id=4ccfb82b&scoped=true&lang=css":
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/RadioComponent.vue?vue&type=style&index=0&id=4ccfb82b&scoped=true&lang=css ***!
@@ -50557,6 +51078,37 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/Pages/HeaderComponent.vue":
+/*!************************************************!*\
+  !*** ./resources/js/Pages/HeaderComponent.vue ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _HeaderComponent_vue_vue_type_template_id_ddb9eb52_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderComponent.vue?vue&type=template&id=ddb9eb52&scoped=true */ "./resources/js/Pages/HeaderComponent.vue?vue&type=template&id=ddb9eb52&scoped=true");
+/* harmony import */ var _HeaderComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeaderComponent.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/HeaderComponent.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _HeaderComponent_vue_vue_type_style_index_0_id_ddb9eb52_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css */ "./resources/js/Pages/HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+
+
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_HeaderComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_HeaderComponent_vue_vue_type_template_id_ddb9eb52_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-ddb9eb52"],['__file',"resources/js/Pages/HeaderComponent.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/InputComponent.vue":
 /*!***********************************************!*\
   !*** ./resources/js/Pages/InputComponent.vue ***!
@@ -50967,6 +51519,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/HeaderComponent.vue?vue&type=script&setup=true&lang=js":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/Pages/HeaderComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_HeaderComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_HeaderComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./HeaderComponent.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=script&setup=true&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/Pages/InputComponent.vue?vue&type=script&setup=true&lang=js":
 /*!**********************************************************************************!*\
   !*** ./resources/js/Pages/InputComponent.vue?vue&type=script&setup=true&lang=js ***!
@@ -51351,6 +51919,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/HeaderComponent.vue?vue&type=template&id=ddb9eb52&scoped=true":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/Pages/HeaderComponent.vue?vue&type=template&id=ddb9eb52&scoped=true ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_HeaderComponent_vue_vue_type_template_id_ddb9eb52_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_HeaderComponent_vue_vue_type_template_id_ddb9eb52_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./HeaderComponent.vue?vue&type=template&id=ddb9eb52&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=template&id=ddb9eb52&scoped=true");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/InputComponent.vue?vue&type=template&id=a2794688":
 /*!*****************************************************************************!*\
   !*** ./resources/js/Pages/InputComponent.vue?vue&type=template&id=a2794688 ***!
@@ -51395,6 +51979,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Welcome_vue_vue_type_template_id_317d1a6e_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Welcome_vue_vue_type_template_id_317d1a6e_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Welcome.vue?vue&type=template&id=317d1a6e&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Welcome.vue?vue&type=template&id=317d1a6e&scoped=true");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css":
+/*!********************************************************************************************************!*\
+  !*** ./resources/js/Pages/HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css ***!
+  \********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_HeaderComponent_vue_vue_type_style_index_0_id_ddb9eb52_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css");
 
 
 /***/ }),
@@ -51699,6 +52296,7 @@ var map = {
 	"./ButtonComponent.vue": "./resources/js/Pages/ButtonComponent.vue",
 	"./ComponentLibrary.vue": "./resources/js/Pages/ComponentLibrary.vue",
 	"./Dashboard.vue": "./resources/js/Pages/Dashboard.vue",
+	"./HeaderComponent.vue": "./resources/js/Pages/HeaderComponent.vue",
 	"./InputComponent.vue": "./resources/js/Pages/InputComponent.vue",
 	"./RadioComponent.vue": "./resources/js/Pages/RadioComponent.vue",
 	"./Welcome.vue": "./resources/js/Pages/Welcome.vue"
