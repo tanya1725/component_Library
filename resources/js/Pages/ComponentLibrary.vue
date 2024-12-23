@@ -41,15 +41,20 @@ import ButtonComponent from './ButtonComponent.vue'
 import InputComponent from './InputComponent.vue'
 import RadioComponent from './RadioComponent.vue'
 import HeaderComponent from './HeaderComponent.vue'
+import FooterComponent from './FooterComponent.vue'
+import FlexibleSidebarComponent from './FlexibleSidebarComponent.vue'
 
 const selectedComponent = ref('Button')
-const components = ['Button', 'Input', 'Radio Groups','Header']
+const components = ['Button', 'Input', 'Radio Groups','Header','Sidebar Layout','Footer']
 
 const componentMap = {
   Button: ButtonComponent,
   Input: InputComponent,
   'Radio Groups': RadioComponent,
-  Header: HeaderComponent
+  Header: HeaderComponent,
+  'Sidebar Layout':FlexibleSidebarComponent,
+  Footer:FooterComponent
+
 }
 
 const currentComponent = computed(() => componentMap[selectedComponent.value])

@@ -22980,6 +22980,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./InputComponent.vue */ "./resources/js/Pages/InputComponent.vue");
 /* harmony import */ var _RadioComponent_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./RadioComponent.vue */ "./resources/js/Pages/RadioComponent.vue");
 /* harmony import */ var _HeaderComponent_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./HeaderComponent.vue */ "./resources/js/Pages/HeaderComponent.vue");
+/* harmony import */ var _FooterComponent_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./FooterComponent.vue */ "./resources/js/Pages/FooterComponent.vue");
+/* harmony import */ var _FlexibleSidebarComponent_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./FlexibleSidebarComponent.vue */ "./resources/js/Pages/FlexibleSidebarComponent.vue");
+
+
 
 
 
@@ -22991,12 +22995,14 @@ __webpack_require__.r(__webpack_exports__);
     var __expose = _ref.expose;
     __expose();
     var selectedComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)('Button');
-    var components = ['Button', 'Input', 'Radio Groups', 'Header'];
+    var components = ['Button', 'Input', 'Radio Groups', 'Header', 'Sidebar Layout', 'Footer'];
     var componentMap = {
       Button: _ButtonComponent_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
       Input: _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
       'Radio Groups': _RadioComponent_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
-      Header: _HeaderComponent_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
+      Header: _HeaderComponent_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+      'Sidebar Layout': _FlexibleSidebarComponent_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
+      Footer: _FooterComponent_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
     };
     var currentComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
       return componentMap[selectedComponent.value];
@@ -23015,7 +23021,9 @@ __webpack_require__.r(__webpack_exports__);
       ButtonComponent: _ButtonComponent_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
       InputComponent: _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
       RadioComponent: _RadioComponent_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
-      HeaderComponent: _HeaderComponent_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
+      HeaderComponent: _HeaderComponent_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+      FooterComponent: _FooterComponent_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
+      FlexibleSidebarComponent: _FlexibleSidebarComponent_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -23052,6 +23060,170 @@ __webpack_require__.r(__webpack_exports__);
       get Head() {
         return _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Head;
       }
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=script&setup=true&lang=js":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/menu.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/x.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/house.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/users.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/folder.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/calendar.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/settings.js");
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  __name: 'FlexibleSidebarComponent',
+  setup: function setup(__props, _ref) {
+    var __expose = _ref.expose;
+    __expose();
+    var showCode = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
+    var variations = [{
+      name: 'Brand sidebar with header',
+      html: "\n        <div class=\"flex h-screen bg-gray-100\">\n          <!-- Sidebar -->\n          <aside class=\"w-64 bg-indigo-600\">\n            <div class=\"flex items-center justify-between h-16 px-4 bg-indigo-700\">\n              <span class=\"text-2xl font-semibold text-white\">Logo</span>\n              <button class=\"text-white focus:outline-none focus:ring-2 focus:ring-white\">\n                <Menu class=\"w-6 h-6\" />\n              </button>\n            </div>\n            <nav class=\"px-2 py-4\">\n              <a href=\"#\" class=\"flex items-center px-4 py-2 text-white hover:bg-indigo-500 rounded-md\">\n                <Home class=\"w-5 h-5 mr-3\" />\n                Dashboard\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-white hover:bg-indigo-500 rounded-md\">\n                <Users class=\"w-5 h-5 mr-3\" />\n                Team\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-white hover:bg-indigo-500 rounded-md\">\n                <Folder class=\"w-5 h-5 mr-3\" />\n                Projects\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-white hover:bg-indigo-500 rounded-md\">\n                <Calendar class=\"w-5 h-5 mr-3\" />\n                Calendar\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-white hover:bg-indigo-500 rounded-md\">\n                <Settings class=\"w-5 h-5 mr-3\" />\n                Settings\n              </a>\n            </nav>\n          </aside>\n  \n          <!-- Main Content -->\n          <div class=\"flex-1\">\n            <header class=\"flex items-center justify-between h-16 px-6 bg-white border-b\">\n              <h1 class=\"text-2xl font-semibold\">Dashboard</h1>\n              <div class=\"flex items-center\">\n                <button class=\"mr-4 text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500\">\n                  <span class=\"sr-only\">Notifications</span>\n                  <svg class=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9\"></path>\n                  </svg>\n                </button>\n                <button class=\"flex items-center text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500\">\n                  <img class=\"w-8 h-8 rounded-full\" src=\"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\" alt=\"User avatar\" />\n                  <span class=\"ml-2\">John Doe</span>\n                </button>\n              </div>\n            </header>\n            <main class=\"p-6\">\n              <p class=\"text-gray-700\">Main content goes here.</p>\n            </main>\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Dark sidebar with header',
+      html: "\n        <div class=\"flex h-screen bg-gray-100\">\n          <!-- Sidebar -->\n          <aside class=\"w-64 bg-gray-800\">\n            <div class=\"flex items-center justify-between h-16 px-4 bg-gray-900\">\n              <span class=\"text-2xl font-semibold text-white\">Logo</span>\n              <button class=\"text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white\">\n                <Menu class=\"w-6 h-6\" />\n              </button>\n            </div>\n            <nav class=\"px-2 py-4\">\n              <a href=\"#\" class=\"flex items-center px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md\">\n                <Home class=\"w-5 h-5 mr-3\" />\n                Dashboard\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md\">\n                <Users class=\"w-5 h-5 mr-3\" />\n                Team\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md\">\n                <Folder class=\"w-5 h-5 mr-3\" />\n                Projects\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md\">\n                <Calendar class=\"w-5 h-5 mr-3\" />\n                Calendar\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md\">\n                <Settings class=\"w-5 h-5 mr-3\" />\n                Settings\n              </a>\n            </nav>\n          </aside>\n  \n          <!-- Main Content -->\n          <div class=\"flex-1\">\n            <header class=\"flex items-center justify-between h-16 px-6 bg-white border-b\">\n              <h1 class=\"text-2xl font-semibold\">Dashboard</h1>\n              <div class=\"flex items-center\">\n                <button class=\"mr-4 text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500\">\n                  <span class=\"sr-only\">Notifications</span>\n                  <svg class=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9\"></path>\n                  </svg>\n                </button>\n                <button class=\"flex items-center text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500\">\n                  <img class=\"w-8 h-8 rounded-full\" src=\"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\" alt=\"User avatar\" />\n                  <span class=\"ml-2\">John Doe</span>\n                </button>\n              </div>\n            </header>\n            <main class=\"p-6\">\n              <p class=\"text-gray-700\">Main content goes here.</p>\n            </main>\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Light sidebar with header',
+      html: "\n        <div class=\"flex h-screen bg-gray-100\">\n          <!-- Sidebar -->\n          <aside class=\"w-64 bg-white border-r\">\n            <div class=\"flex items-center justify-between h-16 px-4 border-b\">\n              <span class=\"text-2xl font-semibold text-gray-800\">Logo</span>\n              <button class=\"text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500\">\n                <Menu class=\"w-6 h-6\" />\n              </button>\n            </div>\n            <nav class=\"px-2 py-4\">\n              <a href=\"#\" class=\"flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md\">\n                <Home class=\"w-5 h-5 mr-3 text-gray-500\" />\n                Dashboard\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-700 hover:bg-gray-100 rounded-md\">\n                <Users class=\"w-5 h-5 mr-3 text-gray-500\" />\n                Team\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-700 hover:bg-gray-100 rounded-md\">\n                <Folder class=\"w-5 h-5 mr-3 text-gray-500\" />\n                Projects\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-700 hover:bg-gray-100 rounded-md\">\n                <Calendar class=\"w-5 h-5 mr-3 text-gray-500\" />\n                Calendar\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-700 hover:bg-gray-100 rounded-md\">\n                <Settings class=\"w-5 h-5 mr-3 text-gray-500\" />\n                Settings\n              </a>\n            </nav>\n          </aside>\n  \n          <!-- Main Content -->\n          <div class=\"flex-1\">\n            <header class=\"flex items-center justify-between h-16 px-6 bg-white border-b\">\n              <h1 class=\"text-2xl font-semibold text-gray-800\">Dashboard</h1>\n              <div class=\"flex items-center\">\n                <button class=\"mr-4 text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500\">\n                  <span class=\"sr-only\">Notifications</span>\n                  <svg class=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9\"></path>\n                  </svg>\n                </button>\n                <button class=\"flex items-center text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500\">\n                  <img class=\"w-8 h-8 rounded-full\" src=\"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\" alt=\"User avatar\" />\n                  <span class=\"ml-2\">John Doe</span>\n                </button>\n              </div>\n            </header>\n            <main class=\"p-6\">\n              <p class=\"text-gray-700\">Main content goes here.</p>\n            </main>\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Brand sidebar',
+      html: "\n        <div class=\"flex h-screen bg-gray-100\">\n          <!-- Sidebar -->\n          <aside class=\"w-64 bg-indigo-600\">\n            <div class=\"flex items-center justify-between h-16 px-4 bg-indigo-700\">\n              <span class=\"text-2xl font-semibold text-white\">Logo</span>\n              <button class=\"text-white focus:outline-none focus:ring-2 focus:ring-white\">\n                <Menu class=\"w-6 h-6\" />\n              </button>\n            </div>\n            <nav class=\"px-2 py-4\">\n              <a href=\"#\" class=\"flex items-center px-4 py-2 text-white hover:bg-indigo-500 rounded-md\">\n                <Home class=\"w-5 h-5 mr-3\" />\n                Dashboard\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-white hover:bg-indigo-500 rounded-md\">\n                <Users class=\"w-5 h-5 mr-3\" />\n                Team\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-white hover:bg-indigo-500 rounded-md\">\n                <Folder class=\"w-5 h-5 mr-3\" />\n                Projects\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-white hover:bg-indigo-500 rounded-md\">\n                <Calendar class=\"w-5 h-5 mr-3\" />\n                Calendar\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-white hover:bg-indigo-500 rounded-md\">\n                <Settings class=\"w-5 h-5 mr-3\" />\n                Settings\n              </a>\n            </nav>\n          </aside>\n  \n          <!-- Main Content -->\n          <div class=\"flex-1 p-6\">\n            <h1 class=\"text-2xl font-semibold text-gray-800 mb-4\">Dashboard</h1>\n            <p class=\"text-gray-700\">Main content goes here.</p>\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Dark sidebar',
+      html: "\n        <div class=\"flex h-screen bg-gray-100\">\n          <!-- Sidebar -->\n          <aside class=\"w-64 bg-gray-800\">\n            <div class=\"flex items-center justify-between h-16 px-4 bg-gray-900\">\n              <span class=\"text-2xl font-semibold text-white\">Logo</span>\n              <button class=\"text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white\">\n                <Menu class=\"w-6 h-6\" />\n              </button>\n            </div>\n            <nav class=\"px-2 py-4\">\n              <a href=\"#\" class=\"flex items-center px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md\">\n                <Home class=\"w-5 h-5 mr-3\" />\n                Dashboard\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md\">\n                <Users class=\"w-5 h-5 mr-3\" />\n                Team\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md\">\n                <Folder class=\"w-5 h-5 mr-3\" />\n                Projects\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md\">\n                <Calendar class=\"w-5 h-5 mr-3\" />\n                Calendar\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md\">\n                <Settings class=\"w-5 h-5 mr-3\" />\n                Settings\n              </a>\n            </nav>\n          </aside>\n  \n          <!-- Main Content -->\n          <div class=\"flex-1 p-6\">\n            <h1 class=\"text-2xl font-semibold text-gray-800 mb-4\">Dashboard</h1>\n            <p class=\"text-gray-700\">Main content goes here.</p>\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Light sidebar with constrained content area',
+      html: "\n        <div class=\"flex h-screen bg-gray-100\">\n          <!-- Sidebar -->\n          <aside class=\"w-64 bg-white border-r\">\n            <div class=\"flex items-center justify-between h-16 px-4 border-b\">\n              <span class=\"text-2xl font-semibold text-gray-800\">Logo</span>\n              <button class=\"text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500\">\n                <Menu class=\"w-6 h-6\" />\n              </button>\n            </div>\n            <nav class=\"px-2 py-4\">\n              <a href=\"#\" class=\"flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md\">\n                <Home class=\"w-5 h-5 mr-3 text-gray-500\" />\n                Dashboard\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-700 hover:bg-gray-100 rounded-md\">\n                <Users class=\"w-5 h-5 mr-3 text-gray-500\" />\n                Team\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-700 hover:bg-gray-100 rounded-md\">\n                <Folder class=\"w-5 h-5 mr-3 text-gray-500\" />\n                Projects\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-700 hover:bg-gray-100 rounded-md\">\n                <Calendar class=\"w-5 h-5 mr-3 text-gray-500\" />\n                Calendar\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-700 hover:bg-gray-100 rounded-md\">\n                <Settings class=\"w-5 h-5 mr-3 text-gray-500\" />\n                Settings\n              </a>\n            </nav>\n          </aside>\n  \n          <!-- Main Content -->\n          <div class=\"flex-1 overflow-hidden\">\n            <div class=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6\">\n              <h1 class=\"text-2xl font-semibold text-gray-800 mb-4\">Dashboard</h1>\n              <div class=\"bg-white shadow rounded-lg p-6\">\n                <p class=\"text-gray-700\">Main content goes here, constrained to a maximum width.</p>\n              </div>\n            </div>\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Light sidebar with off-white background',
+      html: "\n        <div class=\"flex h-screen bg-gray-50\">\n          <!-- Sidebar -->\n          <aside class=\"w-64 bg-white border-r\">\n            <div class=\"flex items-center justify-between h-16 px-4 border-b\">\n              <span class=\"text-2xl font-semibold text-gray-800\">Logo</span>\n              <button class=\"text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500\">\n                <Menu class=\"w-6 h-6\" />\n              </button>\n            </div>\n            <nav class=\"px-2 py-4\">\n              <a href=\"#\" class=\"flex items-center px-4 py-2 text-gray-700 bg-gray-100 rounded-md\">\n                <Home class=\"w-5 h-5 mr-3 text-gray-500\" />\n                Dashboard\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-700 hover:bg-gray-100 rounded-md\">\n                <Users class=\"w-5 h-5 mr-3 text-gray-500\" />\n                Team\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-700 hover:bg-gray-100 rounded-md\">\n                <Folder class=\"w-5 h-5 mr-3 text-gray-500\" />\n                Projects\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-700 hover:bg-gray-100 rounded-md\">\n                <Calendar class=\"w-5 h-5 mr-3 text-gray-500\" />\n                Calendar\n              </a>\n              <a href=\"#\" class=\"flex items-center px-4 py-2 mt-2 text-gray-700 hover:bg-gray-100 rounded-md\">\n                <Settings class=\"w-5 h-5 mr-3 text-gray-500\" />\n                Settings\n              </a>\n            </nav>\n          </aside>\n  \n          <!-- Main Content -->\n          <div class=\"flex-1 p-6\">\n            <h1 class=\"text-2xl font-semibold text-gray-800 mb-4\">Dashboard</h1>\n            <div class=\"bg-white shadow rounded-lg p-6\">\n              <p class=\"text-gray-700\">Main content goes here, on an off-white background.</p>\n            </div>\n          </div>\n        </div>\n      "
+    }];
+    var toggleCode = function toggleCode(index) {
+      showCode.value[index] = !showCode.value[index];
+    };
+    var __returned__ = {
+      showCode: showCode,
+      variations: variations,
+      toggleCode: toggleCode,
+      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref,
+      get Menu() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__["default"];
+      },
+      get X() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"];
+      },
+      get Home() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_3__["default"];
+      },
+      get Users() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_4__["default"];
+      },
+      get Folder() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_5__["default"];
+      },
+      get Calendar() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_6__["default"];
+      },
+      get Settings() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_7__["default"];
+      }
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FooterComponent.vue?vue&type=script&setup=true&lang=js":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FooterComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \***************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  __name: 'FooterComponent',
+  setup: function setup(__props, _ref) {
+    var __expose = _ref.expose;
+    __expose();
+    var showCode = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
+    var variations = [{
+      name: '4-column with company mission',
+      html: "\n        <footer class=\"bg-white\">\n          <div class=\"max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8\">\n            <div class=\"xl:grid xl:grid-cols-3 xl:gap-8\">\n              <div class=\"grid grid-cols-2 gap-8 xl:col-span-2\">\n                <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                  <div>\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Solutions</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Marketing</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Analytics</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Commerce</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Insights</a></li>\n                    </ul>\n                  </div>\n                  <div class=\"mt-12 md:mt-0\">\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Support</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Pricing</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Documentation</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Guides</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">API Status</a></li>\n                    </ul>\n                  </div>\n                </div>\n                <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                  <div>\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Company</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">About</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Blog</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Jobs</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Press</a></li>\n                    </ul>\n                  </div>\n                  <div class=\"mt-12 md:mt-0\">\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Legal</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Privacy</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Terms</a></li>\n                    </ul>\n                  </div>\n                </div>\n              </div>\n              <div class=\"mt-8 xl:mt-0\">\n                <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Our Mission</h3>\n                <p class=\"mt-4 text-base text-gray-500\">\n                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.\n                </p>\n              </div>\n            </div>\n            <div class=\"mt-8 border-t border-gray-200 pt-8\">\n              <p class=\"text-base text-gray-400 xl:text-center\">&copy; 2023 Your Company, Inc. All rights reserved.</p>\n            </div>\n          </div>\n        </footer>\n      "
+    }, {
+      name: '4-column with company mission dark',
+      html: "\n      <footer class=\"bg-white dark:bg-gray-800\">\n        <div class=\"max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8\">\n          <div class=\"xl:grid xl:grid-cols-3 xl:gap-8\">\n            <div class=\"grid grid-cols-2 gap-8 xl:col-span-2\">\n              <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                <div>\n                  <h3 class=\"text-sm font-semibold text-gray-400 dark:text-gray-300 tracking-wider uppercase\">Solutions</h3>\n                  <ul class=\"mt-4 space-y-4\">\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Marketing</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Analytics</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Commerce</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Insights</a></li>\n                  </ul>\n                </div>\n                <div class=\"mt-12 md:mt-0\">\n                  <h3 class=\"text-sm font-semibold text-gray-400 dark:text-gray-300 tracking-wider uppercase\">Support</h3>\n                  <ul class=\"mt-4 space-y-4\">\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Pricing</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Documentation</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Guides</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">API Status</a></li>\n                  </ul>\n                </div>\n              </div>\n              <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                <div>\n                  <h3 class=\"text-sm font-semibold text-gray-400 dark:text-gray-300 tracking-wider uppercase\">Company</h3>\n                  <ul class=\"mt-4 space-y-4\">\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">About</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Blog</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Jobs</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Press</a></li>\n                  </ul>\n                </div>\n                <div class=\"mt-12 md:mt-0\">\n                  <h3 class=\"text-sm font-semibold text-gray-400 dark:text-gray-300 tracking-wider uppercase\">Legal</h3>\n                  <ul class=\"mt-4 space-y-4\">\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Privacy</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Terms</a></li>\n                  </ul>\n                </div>\n              </div>\n            </div>\n            <div class=\"mt-8 xl:mt-0\">\n              <h3 class=\"text-sm font-semibold text-gray-400 dark:text-gray-300 tracking-wider uppercase\">Our Mission</h3>\n              <p class=\"mt-4 text-base text-gray-500 dark:text-gray-400\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.\n              </p>\n            </div>\n          </div>\n          <div class=\"mt-8 border-t border-gray-200 dark:border-gray-700 pt-8\">\n            <p class=\"text-base text-gray-400 xl:text-center\">&copy; 2023 Your Company, Inc. All rights reserved.</p>\n          </div>\n        </div>\n      </footer>\n    "
+    }, {
+      name: '4-column with call-to-action',
+      html: "\n        <footer class=\"bg-white\">\n          <div class=\"max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8\">\n            <div class=\"xl:grid xl:grid-cols-3 xl:gap-8\">\n              <div class=\"grid grid-cols-2 gap-8 xl:col-span-2\">\n                <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                  <div>\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Solutions</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Marketing</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Analytics</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Commerce</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Insights</a></li>\n                    </ul>\n                  </div>\n                  <div class=\"mt-12 md:mt-0\">\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Support</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Pricing</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Documentation</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Guides</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">API Status</a></li>\n                    </ul>\n                  </div>\n                </div>\n                <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                  <div>\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Company</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">About</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Blog</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Jobs</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Press</a></li>\n                    </ul>\n                  </div>\n                  <div class=\"mt-12 md:mt-0\">\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Legal</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Privacy</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Terms</a></li>\n                    </ul>\n                  </div>\n                </div>\n              </div>\n              <div class=\"mt-8 xl:mt-0\">\n                <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Subscribe to our newsletter</h3>\n                <p class=\"mt-4 text-base text-gray-500\">\n                  The latest news, articles, and resources, sent to your inbox weekly.\n                </p>\n                <form class=\"mt-4 sm:flex sm:max-w-md\">\n                  <label for=\"email-address\" class=\"sr-only\">Email address</label>\n                  <input type=\"email\" name=\"email-address\" id=\"email-address\" autocomplete=\"email\" required class=\"appearance-none min-w-0 w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400\" placeholder=\"Enter your email\">\n                  <div class=\"mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0\">\n                    <button type=\"submit\" class=\"w-full bg-indigo-600 flex items-center justify-center border border-transparent rounded-md py-2 px-4 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\">\n                      Subscribe\n                    </button>\n                  </div>\n                </form>\n              </div>\n            </div>\n            <div class=\"mt-8 border-t border-gray-200 pt-8\">\n              <p class=\"text-base text-gray-400 xl:text-center\">&copy; 2023 Your Company, Inc. All rights reserved.</p>\n            </div>\n          </div>\n        </footer>\n      "
+    }, {
+      name: '4-column simple',
+      html: "\n        <footer class=\"bg-white\">\n          <div class=\"max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8\">\n            <div class=\"xl:grid xl:grid-cols-3 xl:gap-8\">\n              <div class=\"grid grid-cols-2 gap-8 xl:col-span-2\">\n                <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                  <div>\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Solutions</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Marketing</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Analytics</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Commerce</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Insights</a></li>\n                    </ul>\n                  </div>\n                  <div class=\"mt-12 md:mt-0\">\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Support</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Pricing</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Documentation</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Guides</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">API Status</a></li>\n                    </ul>\n                  </div>\n                </div>\n                <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                  <div>\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Company</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">About</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Blog</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Jobs</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Press</a></li>\n                    </ul>\n                  </div>\n                  <div class=\"mt-12 md:mt-0\">\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Legal</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Privacy</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Terms</a></li>\n                    </ul>\n                  </div>\n                </div>\n              </div>\n              <div class=\"mt-8 xl:mt-0\">\n                <img class=\"h-10\" src=\"/placeholder.svg?height=40&width=120\" alt=\"Company logo\">\n                <p class=\"mt-4 text-base text-gray-500\">\n                  Making the world a better place through constructing elegant hierarchies.\n                </p>\n              </div>\n            </div>\n            <div class=\"mt-8 border-t border-gray-200 pt-8\">\n              <p class=\"text-base text-gray-400 xl:text-center\">&copy; 2023 Your Company, Inc. All rights reserved.</p>\n            </div>\n          </div>\n        </footer>\n      "
+    }, {
+      name: '4-column with newsletter',
+      html: "\n        <footer class=\"bg-white\">\n          <div class=\"max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8\">\n            <div class=\"xl:grid xl:grid-cols-3 xl:gap-8\">\n              <div class=\"grid grid-cols-2 gap-8 xl:col-span-2\">\n                <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                  <div>\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Solutions</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Marketing</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Analytics</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Commerce</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Insights</a></li>\n                    </ul>\n                  </div>\n                  <div class=\"mt-12 md:mt-0\">\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Support</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Pricing</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Documentation</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Guides</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">API Status</a></li>\n                    </ul>\n                  </div>\n                </div>\n                <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                  <div>\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Company</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">About</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Blog</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Jobs</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Press</a></li>\n                    </ul>\n                  </div>\n                  <div class=\"mt-12 md:mt-0\">\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Legal</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Privacy</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Terms</a></li>\n                    </ul>\n                  </div>\n                </div>\n              </div>\n              <div class=\"mt-8 xl:mt-0\">\n                <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Subscribe to our newsletter</h3>\n                <p class=\"mt-4 text-base text-gray-500\">\n                  The latest news, articles, and resources, sent to your inbox weekly.\n                </p>\n                <form class=\"mt-4 sm:flex sm:max-w-md\">\n                  <label for=\"email-address\" class=\"sr-only\">Email address</label>\n                  <input type=\"email\" name=\"email-address\" id=\"email-address\" autocomplete=\"email\" required class=\"appearance-none min-w-0 w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400\" placeholder=\"Enter your email\">\n                  <div class=\"mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0\">\n                    <button type=\"submit\" class=\"w-full bg-indigo-600 flex items-center justify-center border border-transparent rounded-md py-2 px-4 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\">\n                      Subscribe\n                    </button>\n                  </div>\n                </form>\n              </div>\n            </div>\n            <div class=\"mt-8 border-t border-gray-200 pt-8\">\n              <p class=\"text-base text-gray-400 xl:text-center\">&copy; 2023 Your Company, Inc. All rights reserved.</p>\n            </div>\n          </div>\n        </footer>\n      "
+    }, {
+      name: '4-column with newsletter',
+      html: "\n      <footer class=\"bg-white dark:bg-gray-800\">\n        <div class=\"max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8\">\n          <div class=\"xl:grid xl:grid-cols-3 xl:gap-8\">\n            <div class=\"grid grid-cols-2 gap-8 xl:col-span-2\">\n              <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                <div>\n                  <h3 class=\"text-sm font-semibold text-gray-400 dark:text-gray-300 tracking-wider uppercase\">Solutions</h3>\n                  <ul class=\"mt-4 space-y-4\">\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Marketing</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Analytics</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Commerce</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Insights</a></li>\n                  </ul>\n                </div>\n                <div class=\"mt-12 md:mt-0\">\n                  <h3 class=\"text-sm font-semibold text-gray-400 dark:text-gray-300 tracking-wider uppercase\">Support</h3>\n                  <ul class=\"mt-4 space-y-4\">\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Pricing</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Documentation</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Guides</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">API Status</a></li>\n                  </ul>\n                </div>\n              </div>\n              <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                <div>\n                  <h3 class=\"text-sm font-semibold text-gray-400 dark:text-gray-300 tracking-wider uppercase\">Company</h3>\n                  <ul class=\"mt-4 space-y-4\">\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">About</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Blog</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Jobs</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Press</a></li>\n                  </ul>\n                </div>\n                <div class=\"mt-12 md:mt-0\">\n                  <h3 class=\"text-sm font-semibold text-gray-400 dark:text-gray-300 tracking-wider uppercase\">Legal</h3>\n                  <ul class=\"mt-4 space-y-4\">\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Privacy</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Terms</a></li>\n                  </ul>\n                </div>\n              </div>\n            </div>\n            <div class=\"mt-8 xl:mt-0\">\n              <h3 class=\"text-sm font-semibold text-gray-400 dark:text-gray-300 tracking-wider uppercase\">Subscribe to our newsletter</h3>\n              <p class=\"mt-4 text-base text-gray-500 dark:text-gray-400\">\n                The latest news, articles, and resources, sent to your inbox weekly.\n              </p>\n              <form class=\"mt-4 sm:flex sm:max-w-md\">\n                <label for=\"email-address\" class=\"sr-only\">Email address</label>\n                <input type=\"email\" name=\"email-address\" id=\"email-address\" autocomplete=\"email\" required class=\"appearance-none min-w-0 w-full bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400 dark:focus:ring-indigo-600 dark:focus:border-indigo-600\" placeholder=\"Enter your email\">\n                <div class=\"mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0\">\n                  <button type=\"submit\" class=\"w-full bg-indigo-600 flex items-center justify-center border border-transparent rounded-md py-2 px-4 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:bg-indigo-500 dark:hover:bg-indigo-600 dark:focus:ring-offset-gray-800\">\n                    Subscribe\n                  </button>\n                </div>\n              </form>\n            </div>\n          </div>\n          <div class=\"mt-8 border-t border-gray-200 dark:border-gray-700 pt-8\">\n            <p class=\"text-base text-gray-400 xl:text-center\">&copy; 2023 Your Company, Inc. All rights reserved.</p>\n          </div>\n        </div>\n      </footer>\n    "
+    }, {
+      name: '4-column with newsletter below',
+      html: "\n        <footer class=\"bg-white\">\n          <div class=\"max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8\">\n            <div class=\"xl:grid xl:grid-cols-3 xl:gap-8\">\n              <div class=\"grid grid-cols-2 gap-8 xl:col-span-2\">\n                <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                  <div>\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Solutions</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Marketing</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Analytics</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Commerce</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Insights</a></li>\n                    </ul>\n                  </div>\n                  <div class=\"mt-12 md:mt-0\">\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Support</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Pricing</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Documentation</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Guides</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">API Status</a></li>\n                    </ul>\n                  </div>\n                </div>\n                <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                  <div>\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Company</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">About</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Blog</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Jobs</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Press</a></li>\n                    </ul>\n                  </div>\n                  <div class=\"mt-12 md:mt-0\">\n                    <h3 class=\"text-sm font-semibold text-gray-400 tracking-wider uppercase\">Legal</h3>\n                    <ul class=\"mt-4 space-y-4\">\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Privacy</a></li>\n                      <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">Terms</a></li>\n                    </ul>\n                  </div>\n                </div>\n              </div>\n              <div class=\"mt-8 xl:mt-0\">\n                <img class=\"h-10\" src=\"/placeholder.svg?height=40&width=120\" alt=\"Company logo\">\n                <p class=\"mt-4 text-base text-gray-500\">\n                  Making the world a better place through constructing elegant hierarchies.\n                </p>\n              </div>\n            </div>\n            <div class=\"mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between\">\n              <div class=\"flex space-x-6 md:order-2\">\n                <a href=\"#\" class=\"text-gray-400 hover:text-gray-500\">\n                  <span class=\"sr-only\">Facebook</span>\n                  <Facebook class=\"h-6 w-6\" />\n                </a>\n                <a href=\"#\" class=\"text-gray-400 hover:text-gray-500\">\n                  <span class=\"sr-only\">Instagram</span>\n                  <Instagram class=\"h-6 w-6\" />\n                </a>\n                <a href=\"#\" class=\"text-gray-400 hover:text-gray-500\">\n                  <span class=\"sr-only\">Twitter</span>\n                  <Twitter class=\"h-6 w-6\" />\n                </a>\n                <a href=\"#\" class=\"text-gray-400 hover:text-gray-500\">\n                  <span class=\"sr-only\">GitHub</span>\n                  <GitHub class=\"h-6 w-6\" />\n                </a>\n              </div>\n              <p class=\"mt-8 text-base text-gray-400 md:mt-0 md:order-1\">\n                &copy; 2023 Your Company, Inc. All rights reserved.\n              </p>\n            </div>\n          </div>\n          <div class=\"max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8\">\n            <h2 class=\"text-3xl font-extrabold text-gray-900 sm:text-4xl\">\n              <span class=\"block\">Want product news and updates?</span>\n              <span class=\"block text-indigo-600\">Sign up for our newsletter.</span>\n            </h2>\n            <form class=\"mt-8 sm:flex\">\n              <label for=\"email-address\" class=\"sr-only\">Email address</label>\n              <input id=\"email-address\" name=\"email\" type=\"email\" autocomplete=\"email\" required class=\"w-full px-5 py-3 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs border-gray-300 rounded-md\" placeholder=\"Enter your email\">\n              <div class=\"mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0\">\n                <button type=\"submit\" class=\"w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\">\n                  Notify me\n                </button>\n              </div>\n            </form>\n          </div>\n        </footer>\n      "
+    }, {
+      name: '4-column with newsletter below',
+      html: "\n      <footer class=\"bg-white dark:bg-gray-800\">\n        <div class=\"max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8\">\n          <div class=\"xl:grid xl:grid-cols-3 xl:gap-8\">\n            <div class=\"grid grid-cols-2 gap-8 xl:col-span-2\">\n              <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                <div>\n                  <h3 class=\"text-sm font-semibold text-gray-400 dark:text-gray-300 tracking-wider uppercase\">Solutions</h3>\n                  <ul class=\"mt-4 space-y-4\">\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Marketing</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Analytics</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Commerce</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Insights</a></li>\n                  </ul>\n                </div>\n                <div class=\"mt-12 md:mt-0\">\n                  <h3 class=\"text-sm font-semibold text-gray-400 dark:text-gray-300 tracking-wider uppercase\">Support</h3>\n                  <ul class=\"mt-4 space-y-4\">\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Pricing</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Documentation</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Guides</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">API Status</a></li>\n                  </ul>\n                </div>\n              </div>\n              <div class=\"md:grid md:grid-cols-2 md:gap-8\">\n                <div>\n                  <h3 class=\"text-sm font-semibold text-gray-400 dark:text-gray-300 tracking-wider uppercase\">Company</h3>\n                  <ul class=\"mt-4 space-y-4\">\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">About</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Blog</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Jobs</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Press</a></li>\n                  </ul>\n                </div>\n                <div class=\"mt-12 md:mt-0\">\n                  <h3 class=\"text-sm font-semibold text-gray-400 dark:text-gray-300 tracking-wider uppercase\">Legal</h3>\n                  <ul class=\"mt-4 space-y-4\">\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Privacy</a></li>\n                    <li><a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">Terms</a></li>\n                  </ul>\n                </div>\n              </div>\n            </div>\n            <div class=\"mt-8 xl:mt-0\">\n              <img class=\"h-10\" src=\"/placeholder.svg?height=40&width=120\" alt=\"Company logo\">\n              <p class=\"mt-4 text-base text-gray-500 dark:text-gray-400\">\n                Making the world a better place through constructing elegant hierarchies.\n              </p>\n            </div>\n          </div>\n          <div class=\"mt-8 border-t border-gray-200 dark:border-gray-700 pt-8 md:flex md:items-center md:justify-between\">\n            <div class=\"flex space-x-6 md:order-2\">\n              <a href=\"#\" class=\"text-gray-400 hover:text-gray-500 dark:hover:text-gray-300\">\n                <span class=\"sr-only\">Facebook</span>\n                <Facebook class=\"h-6 w-6\" />\n              </a>\n              <a href=\"#\" class=\"text-gray-400 hover:text-gray-500 dark:hover:text-gray-300\">\n                <span class=\"sr-only\">Instagram</span>\n                <Instagram class=\"h-6 w-6\" />\n              </a>\n              <a href=\"#\" class=\"text-gray-400 hover:text-gray-500 dark:hover:text-gray-300\">\n                <span class=\"sr-only\">Twitter</span>\n                <Twitter class=\"h-6 w-6\" />\n              </a>\n              <a href=\"#\" class=\"text-gray-400 hover:text-gray-500 dark:hover:text-gray-300\">\n                <span class=\"sr-only\">GitHub</span>\n                <Github class=\"h-6 w-6\" />\n              </a>\n            </div>\n            <p class=\"mt-8 text-base text-gray-400 md:mt-0 md:order-1\">\n              &copy; 2023 Your Company, Inc. All rights reserved.\n            </p>\n          </div>\n        </div>\n        <div class=\"max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8\">\n          <h2 class=\"text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl\">\n            <span class=\"block\">Want product news and updates?</span>\n            <span class=\"block text-indigo-600 dark:text-indigo-400\">Sign up for our newsletter.</span>\n          </h2>\n          <form class=\"mt-8 sm:flex\">\n            <label for=\"email-address\" class=\"sr-only\">Email address</label>\n            <input id=\"email-address\" name=\"email\" type=\"email\" autocomplete=\"email\" required class=\"w-full px-5 py-3 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs border-gray-300 rounded-md dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-600 dark:focus:border-indigo-600\" placeholder=\"Enter your email\">\n            <div class=\"mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0\">\n              <button type=\"submit\" class=\"w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:bg-indigo-500 dark:hover:bg-indigo-600 dark:focus:ring-offset-gray-800\">\n                Notify me\n              </button>\n            </div>\n          </form>\n        </div>\n      </footer>\n    "
+    }, {
+      name: 'Simple centered',
+      html: "\n        <footer class=\"bg-white\">\n          <div class=\"max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8\">\n            <nav class=\"-mx-5 -my-2 flex flex-wrap justify-center\" aria-label=\"Footer\">\n              <div class=\"px-5 py-2\">\n                <a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">\n                  About\n                </a>\n              </div>\n              <div class=\"px-5 py-2\">\n                <a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">\n                  Blog\n                </a>\n              </div>\n              <div class=\"px-5 py-2\">\n                <a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">\n                  Jobs\n                </a>\n              </div>\n              <div class=\"px-5 py-2\">\n                <a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">\n                  Press\n                </a>\n              </div>\n              <div class=\"px-5 py-2\">\n                <a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">\n                  Accessibility\n                </a>\n              </div>\n              <div class=\"px-5 py-2\">\n                <a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900\">\n                  Partners\n                </a>\n              </div>\n            </nav>\n            <div class=\"mt-8 flex justify-center space-x-6\">\n              <a href=\"#\" class=\"text-gray-400 hover:text-gray-500\">\n                <span class=\"sr-only\">Facebook</span>\n                <Facebook class=\"h-6 w-6\" />\n              </a>\n              <a href=\"#\" class=\"text-gray-400 hover:text-gray-500\">\n                <span class=\"sr-only\">Instagram</span>\n                <Instagram class=\"h-6 w-6\" />\n              </a>\n              <a href=\"#\" class=\"text-gray-400 hover:text-gray-500\">\n                <span class=\"sr-only\">Twitter</span>\n                <Twitter class=\"h-6 w-6\" />\n              </a>\n              <a href=\"#\" class=\"text-gray-400 hover:text-gray-500\">\n                <span class=\"sr-only\">GitHub</span>\n                <GitHub class=\"h-6 w-6\" />\n              </a>\n            </div>\n            <p class=\"mt-8 text-center text-base text-gray-400\">\n              &copy; 2023 Your Company, Inc. All rights reserved.\n            </p>\n          </div>\n        </footer>\n      "
+    }, {
+      name: 'Simple centered',
+      html: "\n      <footer class=\"bg-white dark:bg-gray-800\">\n        <div class=\"max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8\">\n          <nav class=\"-mx-5 -my-2 flex flex-wrap justify-center\" aria-label=\"Footer\">\n            <div class=\"px-5 py-2\">\n              <a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">\n                About\n              </a>\n            </div>\n            <div class=\"px-5 py-2\">\n              <a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">\n                Blog\n              </a>\n            </div>\n            <div class=\"px-5 py-2\">\n              <a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">\n                Jobs\n              </a>\n            </div>\n            <div class=\"px-5 py-2\">\n              <a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">\n                Press\n              </a>\n            </div>\n            <div class=\"px-5 py-2\">\n              <a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">\n                Accessibility\n              </a>\n            </div>\n            <div class=\"px-5 py-2\">\n              <a href=\"#\" class=\"text-base text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white\">\n                Partners\n              </a>\n            </div>\n          </nav>\n          <div class=\"mt-8 flex justify-center space-x-6\">\n            <a href=\"#\" class=\"text-gray-400 hover:text-gray-500 dark:hover:text-gray-300\">\n              <span class=\"sr-only\">Facebook</span>\n              <Facebook class=\"h-6 w-6\" />\n            </a>\n            <a href=\"#\" class=\"text-gray-400 hover:text-gray-500 dark:hover:text-gray-300\">\n              <span class=\"sr-only\">Instagram</span>\n              <Instagram class=\"h-6 w-6\" />\n            </a>\n            <a href=\"#\" class=\"text-gray-400 hover:text-gray-500 dark:hover:text-gray-300\">\n              <span class=\"sr-only\">Twitter</span>\n              <Twitter class=\"h-6 w-6\" />\n            </a>\n            <a href=\"#\" class=\"text-gray-400 hover:text-gray-500 dark:hover:text-gray-300\">\n              <span class=\"sr-only\">GitHub</span>\n              <Github class=\"h-6 w-6\" />\n            </a>\n          </div>\n          <p class=\"mt-8 text-center text-base text-gray-400\">\n            &copy; 2023 Your Company, Inc. All rights reserved.\n          </p>\n        </div>\n      </footer>\n    "
+    }, {
+      name: 'Simple with social links',
+      html: "\n        <footer class=\"bg-white\">\n          <div class=\"max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8\">\n            <div class=\"flex justify-center space-x-6 md:order-2\">\n              <a href=\"#\" class=\"text-gray-400 hover:text-gray-500\">\n                <span class=\"sr-only\">Facebook</span>\n                <Facebook class=\"h-6 w-6\" />\n              </a>\n              <a href=\"#\" class=\"text-gray-400 hover:text-gray-500\">\n                <span class=\"sr-only\">Instagram</span>\n                <Instagram class=\"h-6 w-6\" />\n              </a>\n              <a href=\"#\" class=\"text-gray-400 hover:text-gray-500\">\n                <span class=\"sr-only\">Twitter</span>\n                <Twitter class=\"h-6 w-6\" />\n              </a>\n              <a href=\"#\" class=\"text-gray-400 hover:text-gray-500\">\n                <span class=\"sr-only\">GitHub</span>\n                <GitHub class=\"h-6 w-6\" />\n              </a>\n            </div>\n            <div class=\"mt-8 md:mt-0 md:order-1\">\n              <p class=\"text-center text-base text-gray-400\">\n                &copy; 2023 Your Company, Inc. All rights reserved.\n              </p>\n            </div>\n          </div>\n        </footer>\n      "
+    }, {
+      name: 'Simple with social links dark',
+      html: "\n      <footer class=\"bg-white dark:bg-gray-800\">\n        <div class=\"max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8\">\n          <div class=\"flex justify-center space-x-6 md:order-2\">\n            <a href=\"#\" class=\"text-gray-400 hover:text-gray-500 dark:hover:text-gray-300\">\n              <span class=\"sr-only\">Facebook</span>\n              <Facebook class=\"h-6 w-6\" />\n            </a>\n            <a href=\"#\" class=\"text-gray-400 hover:text-gray-500 dark:hover:text-gray-300\">\n              <span class=\"sr-only\">Instagram</span>\n              <Instagram class=\"h-6 w-6\" />\n            </a>\n            <a href=\"#\" class=\"text-gray-400 hover:text-gray-500 dark:hover:text-gray-300\">\n              <span class=\"sr-only\">Twitter</span>\n              <Twitter class=\"h-6 w-6\" />\n            </a>\n            <a href=\"#\" class=\"text-gray-400 hover:text-gray-500 dark:hover:text-gray-300\">\n              <span class=\"sr-only\">GitHub</span>\n              <Github class=\"h-6 w-6\" />\n            </a>\n          </div>\n          <div class=\"mt-8 md:mt-0 md:order-1\">\n            <p class=\"text-center text-base text-gray-400\">\n              &copy; 2023 Your Company, Inc. All rights reserved.\n            </p>\n          </div>\n        </div>\n      </footer>\n    "
+    }];
+    var toggleCode = function toggleCode(index) {
+      showCode.value[index] = !showCode.value[index];
+    };
+    var __returned__ = {
+      showCode: showCode,
+      variations: variations,
+      toggleCode: toggleCode,
+      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -24620,6 +24792,122 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=template&id=afaf6cd6&scoped=true":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=template&id=afaf6cd6&scoped=true ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "space-y-8"
+};
+var _hoisted_2 = {
+  "class": "p-4 bg-gray-50 border-b"
+};
+var _hoisted_3 = {
+  "class": "text-lg font-semibold text-gray-800"
+};
+var _hoisted_4 = {
+  "class": "p-4"
+};
+var _hoisted_5 = {
+  "class": "mb-4"
+};
+var _hoisted_6 = ["innerHTML"];
+var _hoisted_7 = ["onClick"];
+var _hoisted_8 = {
+  "class": "mt-4"
+};
+var _hoisted_9 = {
+  "class": "p-4 bg-gray-800 rounded-md overflow-x-auto"
+};
+var _hoisted_10 = {
+  "class": "text-sm text-white"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.variations, function (variation, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      key: index,
+      "class": "bg-white rounded-lg shadow-md"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "bg-gray-100 rounded-md",
+      innerHTML: variation.html
+    }, null, 8 /* PROPS */, _hoisted_6)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $setup.toggleCode(index);
+      },
+      "class": "px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.showCode[index] ? 'Hide Code' : 'Show Code'), 9 /* TEXT, PROPS */, _hoisted_7)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", _hoisted_9, [_cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("              ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("code", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.html), 1 /* TEXT */), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("\n            "))])], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.showCode[index]]])])]);
+  }), 64 /* STABLE_FRAGMENT */))]);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FooterComponent.vue?vue&type=template&id=25e91e09&scoped=true":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FooterComponent.vue?vue&type=template&id=25e91e09&scoped=true ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "space-y-8"
+};
+var _hoisted_2 = {
+  "class": "p-4 bg-gray-50 border-b"
+};
+var _hoisted_3 = {
+  "class": "text-lg font-semibold text-gray-800"
+};
+var _hoisted_4 = {
+  "class": "p-4"
+};
+var _hoisted_5 = {
+  "class": "mb-4"
+};
+var _hoisted_6 = ["innerHTML"];
+var _hoisted_7 = ["onClick"];
+var _hoisted_8 = {
+  "class": "mt-4"
+};
+var _hoisted_9 = {
+  "class": "p-4 bg-gray-800 rounded-md overflow-x-auto"
+};
+var _hoisted_10 = {
+  "class": "text-sm text-white"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.variations, function (variation, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      key: index,
+      "class": "bg-white rounded-lg shadow-md"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "bg-gray-100 rounded-md",
+      innerHTML: variation.html
+    }, null, 8 /* PROPS */, _hoisted_6)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $setup.toggleCode(index);
+      },
+      "class": "px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.showCode[index] ? 'Hide Code' : 'Show Code'), 9 /* TEXT, PROPS */, _hoisted_7)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", _hoisted_9, [_cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("              ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("code", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.html), 1 /* TEXT */), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("\n            "))])], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.showCode[index]]])])]);
+  }), 64 /* STABLE_FRAGMENT */))]);
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=template&id=ddb9eb52&scoped=true":
 /*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=template&id=ddb9eb52&scoped=true ***!
@@ -25114,6 +25402,54 @@ module.exports = function callBoundIntrinsic(name, allowMissing) {
 	}
 	return intrinsic;
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n  /* Add any additional styles here if needed */\n  ", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FooterComponent.vue?vue&type=style&index=0&id=25e91e09&scoped=true&lang=css":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FooterComponent.vue?vue&type=style&index=0&id=25e91e09&scoped=true&lang=css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n  /* Add any additional styles here if needed */\n  ", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
@@ -47276,6 +47612,115 @@ var defaultAttributes = {
 
 /***/ }),
 
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/calendar.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/calendar.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Calendar)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Calendar = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("CalendarIcon", [
+  ["path", { d: "M8 2v4", key: "1cmpym" }],
+  ["path", { d: "M16 2v4", key: "4m81vk" }],
+  ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
+  ["path", { d: "M3 10h18", key: "8toen8" }]
+]);
+
+
+//# sourceMappingURL=calendar.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/folder.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/folder.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Folder)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Folder = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("FolderIcon", [
+  [
+    "path",
+    {
+      d: "M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z",
+      key: "1kt360"
+    }
+  ]
+]);
+
+
+//# sourceMappingURL=folder.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/house.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/house.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ House)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const House = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("HouseIcon", [
+  ["path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8", key: "5wwlr5" }],
+  [
+    "path",
+    {
+      d: "M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",
+      key: "1d0kgt"
+    }
+  ]
+]);
+
+
+//# sourceMappingURL=house.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-vue-next/dist/esm/icons/menu.js":
 /*!*************************************************************!*\
   !*** ./node_modules/lucide-vue-next/dist/esm/icons/menu.js ***!
@@ -47305,6 +47750,78 @@ const Menu = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("M
 
 
 //# sourceMappingURL=menu.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/settings.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/settings.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Settings)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Settings = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("SettingsIcon", [
+  [
+    "path",
+    {
+      d: "M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z",
+      key: "1qme2f"
+    }
+  ],
+  ["circle", { cx: "12", cy: "12", r: "3", key: "1v7zrd" }]
+]);
+
+
+//# sourceMappingURL=settings.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/users.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/users.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Users)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Users = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("UsersIcon", [
+  ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
+  ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }],
+  ["path", { d: "M22 21v-2a4 4 0 0 0-3-3.87", key: "kshegd" }],
+  ["path", { d: "M16 3.13a4 4 0 0 1 0 7.75", key: "1da9ce" }]
+]);
+
+
+//# sourceMappingURL=users.js.map
 
 
 /***/ }),
@@ -50101,6 +50618,66 @@ module.exports = function getSideChannel() {
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FlexibleSidebarComponent_vue_vue_type_style_index_0_id_afaf6cd6_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FlexibleSidebarComponent_vue_vue_type_style_index_0_id_afaf6cd6_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FlexibleSidebarComponent_vue_vue_type_style_index_0_id_afaf6cd6_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FooterComponent.vue?vue&type=style&index=0&id=25e91e09&scoped=true&lang=css":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FooterComponent.vue?vue&type=style&index=0&id=25e91e09&scoped=true&lang=css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FooterComponent_vue_vue_type_style_index_0_id_25e91e09_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./FooterComponent.vue?vue&type=style&index=0&id=25e91e09&scoped=true&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FooterComponent.vue?vue&type=style&index=0&id=25e91e09&scoped=true&lang=css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FooterComponent_vue_vue_type_style_index_0_id_25e91e09_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FooterComponent_vue_vue_type_style_index_0_id_25e91e09_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css ***!
@@ -51078,6 +51655,68 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/Pages/FlexibleSidebarComponent.vue":
+/*!*********************************************************!*\
+  !*** ./resources/js/Pages/FlexibleSidebarComponent.vue ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _FlexibleSidebarComponent_vue_vue_type_template_id_afaf6cd6_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FlexibleSidebarComponent.vue?vue&type=template&id=afaf6cd6&scoped=true */ "./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=template&id=afaf6cd6&scoped=true");
+/* harmony import */ var _FlexibleSidebarComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FlexibleSidebarComponent.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _FlexibleSidebarComponent_vue_vue_type_style_index_0_id_afaf6cd6_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css */ "./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+
+
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_FlexibleSidebarComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_FlexibleSidebarComponent_vue_vue_type_template_id_afaf6cd6_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-afaf6cd6"],['__file',"resources/js/Pages/FlexibleSidebarComponent.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/FooterComponent.vue":
+/*!************************************************!*\
+  !*** ./resources/js/Pages/FooterComponent.vue ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _FooterComponent_vue_vue_type_template_id_25e91e09_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FooterComponent.vue?vue&type=template&id=25e91e09&scoped=true */ "./resources/js/Pages/FooterComponent.vue?vue&type=template&id=25e91e09&scoped=true");
+/* harmony import */ var _FooterComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FooterComponent.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/FooterComponent.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _FooterComponent_vue_vue_type_style_index_0_id_25e91e09_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FooterComponent.vue?vue&type=style&index=0&id=25e91e09&scoped=true&lang=css */ "./resources/js/Pages/FooterComponent.vue?vue&type=style&index=0&id=25e91e09&scoped=true&lang=css");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+
+
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_FooterComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_FooterComponent_vue_vue_type_template_id_25e91e09_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-25e91e09"],['__file',"resources/js/Pages/FooterComponent.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/HeaderComponent.vue":
 /*!************************************************!*\
   !*** ./resources/js/Pages/HeaderComponent.vue ***!
@@ -51519,6 +52158,38 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=script&setup=true&lang=js":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FlexibleSidebarComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FlexibleSidebarComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./FlexibleSidebarComponent.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=script&setup=true&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/FooterComponent.vue?vue&type=script&setup=true&lang=js":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/Pages/FooterComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FooterComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FooterComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./FooterComponent.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FooterComponent.vue?vue&type=script&setup=true&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/Pages/HeaderComponent.vue?vue&type=script&setup=true&lang=js":
 /*!***********************************************************************************!*\
   !*** ./resources/js/Pages/HeaderComponent.vue?vue&type=script&setup=true&lang=js ***!
@@ -51919,6 +52590,38 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=template&id=afaf6cd6&scoped=true":
+/*!***************************************************************************************************!*\
+  !*** ./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=template&id=afaf6cd6&scoped=true ***!
+  \***************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FlexibleSidebarComponent_vue_vue_type_template_id_afaf6cd6_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FlexibleSidebarComponent_vue_vue_type_template_id_afaf6cd6_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./FlexibleSidebarComponent.vue?vue&type=template&id=afaf6cd6&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=template&id=afaf6cd6&scoped=true");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/FooterComponent.vue?vue&type=template&id=25e91e09&scoped=true":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/Pages/FooterComponent.vue?vue&type=template&id=25e91e09&scoped=true ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FooterComponent_vue_vue_type_template_id_25e91e09_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FooterComponent_vue_vue_type_template_id_25e91e09_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./FooterComponent.vue?vue&type=template&id=25e91e09&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FooterComponent.vue?vue&type=template&id=25e91e09&scoped=true");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/HeaderComponent.vue?vue&type=template&id=ddb9eb52&scoped=true":
 /*!******************************************************************************************!*\
   !*** ./resources/js/Pages/HeaderComponent.vue?vue&type=template&id=ddb9eb52&scoped=true ***!
@@ -51979,6 +52682,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Welcome_vue_vue_type_template_id_317d1a6e_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Welcome_vue_vue_type_template_id_317d1a6e_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Welcome.vue?vue&type=template&id=317d1a6e&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Welcome.vue?vue&type=template&id=317d1a6e&scoped=true");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css":
+/*!*****************************************************************************************************************!*\
+  !*** ./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css ***!
+  \*****************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FlexibleSidebarComponent_vue_vue_type_style_index_0_id_afaf6cd6_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/FooterComponent.vue?vue&type=style&index=0&id=25e91e09&scoped=true&lang=css":
+/*!********************************************************************************************************!*\
+  !*** ./resources/js/Pages/FooterComponent.vue?vue&type=style&index=0&id=25e91e09&scoped=true&lang=css ***!
+  \********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FooterComponent_vue_vue_type_style_index_0_id_25e91e09_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./FooterComponent.vue?vue&type=style&index=0&id=25e91e09&scoped=true&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FooterComponent.vue?vue&type=style&index=0&id=25e91e09&scoped=true&lang=css");
 
 
 /***/ }),
@@ -52296,6 +53025,8 @@ var map = {
 	"./ButtonComponent.vue": "./resources/js/Pages/ButtonComponent.vue",
 	"./ComponentLibrary.vue": "./resources/js/Pages/ComponentLibrary.vue",
 	"./Dashboard.vue": "./resources/js/Pages/Dashboard.vue",
+	"./FlexibleSidebarComponent.vue": "./resources/js/Pages/FlexibleSidebarComponent.vue",
+	"./FooterComponent.vue": "./resources/js/Pages/FooterComponent.vue",
 	"./HeaderComponent.vue": "./resources/js/Pages/HeaderComponent.vue",
 	"./InputComponent.vue": "./resources/js/Pages/InputComponent.vue",
 	"./RadioComponent.vue": "./resources/js/Pages/RadioComponent.vue",
