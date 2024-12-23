@@ -40,14 +40,16 @@ import { ref, computed } from 'vue'
 import ButtonComponent from './ButtonComponent.vue'
 import InputComponent from './InputComponent.vue'
 import RadioComponent from './RadioComponent.vue'
+import HeaderComponent from './HeaderComponent.vue'
 
 const selectedComponent = ref('Button')
-const components = ['Button', 'Input', 'Radio Groups']
+const components = ['Button', 'Input', 'Radio Groups','Header']
 
 const componentMap = {
   Button: ButtonComponent,
   Input: InputComponent,
-  'Radio Groups': RadioComponent
+  'Radio Groups': RadioComponent,
+  Header: HeaderComponent
 }
 
 const currentComponent = computed(() => componentMap[selectedComponent.value])
