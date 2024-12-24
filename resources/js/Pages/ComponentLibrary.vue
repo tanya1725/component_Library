@@ -43,9 +43,10 @@ import RadioComponent from './RadioComponent.vue'
 import HeaderComponent from './HeaderComponent.vue'
 import FooterComponent from './FooterComponent.vue'
 import FlexibleSidebarComponent from './FlexibleSidebarComponent.vue'
+import AboutpageComponent from './AboutpageComponent.vue'
 
 const selectedComponent = ref('Button')
-const components = ['Button', 'Input', 'Radio Groups','Header','Sidebar Layout','Footer']
+const components = ['Button', 'Input', 'Radio Groups','Header','Sidebar Layout','Footer','About Page']
 
 const componentMap = {
   Button: ButtonComponent,
@@ -53,7 +54,8 @@ const componentMap = {
   'Radio Groups': RadioComponent,
   Header: HeaderComponent,
   'Sidebar Layout':FlexibleSidebarComponent,
-  Footer:FooterComponent
+  Footer:FooterComponent,
+  'About Page':AboutpageComponent
 
 }
 
