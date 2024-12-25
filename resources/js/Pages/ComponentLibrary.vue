@@ -44,9 +44,15 @@ import HeaderComponent from './HeaderComponent.vue'
 import FooterComponent from './FooterComponent.vue'
 import FlexibleSidebarComponent from './FlexibleSidebarComponent.vue'
 import AboutpageComponent from './AboutpageComponent.vue'
+import ActionpanelComponent from './ActionpanelComponent.vue'
+import AlertComponent from './AlertComponent.vue'
+import AvatarComponent from './AvatarComponent.vue'
+import BadgesComponent from './BadgesComponent.vue'
 
 const selectedComponent = ref('Button')
-const components = ['Button', 'Input', 'Radio Groups','Header','Sidebar Layout','Footer','About Page']
+const components = ['Button', 'Input', 'Radio Groups','Header','Sidebar Layout','Footer','About Page','Action Panel','Alerts',
+'Avatars','Badges'
+]
 
 const componentMap = {
   Button: ButtonComponent,
@@ -55,7 +61,11 @@ const componentMap = {
   Header: HeaderComponent,
   'Sidebar Layout':FlexibleSidebarComponent,
   Footer:FooterComponent,
-  'About Page':AboutpageComponent
+  'About Page':AboutpageComponent,
+  'Action Panel':ActionpanelComponent,
+  'Alerts':AlertComponent,
+  'Avatars':AvatarComponent,
+  'Badges': BadgesComponent
 
 }
 
