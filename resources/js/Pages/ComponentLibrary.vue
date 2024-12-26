@@ -48,10 +48,11 @@ import ActionpanelComponent from './ActionpanelComponent.vue'
 import AlertComponent from './AlertComponent.vue'
 import AvatarComponent from './AvatarComponent.vue'
 import BadgesComponent from './BadgesComponent.vue'
+import BannerComponent from './BannerComponent.vue'
 
 const selectedComponent = ref('Button')
 const components = ['Button', 'Input', 'Radio Groups','Header','Sidebar Layout','Footer','About Page','Action Panel','Alerts',
-'Avatars','Badges'
+'Avatars','Badges','Banners'
 ]
 
 const componentMap = {
@@ -65,7 +66,8 @@ const componentMap = {
   'Action Panel':ActionpanelComponent,
   'Alerts':AlertComponent,
   'Avatars':AvatarComponent,
-  'Badges': BadgesComponent
+  'Badges': BadgesComponent,
+  'Banners':BannerComponent
 
 }
 
