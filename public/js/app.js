@@ -23378,6 +23378,103 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BentogridComponent.vue?vue&type=script&setup=true&lang=js":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BentogridComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/chart-column.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/shield.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/zap.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/code-xml.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/arrow-right.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/circle-check-big.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/users.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/clock.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/cloud.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/settings.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/lock.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/bell.js");
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  __name: 'BentogridComponent',
+  setup: function setup(__props, _ref) {
+    var __expose = _ref.expose;
+    __expose();
+    var showCode = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
+    var variations = [{
+      name: 'Three Column Bento Grid',
+      html: "\n      <div class=\"grid grid-cols-1 md:grid-cols-3 gap-6\">\n        <div class=\"md:col-span-2 md:row-span-2 bg-white rounded-2xl overflow-hidden shadow-lg\">\n          <div class=\"relative h-64\">\n            <img \n              src=\"/placeholder.svg?height=400&width=600\"\n              alt=\"Main Feature\" \n              class=\"absolute inset-0 w-full h-full object-cover\"\n            />\n            <div class=\"absolute inset-0 bg-gradient-to-t from-black/60 to-transparent\"></div>\n            <div class=\"absolute bottom-4 left-4 right-4\">\n              <h3 class=\"text-2xl font-bold text-white mb-2\">Analytics Dashboard</h3>\n              <p class=\"text-white/90\">Comprehensive data visualization and reporting tools</p>\n            </div>\n          </div>\n          <div class=\"p-6\">\n            <div class=\"flex items-center gap-4 mb-4\">\n              <svg class=\"w-6 h-6 text-indigo-600\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect width=\"18\" height=\"18\" x=\"3\" y=\"3\" rx=\"2\"/><path d=\"M3 9h18\"/><path d=\"M15 14v3\"/><path d=\"M9 14v6\"/><path d=\"M21 9v12\"/></svg>\n              <span class=\"text-lg font-semibold\">Real-time Metrics</span>\n            </div>\n            <p class=\"text-gray-600\">Track your application's performance with our advanced analytics dashboard. Get insights into user behavior, system performance, and business metrics.</p>\n          </div>\n        </div>\n        <div class=\"bg-white rounded-2xl overflow-hidden shadow-lg\">\n          <div class=\"relative h-48\">\n            <img \n              src=\"/placeholder.svg?height=200&width=300\"\n              alt=\"Team Collaboration\" \n              class=\"absolute inset-0 w-full h-full object-cover\"\n            />\n            <div class=\"absolute inset-0 bg-gradient-to-t from-black/60 to-transparent\"></div>\n            <div class=\"absolute bottom-4 left-4 right-4\">\n              <h3 class=\"text-xl font-bold text-white\">Team Collaboration</h3>\n            </div>\n          </div>\n          <div class=\"p-4\">\n            <div class=\"flex items-center gap-3 mb-3\">\n              <svg class=\"w-5 h-5 text-indigo-600\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>\n              <span class=\"font-medium\">Work Together</span>\n            </div>\n            <p class=\"text-gray-600 text-sm\">Enable seamless collaboration between team members with real-time updates.</p>\n          </div>\n        </div>\n        <div class=\"bg-white rounded-2xl overflow-hidden shadow-lg\">\n          <div class=\"relative h-48\">\n            <img \n              src=\"/placeholder.svg?height=200&width=300\"\n              alt=\"Performance Metrics\" \n              class=\"absolute inset-0 w-full h-full object-cover\"\n            />\n            <div class=\"absolute inset-0 bg-gradient-to-t from-black/60 to-transparent\"></div>\n            <div class=\"absolute bottom-4 left-4 right-4\">\n              <h3 class=\"text-xl font-bold text-white\">Performance Metrics</h3>\n            </div>\n          </div>\n          <div class=\"p-4\">\n            <div class=\"flex items-center gap-3 mb-3\">\n              <svg class=\"w-5 h-5 text-indigo-600\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/></svg>\n              <span class=\"font-medium\">Track Progress</span>\n            </div>\n            <p class=\"text-gray-600 text-sm\">Monitor and optimize your application performance with detailed analytics.</p>\n          </div>\n        </div>\n      </div>\n      "
+    }, {
+      name: 'Two Row Bento Grid on Dark',
+      html: "\n      <div class=\"bg-gray-900 p-6 rounded-lg\">\n        <div class=\"grid grid-cols-1 md:grid-cols-3 gap-6\">\n          <div class=\"md:col-span-2 bg-gray-800 rounded-2xl overflow-hidden shadow-lg\">\n            <div class=\"relative h-64\">\n              <img \n                src=\"/placeholder.svg?height=400&width=600\"\n                alt=\"Dark Feature\" \n                class=\"absolute inset-0 w-full h-full object-cover\"\n              />\n              <div class=\"absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent\"></div>\n              <div class=\"absolute bottom-4 left-4 right-4\">\n                <h3 class=\"text-2xl font-bold text-white mb-2\">Security Features</h3>\n                <p class=\"text-gray-300\">Enterprise-grade security for your applications</p>\n              </div>\n            </div>\n            <div class=\"p-6\">\n              <div class=\"flex items-center gap-4 mb-4\">\n                <svg class=\"w-6 h-6 text-indigo-400\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>\n                <span class=\"text-lg font-semibold text-white\">Advanced Protection</span>\n              </div>\n              <p class=\"text-gray-400\">Implement robust security measures with our comprehensive suite of tools and features.</p>\n            </div>\n          </div>\n          <div class=\"bg-gray-800 rounded-2xl overflow-hidden shadow-lg\">\n            <div class=\"p-6\">\n              <div class=\"flex items-center gap-3 mb-4\">\n                <svg class=\"w-6 h-6 text-indigo-400\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect width=\"18\" height=\"11\" x=\"3\" y=\"11\" rx=\"2\" ry=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/></svg>\n                <h3 class=\"text-lg font-semibold text-white\">Authentication</h3>\n              </div>\n              <p class=\"text-gray-400 mb-4\">Secure user authentication and authorization systems.</p>\n              <div class=\"flex items-center gap-2 text-indigo-400\">\n                <span class=\"text-sm font-medium\">Learn more</span>\n                <svg class=\"w-4 h-4\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg>\n              </div>\n            </div>\n          </div>\n          <div class=\"bg-gray-800 rounded-2xl overflow-hidden shadow-lg\">\n            <div class=\"p-6\">\n              <div class=\"flex items-center gap-3 mb-4\">\n                <svg class=\"w-6 h-6 text-indigo-400\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg>\n                <h3 class=\"text-lg font-semibold text-white\">API Security</h3>\n              </div>\n              <p class=\"text-gray-400 mb-4\">Protected API endpoints with industry-standard security.</p>\n              <div class=\"flex items-center gap-2 text-indigo-400\">\n                <span class=\"text-sm font-medium\">Learn more</span>\n                <svg class=\"w-4 h-4\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n      "
+    }, {
+      name: 'Two Row Bento Grid',
+      html: "\n      <div class=\"grid grid-cols-1 md:grid-cols-4 gap-6\">\n        <div class=\"md:col-span-2 md:row-span-2 bg-white rounded-2xl overflow-hidden shadow-lg\">\n          <div class=\"relative h-72\">\n            <img \n              src=\"/placeholder.svg?height=400&width=600\"\n              alt=\"Feature\" \n              class=\"absolute inset-0 w-full h-full object-cover\"\n            />\n            <div class=\"absolute inset-0 bg-gradient-to-t from-black/60 to-transparent\"></div>\n            <div class=\"absolute bottom-4 left-4 right-4\">\n              <h3 class=\"text-2xl font-bold text-white mb-2\">Developer Experience</h3>\n              <p class=\"text-white/90\">Build faster with modern tools</p>\n            </div>\n          </div>\n          <div class=\"p-6\">\n            <div class=\"flex items-center gap-4 mb-4\">\n              <svg class=\"w-6 h-6 text-indigo-600\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m18 16 4-4-4-4\"/><path d=\"m6 8-4 4 4 4\"/><path d=\"m14.5 4-5 16\"/></svg>\n              <span class=\"text-lg font-semibold\">Modern Development</span>\n            </div>\n            <p class=\"text-gray-600 mb-4\">Access a complete suite of development tools and resources designed to accelerate your workflow.</p>\n            <div class=\"grid grid-cols-2 gap-4\">\n              <div class=\"flex items-center gap-2 text-sm text-gray-600\">\n                <svg class=\"w-4 h-4 text-green-500\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"/><path d=\"m9 11 3 3L22 4\"/></svg>\n                <span>TypeScript Support</span>\n              </div>\n              <div class=\"flex items-center gap-2 text-sm text-gray-600\">\n                <svg class=\"w-4 h-4 text-green-500\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"/><path d=\"m9 11 3 3L22 4\"/></svg>\n                <span>API Integration</span>\n              </div>\n              <div class=\"flex items-center gap-2 text-sm text-gray-600\">\n                <svg class=\"w-4 h-4 text-green-500\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"/><path d=\"m9 11 3 3L22 4\"/></svg>\n                <span>Live Preview</span>\n              </div>\n              <div class=\"flex items-center gap-2 text-sm text-gray-600\">\n                <svg class=\"w-4 h-4 text-green-500\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"/><path d=\"m9 11 3 3L22 4\"/></svg>\n                <span>Plugin System</span>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"bg-white rounded-2xl overflow-hidden shadow-lg\">\n          <div class=\"p-6\">\n            <div class=\"flex items-center gap-3 mb-4\">\n              <svg class=\"w-6 h-6 text-indigo-600\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m13 2-2 2.5h3L12 7\"/><path d=\"M12 22v-3\"/><path d=\"M12 17v-2\"/><path d=\"M12 11V9\"/><path d=\"M3 5v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2Z\"/></svg>\n              <h3 class=\"text-lg font-semibold\">Quick Setup</h3>\n            </div>\n            <p class=\"text-gray-600 mb-4\">Get started in minutes with our streamlined setup process.</p>\n            <div class=\"flex items-center gap-2 text-indigo-600\">\n              <span class=\"text-sm font-medium\">Start now</span>\n              <svg class=\"w-4 h-4\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg>\n            </div>\n          </div>\n        </div>\n        <div class=\"bg-white rounded-2xl overflow-hidden shadow-lg\">\n          <div class=\"p-6\">\n            <div class=\"flex items-center gap-3 mb-4\">\n              <svg class=\"w-6 h-6 text-indigo-600\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"3\"/><path d=\"M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z\"/></svg>\n              <h3 class=\"text-lg font-semibold\">Configuration</h3>\n            </div>\n            <p class=\"text-gray-600 mb-4\">Customize every aspect of your development environment.</p>\n            <div class=\"flex items-center gap-2 text-indigo-600\">\n              <span class=\"text-sm font-medium\">Configure</span>\n              <svg class=\"w-4 h-4\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg>\n            </div>\n          </div>\n        </div>\n      </div>\n      "
+    }];
+    var toggleCode = function toggleCode(index) {
+      showCode.value[index] = !showCode.value[index];
+    };
+    var __returned__ = {
+      showCode: showCode,
+      variations: variations,
+      toggleCode: toggleCode,
+      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref,
+      get BarChart3() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__["default"];
+      },
+      get Shield() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"];
+      },
+      get Zap() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_3__["default"];
+      },
+      get Code2() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_4__["default"];
+      },
+      get ArrowRight() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_5__["default"];
+      },
+      get CheckCircle() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_6__["default"];
+      },
+      get Users() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_7__["default"];
+      },
+      get Clock() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_8__["default"];
+      },
+      get Cloud() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_9__["default"];
+      },
+      get Settings() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_10__["default"];
+      },
+      get Lock() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_11__["default"];
+      },
+      get Bell() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_12__["default"];
+      }
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=script&setup=true&lang=js":
 /*!***************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=script&setup=true&lang=js ***!
@@ -23450,6 +23547,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _AvatarComponent_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./AvatarComponent.vue */ "./resources/js/Pages/AvatarComponent.vue");
 /* harmony import */ var _BadgesComponent_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./BadgesComponent.vue */ "./resources/js/Pages/BadgesComponent.vue");
 /* harmony import */ var _BannerComponent_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./BannerComponent.vue */ "./resources/js/Pages/BannerComponent.vue");
+/* harmony import */ var _BentogridComponent_vue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./BentogridComponent.vue */ "./resources/js/Pages/BentogridComponent.vue");
+
 
 
 
@@ -23469,7 +23568,7 @@ __webpack_require__.r(__webpack_exports__);
     var __expose = _ref.expose;
     __expose();
     var selectedComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)('Button');
-    var components = ['Button', 'Input', 'Radio Groups', 'Header', 'Sidebar Layout', 'Footer', 'About Page', 'Action Panel', 'Alerts', 'Avatars', 'Badges', 'Banners'];
+    var components = ['Button', 'Input', 'Radio Groups', 'Header', 'Sidebar Layout', 'Footer', 'About Page', 'Action Panel', 'Alerts', 'Avatars', 'Badges', 'Banners', 'Bento grids'];
     var componentMap = {
       Button: _ButtonComponent_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
       Input: _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
@@ -23482,7 +23581,8 @@ __webpack_require__.r(__webpack_exports__);
       'Alerts': _AlertComponent_vue__WEBPACK_IMPORTED_MODULE_9__["default"],
       'Avatars': _AvatarComponent_vue__WEBPACK_IMPORTED_MODULE_10__["default"],
       'Badges': _BadgesComponent_vue__WEBPACK_IMPORTED_MODULE_11__["default"],
-      'Banners': _BannerComponent_vue__WEBPACK_IMPORTED_MODULE_12__["default"]
+      'Banners': _BannerComponent_vue__WEBPACK_IMPORTED_MODULE_12__["default"],
+      'Bento grids': _BentogridComponent_vue__WEBPACK_IMPORTED_MODULE_13__["default"]
     };
     var currentComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
       return componentMap[selectedComponent.value];
@@ -23509,7 +23609,8 @@ __webpack_require__.r(__webpack_exports__);
       AlertComponent: _AlertComponent_vue__WEBPACK_IMPORTED_MODULE_9__["default"],
       AvatarComponent: _AvatarComponent_vue__WEBPACK_IMPORTED_MODULE_10__["default"],
       BadgesComponent: _BadgesComponent_vue__WEBPACK_IMPORTED_MODULE_11__["default"],
-      BannerComponent: _BannerComponent_vue__WEBPACK_IMPORTED_MODULE_12__["default"]
+      BannerComponent: _BannerComponent_vue__WEBPACK_IMPORTED_MODULE_12__["default"],
+      BentogridComponent: _BentogridComponent_vue__WEBPACK_IMPORTED_MODULE_13__["default"]
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -25477,6 +25578,64 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BentogridComponent.vue?vue&type=template&id=398c62ba&scoped=true":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BentogridComponent.vue?vue&type=template&id=398c62ba&scoped=true ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "space-y-4"
+};
+var _hoisted_2 = {
+  "class": "p-4 bg-gray-50 border-b"
+};
+var _hoisted_3 = {
+  "class": "text-lg font-semibold text-gray-800"
+};
+var _hoisted_4 = {
+  "class": "p-4"
+};
+var _hoisted_5 = {
+  "class": "mb-4"
+};
+var _hoisted_6 = ["innerHTML"];
+var _hoisted_7 = ["onClick"];
+var _hoisted_8 = {
+  "class": "mt-4"
+};
+var _hoisted_9 = {
+  "class": "p-4 bg-gray-800 rounded-md overflow-x-auto"
+};
+var _hoisted_10 = {
+  "class": "text-sm text-white"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.variations, function (variation, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      key: index,
+      "class": "bg-white rounded-lg shadow-md w-full"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "p-4 bg-gray-50 rounded-md",
+      innerHTML: variation.html
+    }, null, 8 /* PROPS */, _hoisted_6)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $setup.toggleCode(index);
+      },
+      "class": "px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.showCode[index] ? 'Hide Code' : 'Show Code'), 9 /* TEXT, PROPS */, _hoisted_7)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", _hoisted_9, [_cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("              ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("code", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.html), 1 /* TEXT */), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("\n            "))])], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.showCode[index]]])])]);
+  }), 64 /* STABLE_FRAGMENT */))]);
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=template&id=191739d2":
 /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=template&id=191739d2 ***!
@@ -26268,6 +26427,30 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n/* Add any additional styles here if
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BannerComponent.vue?vue&type=style&index=0&id=d59fafd0&scoped=true&lang=css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n  /* Add any additional styles here if needed */\n  ", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BentogridComponent.vue?vue&type=style&index=0&id=398c62ba&scoped=true&lang=css":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BentogridComponent.vue?vue&type=style&index=0&id=398c62ba&scoped=true&lang=css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -48636,6 +48819,40 @@ const Calendar = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"]
 
 /***/ }),
 
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/chart-column.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/chart-column.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ChartColumn)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const ChartColumn = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("ChartColumnIcon", [
+  ["path", { d: "M3 3v16a2 2 0 0 0 2 2h16", key: "c24i48" }],
+  ["path", { d: "M18 17V9", key: "2bz60n" }],
+  ["path", { d: "M13 17V5", key: "1frdt8" }],
+  ["path", { d: "M8 17v-3", key: "17ska0" }]
+]);
+
+
+//# sourceMappingURL=chart-column.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-vue-next/dist/esm/icons/chevron-right.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/lucide-vue-next/dist/esm/icons/chevron-right.js ***!
@@ -48663,6 +48880,38 @@ const ChevronRight = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["defau
 
 
 //# sourceMappingURL=chevron-right.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/circle-check-big.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/circle-check-big.js ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ CircleCheckBig)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const CircleCheckBig = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("CircleCheckBigIcon", [
+  ["path", { d: "M21.801 10A10 10 0 1 1 17 3.335", key: "yps3ct" }],
+  ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
+]);
+
+
+//# sourceMappingURL=circle-check-big.js.map
 
 
 /***/ }),
@@ -48695,6 +48944,70 @@ const Clock = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("
 
 
 //# sourceMappingURL=clock.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/cloud.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/cloud.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Cloud)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Cloud = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("CloudIcon", [
+  ["path", { d: "M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z", key: "p7xjir" }]
+]);
+
+
+//# sourceMappingURL=cloud.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/code-xml.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/code-xml.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ CodeXml)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const CodeXml = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("CodeXmlIcon", [
+  ["path", { d: "m18 16 4-4-4-4", key: "1inbqp" }],
+  ["path", { d: "m6 8-4 4 4 4", key: "15zrgr" }],
+  ["path", { d: "m14.5 4-5 16", key: "e7oirm" }]
+]);
+
+
+//# sourceMappingURL=code-xml.js.map
 
 
 /***/ }),
@@ -48807,6 +49120,38 @@ const Info = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("I
 
 /***/ }),
 
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/lock.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/lock.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Lock)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Lock = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("LockIcon", [
+  ["rect", { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2", key: "1w4ew1" }],
+  ["path", { d: "M7 11V7a5 5 0 0 1 10 0v4", key: "fwvmzm" }]
+]);
+
+
+//# sourceMappingURL=lock.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-vue-next/dist/esm/icons/menu.js":
 /*!*************************************************************!*\
   !*** ./node_modules/lucide-vue-next/dist/esm/icons/menu.js ***!
@@ -48874,6 +49219,43 @@ const Settings = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"]
 
 
 //# sourceMappingURL=settings.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/shield.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/shield.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Shield)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Shield = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("ShieldIcon", [
+  [
+    "path",
+    {
+      d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
+      key: "oel41y"
+    }
+  ]
+]);
+
+
+//# sourceMappingURL=shield.js.map
 
 
 /***/ }),
@@ -49012,6 +49394,43 @@ const X = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("XIco
 
 
 //# sourceMappingURL=x.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/zap.js":
+/*!************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/zap.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Zap)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Zap = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("ZapIcon", [
+  [
+    "path",
+    {
+      d: "M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z",
+      key: "1xq2db"
+    }
+  ]
+]);
+
+
+//# sourceMappingURL=zap.js.map
 
 
 /***/ }),
@@ -51836,6 +52255,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BentogridComponent.vue?vue&type=style&index=0&id=398c62ba&scoped=true&lang=css":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BentogridComponent.vue?vue&type=style&index=0&id=398c62ba&scoped=true&lang=css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BentogridComponent_vue_vue_type_style_index_0_id_398c62ba_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BentogridComponent.vue?vue&type=style&index=0&id=398c62ba&scoped=true&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BentogridComponent.vue?vue&type=style&index=0&id=398c62ba&scoped=true&lang=css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BentogridComponent_vue_vue_type_style_index_0_id_398c62ba_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BentogridComponent_vue_vue_type_style_index_0_id_398c62ba_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css":
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css ***!
@@ -52963,6 +53412,37 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/Pages/BentogridComponent.vue":
+/*!***************************************************!*\
+  !*** ./resources/js/Pages/BentogridComponent.vue ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _BentogridComponent_vue_vue_type_template_id_398c62ba_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BentogridComponent.vue?vue&type=template&id=398c62ba&scoped=true */ "./resources/js/Pages/BentogridComponent.vue?vue&type=template&id=398c62ba&scoped=true");
+/* harmony import */ var _BentogridComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BentogridComponent.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/BentogridComponent.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _BentogridComponent_vue_vue_type_style_index_0_id_398c62ba_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BentogridComponent.vue?vue&type=style&index=0&id=398c62ba&scoped=true&lang=css */ "./resources/js/Pages/BentogridComponent.vue?vue&type=style&index=0&id=398c62ba&scoped=true&lang=css");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+
+
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_BentogridComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_BentogridComponent_vue_vue_type_template_id_398c62ba_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-398c62ba"],['__file',"resources/js/Pages/BentogridComponent.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/ButtonComponent.vue":
 /*!************************************************!*\
   !*** ./resources/js/Pages/ButtonComponent.vue ***!
@@ -53598,6 +54078,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/BentogridComponent.vue?vue&type=script&setup=true&lang=js":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/Pages/BentogridComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BentogridComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BentogridComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BentogridComponent.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BentogridComponent.vue?vue&type=script&setup=true&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/Pages/ButtonComponent.vue?vue&type=script&setup=true&lang=js":
 /*!***********************************************************************************!*\
   !*** ./resources/js/Pages/ButtonComponent.vue?vue&type=script&setup=true&lang=js ***!
@@ -54126,6 +54622,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/BentogridComponent.vue?vue&type=template&id=398c62ba&scoped=true":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/Pages/BentogridComponent.vue?vue&type=template&id=398c62ba&scoped=true ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BentogridComponent_vue_vue_type_template_id_398c62ba_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BentogridComponent_vue_vue_type_template_id_398c62ba_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BentogridComponent.vue?vue&type=template&id=398c62ba&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BentogridComponent.vue?vue&type=template&id=398c62ba&scoped=true");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/ButtonComponent.vue?vue&type=template&id=191739d2":
 /*!******************************************************************************!*\
   !*** ./resources/js/Pages/ButtonComponent.vue?vue&type=template&id=191739d2 ***!
@@ -54292,6 +54804,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BannerComponent_vue_vue_type_style_index_0_id_d59fafd0_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BannerComponent.vue?vue&type=style&index=0&id=d59fafd0&scoped=true&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BannerComponent.vue?vue&type=style&index=0&id=d59fafd0&scoped=true&lang=css");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/BentogridComponent.vue?vue&type=style&index=0&id=398c62ba&scoped=true&lang=css":
+/*!***********************************************************************************************************!*\
+  !*** ./resources/js/Pages/BentogridComponent.vue?vue&type=style&index=0&id=398c62ba&scoped=true&lang=css ***!
+  \***********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BentogridComponent_vue_vue_type_style_index_0_id_398c62ba_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BentogridComponent.vue?vue&type=style&index=0&id=398c62ba&scoped=true&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BentogridComponent.vue?vue&type=style&index=0&id=398c62ba&scoped=true&lang=css");
 
 
 /***/ }),
@@ -54638,6 +55163,7 @@ var map = {
 	"./AvatarComponent.vue": "./resources/js/Pages/AvatarComponent.vue",
 	"./BadgesComponent.vue": "./resources/js/Pages/BadgesComponent.vue",
 	"./BannerComponent.vue": "./resources/js/Pages/BannerComponent.vue",
+	"./BentogridComponent.vue": "./resources/js/Pages/BentogridComponent.vue",
 	"./ButtonComponent.vue": "./resources/js/Pages/ButtonComponent.vue",
 	"./ComponentLibrary.vue": "./resources/js/Pages/ComponentLibrary.vue",
 	"./Dashboard.vue": "./resources/js/Pages/Dashboard.vue",
