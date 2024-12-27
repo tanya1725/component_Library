@@ -49,10 +49,11 @@ import AlertComponent from './AlertComponent.vue'
 import AvatarComponent from './AvatarComponent.vue'
 import BadgesComponent from './BadgesComponent.vue'
 import BannerComponent from './BannerComponent.vue'
+import BentogridComponent from './BentogridComponent.vue'
 
 const selectedComponent = ref('Button')
 const components = ['Button', 'Input', 'Radio Groups','Header','Sidebar Layout','Footer','About Page','Action Panel','Alerts',
-'Avatars','Badges','Banners'
+'Avatars','Badges','Banners','Bento grids'
 ]
 
 const componentMap = {
@@ -67,7 +68,8 @@ const componentMap = {
   'Alerts':AlertComponent,
   'Avatars':AvatarComponent,
   'Badges': BadgesComponent,
-  'Banners':BannerComponent
+  'Banners':BannerComponent,
+  'Bento grids':BentogridComponent
 
 }
 
