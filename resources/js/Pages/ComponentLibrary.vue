@@ -50,10 +50,11 @@ import AvatarComponent from './AvatarComponent.vue'
 import BadgesComponent from './BadgesComponent.vue'
 import BannerComponent from './BannerComponent.vue'
 import BentogridComponent from './BentogridComponent.vue'
+import BlogComponent from './BlogComponent.vue'
 
 const selectedComponent = ref('Button')
 const components = ['Button', 'Input', 'Radio Groups','Header','Sidebar Layout','Footer','About Page','Action Panel','Alerts',
-'Avatars','Badges','Banners','Bento grids'
+'Avatars','Badges','Banners','Bento grids','Blogs'
 ]
 
 const componentMap = {
@@ -69,7 +70,9 @@ const componentMap = {
   'Avatars':AvatarComponent,
   'Badges': BadgesComponent,
   'Banners':BannerComponent,
-  'Bento grids':BentogridComponent
+  'Bento grids':BentogridComponent,
+  'Blogs':BlogComponent
+
 
 }
 
