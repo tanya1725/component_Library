@@ -23580,6 +23580,57 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=script&setup=true&lang=js":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \********************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  __name: 'BreadcrumbsComponent',
+  setup: function setup(__props, _ref) {
+    var __expose = _ref.expose;
+    __expose();
+    var showCode = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
+    var variations = [{
+      name: 'Contained',
+      html: "\n        <nav class=\"flex\" aria-label=\"Breadcrumb\">\n          <ol class=\"inline-flex items-center space-x-1 md:space-x-3\">\n            <li class=\"inline-flex items-center\">\n              <a href=\"#\" class=\"inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600\">\n                <svg class=\"w-3 h-3 mr-2.5\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n                  <path d=\"m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z\"/>\n                </svg>\n                Home\n              </a>\n            </li>\n            <li>\n              <div class=\"flex items-center\">\n                <svg class=\"w-3 h-3 text-gray-400 mx-1\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 6 10\">\n                  <path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"m1 9 4-4-4-4\"/>\n                </svg>\n                <a href=\"#\" class=\"ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2\">Projects</a>\n              </div>\n            </li>\n            <li aria-current=\"page\">\n              <div class=\"flex items-center\">\n                <svg class=\"w-3 h-3 text-gray-400 mx-1\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 6 10\">\n                  <path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"m1 9 4-4-4-4\"/>\n                </svg>\n                <span class=\"ml-1 text-sm font-medium text-gray-500 md:ml-2\">Flowbite</span>\n              </div>\n            </li>\n          </ol>\n        </nav>\n      "
+    }, {
+      name: 'Full-width bar',
+      html: "\n        <nav class=\"flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-gray-50\" aria-label=\"Breadcrumb\">\n          <ol class=\"inline-flex items-center space-x-1 md:space-x-3\">\n            <li class=\"inline-flex items-center\">\n              <a href=\"#\" class=\"inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600\">\n                <svg class=\"w-3 h-3 mr-2.5\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\n                  <path d=\"m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z\"/>\n                </svg>\n                Home\n              </a>\n            </li>\n            <li>\n              <div class=\"flex items-center\">\n                <svg class=\"w-3 h-3 text-gray-400 mx-1\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 6 10\">\n                  <path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"m1 9 4-4-4-4\"/>\n                </svg>\n                <a href=\"#\" class=\"ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2\">Projects</a>\n              </div>\n            </li>\n            <li aria-current=\"page\">\n              <div class=\"flex items-center\">\n                <svg class=\"w-3 h-3 text-gray-400 mx-1\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 6 10\">\n                  <path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"m1 9 4-4-4-4\"/>\n                </svg>\n                <span class=\"ml-1 text-sm font-medium text-gray-500 md:ml-2\">Flowbite</span>\n              </div>\n            </li>\n          </ol>\n        </nav>\n      "
+    }, {
+      name: 'Simple with chevrons',
+      html: "\n        <nav class=\"flex\" aria-label=\"Breadcrumb\">\n    <ol class=\"inline-flex items-center space-x-1 md:space-x-3\">\n      <li class=\"inline-flex items-center\">\n        <a href=\"#\" class=\"inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600\">\n          Home\n        </a>\n      </li>\n      <li>\n        <div class=\"flex items-center\">\n          <svg class=\"w-5 h-5 text-gray-400\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <polyline points=\"9 18 15 12 9 6\"></polyline>\n          </svg>\n          <a href=\"#\" class=\"ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2\">Projects</a>\n        </div>\n      </li>\n      <li aria-current=\"page\">\n        <div class=\"flex items-center\">\n          <svg class=\"w-5 h-5 text-gray-400\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <polyline points=\"9 18 15 12 9 6\"></polyline>\n          </svg>\n          <span class=\"ml-1 text-sm font-medium text-gray-500 md:ml-2\">Flowbite</span>\n        </div>\n      </li>\n    </ol>\n  </nav>\n      "
+    }, {
+      name: 'Simple with slashes',
+      html: "\n        <nav class=\"flex\" aria-label=\"Breadcrumb\">\n          <ol class=\"inline-flex items-center space-x-1 md:space-x-3\">\n            <li class=\"inline-flex items-center\">\n              <a href=\"#\" class=\"inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600\">\n                Home\n              </a>\n            </li>\n            <li>\n              <div class=\"flex items-center\">\n                <span class=\"mx-2.5 text-gray-400\">/</span>\n                <a href=\"#\" class=\"ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2\">Projects</a>\n              </div>\n            </li>\n            <li aria-current=\"page\">\n              <div class=\"flex items-center\">\n                <span class=\"mx-2.5 text-gray-400\">/</span>\n                <span class=\"ml-1 text-sm font-medium text-gray-500 md:ml-2\">Flowbite</span>\n              </div>\n            </li>\n          </ol>\n        </nav>\n      "
+    }];
+    var toggleCode = function toggleCode(index) {
+      showCode.value[index] = !showCode.value[index];
+    };
+    var __returned__ = {
+      showCode: showCode,
+      variations: variations,
+      toggleCode: toggleCode,
+      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=script&setup=true&lang=js":
 /*!***************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=script&setup=true&lang=js ***!
@@ -23628,6 +23679,240 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CalenderComponent.vue?vue&type=script&setup=true&lang=js":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CalenderComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/chevron-left.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/chevron-right.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/calendar.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/map-pin.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/ellipsis.js");
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  __name: 'CalenderComponent',
+  setup: function setup(__props, _ref) {
+    var __expose = _ref.expose;
+    __expose();
+    var showCode = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
+    var meetings = [{
+      name: 'Leslie Alexander',
+      time: 'January 10th, 2022 at 5:00 PM',
+      location: 'Starbucks',
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+    }, {
+      name: 'Michael Foster',
+      time: 'January 12th, 2022 at 3:00 PM',
+      location: 'Tim Hortons',
+      avatar: 'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+    }, {
+      name: 'Dries Vincent',
+      time: 'January 12th, 2022 at 5:00 PM',
+      location: 'Costa Coffee at Braehead',
+      avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+    }, {
+      name: 'Lindsay Walton',
+      time: 'January 14th, 2022 at 10:00 AM',
+      location: 'Silverburn',
+      avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+    }, {
+      name: 'Courtney Henry',
+      time: 'January 14th, 2022 at 12:00 PM',
+      location: 'The Glasgow Green',
+      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+    }];
+    var SmallWithMeetings = {
+      setup: function setup() {
+        var dates = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([].concat(_toConsumableArray(Array.from({
+          length: 5
+        }, function (_, i) {
+          return {
+            day: 27 + i,
+            isPrevMonth: true
+          };
+        })), _toConsumableArray(Array.from({
+          length: 31
+        }, function (_, i) {
+          return {
+            day: i + 1,
+            isPrevMonth: false
+          };
+        })), _toConsumableArray(Array.from({
+          length: 6
+        }, function (_, i) {
+          return {
+            day: i + 1,
+            isNextMonth: true
+          };
+        }))));
+        return {
+          meetings: meetings,
+          dates: dates,
+          ChevronLeft: lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__["default"],
+          ChevronRight: lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"],
+          Calendar: lucide_vue_next__WEBPACK_IMPORTED_MODULE_3__["default"],
+          MapPin: lucide_vue_next__WEBPACK_IMPORTED_MODULE_4__["default"],
+          MoreHorizontal: lucide_vue_next__WEBPACK_IMPORTED_MODULE_5__["default"]
+        };
+      },
+      template: "\n     <div class=\"bg-white rounded-lg p-6 relative\">\n  <h2 class=\"text-xl font-semibold text-gray-900 mb-6\">Upcoming meetings</h2>\n  \n  <div class=\"flex\">\n    <!-- Calendar -->\n    <div class=\"w-64 ml-4 p-4 bg-gray-50 rounded-lg shadow-lg relative z-10\">\n      <div class=\"flex items-center justify-between mb-4\">\n        <button class=\"p-1 hover:bg-gray-100 rounded-full\">\n          <ChevronLeft class=\"h-5 w-5 text-gray-500\" />\n        </button>\n        <h3 class=\"text-base font-semibold text-gray-900\">January</h3>\n        <button class=\"p-1 hover:bg-gray-100 rounded-full\">\n          <ChevronRight class=\"h-5 w-5 text-gray-500\" />\n        </button>\n      </div>\n      \n      <div class=\"grid grid-cols-7 text-center text-xs leading-6 text-gray-500 mb-1\">\n        <div>M</div>\n        <div>T</div>\n        <div>W</div>\n        <div>T</div>\n        <div>F</div>\n        <div>S</div>\n        <div>S</div>\n      </div>\n      \n      <div class=\"grid grid-cols-7 text-sm\">\n        <div\n          v-for=\"(date, i) in dates\"\n          :key=\"i\"\n          class=\"py-1.5 flex items-center justify-center\"\n        >\n          <button\n            :class=\"[\n              'w-8 h-8 flex items-center justify-center rounded-full',\n              date.day === 22 && !date.isPrevMonth && !date.isNextMonth ? 'bg-gray-900 text-white font-semibold' : '',\n              date.day === 12 && !date.isPrevMonth && !date.isNextMonth ? 'text-indigo-600 font-semibold' : '',\n              (date.isPrevMonth || date.isNextMonth) ? 'text-gray-400' : 'text-gray-900',\n            ]\"\n          >\n            {{ date.day }}\n          </button>\n        </div>\n      </div>\n    </div>\n\n    <!-- Meetings List -->\n    <div class=\"flex-1 space-y-4 ml-8\">\n      <div v-for=\"meeting in meetings\" :key=\"meeting.name\" class=\"flex items-start group\">\n        <img :src=\"meeting.avatar\" class=\"w-10 h-10 rounded-full mr-4 flex-shrink-0\" :alt=\"meeting.name\">\n        <div class=\"flex-1 min-w-0\">\n          <h4 class=\"text-sm font-medium text-gray-900\">{{ meeting.name }}</h4>\n          <div class=\"flex items-center text-sm text-gray-500 mt-1\">\n            <Calendar class=\"w-4 h-4 mr-1 flex-shrink-0\" />\n            <span>{{ meeting.time }}</span>\n          </div>\n          <div class=\"flex items-center text-sm text-gray-500 mt-1\">\n            <MapPin class=\"w-4 h-4 mr-1 flex-shrink-0\" />\n            <span>{{ meeting.location }}</span>\n          </div>\n        </div>\n        <button class=\"opacity-0 group-hover:opacity-100 transition-opacity p-2 text-gray-500 hover:text-gray-700 rounded-full hover:bg-gray-100\">\n          <MoreHorizontal class=\"w-5 h-5\" />\n        </button>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"mt-6\">\n    <button class=\"w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500\">\n      Add event\n    </button>\n  </div>\n</div>\n\n    "
+    };
+    var MonthView = {
+      setup: function setup() {
+        return {
+          ChevronLeft: lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__["default"],
+          ChevronRight: lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"]
+        };
+      },
+      template: "\n      <div class=\"bg-white rounded-lg shadow overflow-hidden min-h-[600px]\">\n        <div class=\"flex items-center justify-between p-4 border-b\">\n          <h2 class=\"text-xl font-semibold\">January 2022</h2>\n          <div class=\"flex items-center space-x-4\">\n            <button class=\"px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50\">\n              Today\n            </button>\n            <div class=\"flex\">\n              <button class=\"p-2 hover:bg-gray-100 rounded-l-md\">\n                <ChevronLeft class=\"w-5 h-5\" />\n              </button>\n              <button class=\"p-2 hover:bg-gray-100 rounded-r-md\">\n                <ChevronRight class=\"w-5 h-5\" />\n              </button>\n            </div>\n            <select class=\"px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md\">\n              <option>Month view</option>\n            </select>\n            <button class=\"px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700\">\n              Add event\n            </button>\n          </div>\n        </div>\n        <div class=\"grid grid-cols-7 border-b\">\n          <div v-for=\"day in ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']\" :key=\"day\"\n            class=\"px-2 py-3 text-sm font-medium text-gray-900 border-r last:border-r-0\"\n          >\n            {{ day }}\n          </div>\n        </div>\n        <div class=\"grid grid-cols-7 grid-rows-5 h-full\">\n          <div v-for=\"date in 35\" :key=\"date\" \n            class=\"min-h-[100px] p-2 border-b border-r last:border-r-0 relative\"\n            :class=\"{'bg-gray-50': date < 4}\"\n          >\n            <span :class=\"[\n              'text-sm',\n              date < 4 ? 'text-gray-400' : 'text-gray-900'\n            ]\">{{ date < 4 ? 31 - (3 - date) : date - 3 }}</span>\n            <div v-if=\"date === 7\" class=\"mt-1\">\n              <div class=\"bg-gray-100 p-1 text-xs rounded\">\n                <div>Design review</div>\n                <div class=\"text-gray-500\">10AM</div>\n              </div>\n              <div class=\"bg-gray-100 p-1 text-xs rounded mt-1\">\n                <div>Sales meeting</div>\n                <div class=\"text-gray-500\">2PM</div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    "
+    };
+    var WeekView = {
+      setup: function setup() {
+        return {
+          ChevronLeft: lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__["default"],
+          ChevronRight: lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"]
+        };
+      },
+      template: "\n      <div class=\"bg-white rounded-lg shadow overflow-hidden min-h-[600px]\">\n        <div class=\"flex items-center justify-between p-4 border-b\">\n          <h2 class=\"text-xl font-semibold\">January 2022</h2>\n          <div class=\"flex items-center space-x-4\">\n            <button class=\"px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50\">\n              Today\n            </button>\n            <div class=\"flex\">\n              <button class=\"p-2 hover:bg-gray-100 rounded-l-md\">\n                <ChevronLeft class=\"w-5 h-5\" />\n              </button>\n              <button class=\"p-2 hover:bg-gray-100 rounded-r-md\">\n                <ChevronRight class=\"w-5 h-5\" />\n              </button>\n            </div>\n            <select class=\"px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md\">\n              <option>Week view</option>\n            </select>\n            <button class=\"px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700\">\n              Add event\n            </button>\n          </div>\n        </div>\n        <div class=\"grid grid-cols-8 h-full\">\n          <div class=\"border-r pt-16\">\n            <div v-for=\"hour in Array.from({ length: 12 }, (_, i) => i + 6)\" :key=\"hour\" \n              class=\"h-20 border-t text-right pr-2 text-sm text-gray-500\"\n            >\n              {{ hour }}:00 AM\n            </div>\n          </div>\n          <div v-for=\"day in ['Mon 10', 'Tue 11', 'Wed 12', 'Thu 13', 'Fri 14', 'Sat 15', 'Sun 16']\" :key=\"day\"\n            class=\"border-r last:border-r-0\"\n          >\n            <div class=\"text-sm font-medium p-2 text-center border-b\">{{ day }}</div>\n            <div class=\"relative h-full\">\n              <div v-if=\"day === 'Wed 12'\" class=\"absolute top-24 left-0 right-0 mx-2\">\n                <div class=\"bg-blue-100 text-blue-700 p-2 text-xs rounded\">\n                  <div>Breakfast</div>\n                  <div>6:00 AM</div>\n                </div>\n                <div class=\"bg-pink-100 text-pink-700 p-2 text-xs rounded mt-2\">\n                  <div>Flight to Paris</div>\n                  <div>7:30 AM</div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    "
+    };
+    var DayView = {
+      setup: function setup() {
+        return {
+          ChevronLeft: lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__["default"],
+          ChevronRight: lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"]
+        };
+      },
+      template: "\n      <div class=\"bg-white rounded-lg shadow overflow-hidden min-h-[600px]\">\n        <div class=\"flex items-center justify-between p-4 border-b\">\n          <div>\n            <h2 class=\"text-xl font-semibold\">January 22, 2022</h2>\n            <p class=\"text-sm text-gray-500\">Saturday</p>\n          </div>\n          <div class=\"flex items-center space-x-4\">\n            <button class=\"px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50\">\n              Today\n            </button>\n            <div class=\"flex\">\n              <button class=\"p-2 hover:bg-gray-100 rounded-l-md\">\n                <ChevronLeft class=\"w-5 h-5\" />\n              </button>\n              <button class=\"p-2 hover:bg-gray-100 rounded-r-md\">\n                <ChevronRight class=\"w-5 h-5\" />\n              </button>\n            </div>\n            <select class=\"px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md\">\n              <option>Day view</option>\n            </select>\n            <button class=\"px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700\">\n              Add event\n            </button>\n          </div>\n        </div>\n        <div class=\"grid grid-cols-[100px_1fr] h-full\">\n          <div class=\"border-r\">\n            <div v-for=\"hour in Array.from({ length: 12 }, (_, i) => i + 5)\" :key=\"hour\" \n              class=\"h-20 border-t text-right pr-2 text-sm text-gray-500\"\n            >\n              {{ hour }}:00 AM\n            </div>\n          </div>\n          <div class=\"relative\">\n            <div class=\"absolute top-20 left-0 right-0 mx-4\">\n              <div class=\"bg-blue-100 text-blue-700 p-2 text-sm rounded\">\n                <div class=\"font-medium\">Breakfast</div>\n                <div>6:00 AM</div>\n              </div>\n            </div>\n            <div class=\"absolute top-40 left-0 right-0 mx-4\">\n              <div class=\"bg-pink-100 text-pink-700 p-2 text-sm rounded\">\n                <div class=\"font-medium\">Flight to Paris</div>\n                <div>7:30 AM</div>\n                <div class=\"text-sm\">John F. Kennedy International Airport</div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    "
+    };
+    var YearView = {
+      setup: function setup() {
+        return {
+          ChevronLeft: lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__["default"],
+          ChevronRight: lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"]
+        };
+      },
+      template: "\n      <div class=\"bg-white rounded-lg shadow overflow-hidden\">\n        <div class=\"flex items-center justify-between p-4 border-b\">\n          <h2 class=\"text-xl font-semibold\">2022</h2>\n          <div class=\"flex items-center space-x-4\">\n            <button class=\"px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50\">\n              Today\n            </button>\n            <div class=\"flex\">\n              <button class=\"p-2 hover:bg-gray-100 rounded-l-md\">\n                <ChevronLeft class=\"w-5 h-5\" />\n              </button>\n              <button class=\"p-2 hover:bg-gray-100 rounded-r-md\">\n                <ChevronRight class=\"w-5 h-5\" />\n              </button>\n            </div>\n            <select class=\"px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md\">\n              <option>Year view</option>\n            </select>\n            <button class=\"px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700\">\n              Add event\n            </button>\n          </div>\n        </div>\n        <div class=\"grid grid-cols-3 gap-4 p-4\">\n          <div v-for=\"month in ['January', 'February', 'March']\" :key=\"month\" class=\"space-y-2\">\n            <h3 class=\"font-medium\">{{ month }}</h3>\n            <div class=\"grid grid-cols-7 text-center text-xs\">\n              <div v-for=\"day in ['M', 'T', 'W', 'T', 'F', 'S', 'S']\" :key=\"day\" class=\"text-gray-500\">\n                {{ day }}\n              </div>\n              <div v-for=\"date in 31\" :key=\"date\" \n                :class=\"[\n                  'py-1',\n                  month === 'January' && date === 12 ? 'text-indigo-600 font-semibold' : ''\n                ]\"\n              >\n                {{ date }}\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    "
+    };
+    var DoubleView = {
+      setup: function setup() {
+        return {
+          ChevronLeft: lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__["default"],
+          ChevronRight: lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"]
+        };
+      },
+      template: "\n      <div class=\"bg-white rounded-lg shadow overflow-hidden\">\n        <div class=\"grid grid-cols-2 divide-x\">\n          <div class=\"p-4\">\n            <div class=\"flex items-center justify-between mb-4\">\n              <h2 class=\"text-lg font-semibold\">January</h2>\n              <div class=\"flex\">\n                <button class=\"p-1\"><ChevronLeft class=\"h-5 w-5 text-gray-500\" /></button>\n                <button class=\"p-1\"><ChevronRight class=\"h-5 w-5 text-gray-500\" /></button>\n              </div>\n            </div>\n            <div class=\"grid grid-cols-7 text-center mb-2\">\n              <div v-for=\"day in ['M', 'T', 'W', 'T', 'F', 'S', 'S']\" :key=\"day\" class=\"text-xs font-medium text-gray-500\">\n                {{ day }}\n              </div>\n            </div>\n            <div class=\"grid grid-cols-7 gap-1 text-sm\">\n              <div v-for=\"date in 31\" :key=\"date\" \n                :class=\"[\n                  'h-8 flex items-center justify-center rounded-full',\n                  date === 12 ? 'text-indigo-600 font-semibold' : ''\n                ]\"\n              >\n                {{ date }}\n              </div>\n            </div>\n          </div>\n          <div class=\"p-4\">\n            <div class=\"flex items-center justify-between mb-4\">\n              <h2 class=\"text-lg font-semibold\">February</h2>\n              <div class=\"flex\">\n                <button class=\"p-1\"><ChevronLeft class=\"h-5 w-5 text-gray-500\" /></button>\n                <button class=\"p-1\"><ChevronRight class=\"h-5 w-5 text-gray-500\" /></button>\n              </div>\n            </div>\n            <div class=\"grid grid-cols-7 text-center mb-2\">\n              <div v-for=\"day in ['M', 'T', 'W', 'T', 'F', 'S', 'S']\" :key=\"day\" class=\"text-xs font-medium text-gray-500\">\n                {{ day }}\n              </div>\n            </div>\n            <div class=\"grid grid-cols-7 gap-1 text-sm\">\n              <div v-for=\"date in 28\" :key=\"date\" class=\"h-8 flex items-center justify-center rounded-full\">\n                {{ date }}\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    "
+    };
+    var BorderlessStacked = {
+      setup: function setup() {
+        return {
+          meetings: meetings,
+          ChevronLeft: lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__["default"],
+          ChevronRight: lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"]
+        };
+      },
+      template: "\n      <div class=\"bg-white rounded-lg shadow overflow-hidden\">\n        <div class=\"p-4\">\n          <div class=\"flex justify-center mb-8\">\n            <div class=\"text-center\">\n              <h2 class=\"text-lg font-semibold mb-4\">January 2022</h2>\n              <div class=\"inline-flex\">\n                <button class=\"p-1\"><ChevronLeft class=\"h-5 w-5 text-gray-500\" /></button>\n                <button class=\"p-1\"><ChevronRight class=\"h-5 w-5 text-gray-500\" /></button>\n              </div>\n            </div>\n          </div>\n          <div class=\"grid grid-cols-7 text-center mb-2\">\n            <div v-for=\"day in ['M', 'T', 'W', 'T', 'F', 'S', 'S']\" :key=\"day\" class=\"text-xs font-medium text-gray-500\">\n              {{ day }}\n            </div>\n          </div>\n          <div class=\"grid grid-cols-7 gap-1 text-sm mb-8\">\n            <div v-for=\"date in 31\" :key=\"date\" \n              :class=\"[\n                'h-8 flex items-center justify-center rounded-full',\n                date === 21 ? 'bg-black text-white' : '',\n                date === 12 ? 'text-indigo-600 font-semibold' : ''\n              ]\"\n            >\n              {{ date }}\n            </div>\n          </div>\n          <div class=\"space-y-4\">\n            <h3 class=\"text-lg font-semibold\">Schedule for January 21, 2022</h3>\n            <div v-for=\"meeting in meetings.slice(0, 2)\" :key=\"meeting.name\" class=\"flex items-center\">\n              <img :src=\"meeting.avatar\" class=\"w-10 h-10 rounded-full mr-4\" :alt=\"meeting.name\">\n              <div>\n                <h4 class=\"text-sm font-medium\">{{ meeting.name }}</h4>\n                <p class=\"text-sm text-gray-500\">{{ meeting.time }}</p>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    "
+    };
+    var BorderlessSideBySide = {
+      setup: function setup() {
+        return {
+          meetings: meetings,
+          ChevronLeft: lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__["default"],
+          ChevronRight: lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"]
+        };
+      },
+      template: "\n      <div class=\"bg-white rounded-lg shadow overflow-hidden\">\n        <div class=\"grid grid-cols-2\">\n          <div class=\"p-4\">\n            <div class=\"text-center mb-8\">\n              <h2 class=\"text-lg font-semibold mb-4\">January 2022</h2>\n              <div class=\"inline-flex\">\n                <button class=\"p-1\"><ChevronLeft class=\"h-5 w-5 text-gray-500\" /></button>\n                <button class=\"p-1\"><ChevronRight class=\"h-5 w-5 text-gray-500\" /></button>\n              </div>\n            </div>\n            <div class=\"grid grid-cols-7 text-center mb-2\">\n              <div v-for=\"day in ['M', 'T', 'W', 'T', 'F', 'S', 'S']\" :key=\"day\" class=\"text-xs font-medium text-gray-500\">\n                {{ day }}\n              </div>\n            </div>\n            <div class=\"grid grid-cols-7 gap-1 text-sm\">\n              <div v-for=\"date in 31\" :key=\"date\" \n                :class=\"[\n                  'h-8 flex items-center justify-center rounded-full',\n                  date === 21 ? 'bg-black text-white' : '',\n                  date === 12 ? 'text-indigo-600 font-semibold' : ''\n                ]\"\n              >\n                {{ date }}\n              </div>\n            </div>\n          </div>\n          <div class=\"p-4 border-l\">\n            <h3 class=\"text-lg font-semibold mb-4\">Schedule for January 21, 2022</h3>\n            <div class=\"space-y-4\">\n              <div v-for=\"meeting in meetings\" :key=\"meeting.name\" class=\"flex items-center\">\n                <img :src=\"meeting.avatar\" class=\"w-10 h-10 rounded-full mr-4\" :alt=\"meeting.name\">\n                <div>\n                  <h4 class=\"text-sm font-medium\">{{ meeting.name }}</h4>\n                  <p class=\"text-sm text-gray-500\">{{ meeting.time }}</p>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    "
+    };
+    var variations = [{
+      name: 'Small with meetings',
+      component: SmallWithMeetings,
+      code: SmallWithMeetings.template
+    }, {
+      name: 'Month view',
+      component: MonthView,
+      code: MonthView.template
+    }, {
+      name: 'Week view',
+      component: WeekView,
+      code: WeekView.template
+    }, {
+      name: 'Day view',
+      component: DayView,
+      code: DayView.template
+    }, {
+      name: 'Year view',
+      component: YearView,
+      code: YearView.template
+    }, {
+      name: 'Double',
+      component: DoubleView,
+      code: DoubleView.template
+    }, {
+      name: 'Borderless stacked',
+      component: BorderlessStacked,
+      code: BorderlessStacked.template
+    }, {
+      name: 'Borderless side-by-side',
+      component: BorderlessSideBySide,
+      code: BorderlessSideBySide.template
+    }];
+    var toggleCode = function toggleCode(index) {
+      showCode.value[index] = !showCode.value[index];
+    };
+    var __returned__ = {
+      showCode: showCode,
+      meetings: meetings,
+      SmallWithMeetings: SmallWithMeetings,
+      MonthView: MonthView,
+      WeekView: WeekView,
+      DayView: DayView,
+      YearView: YearView,
+      DoubleView: DoubleView,
+      BorderlessStacked: BorderlessStacked,
+      BorderlessSideBySide: BorderlessSideBySide,
+      variations: variations,
+      toggleCode: toggleCode,
+      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref,
+      get Calendar() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_3__["default"];
+      },
+      get ChevronLeft() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__["default"];
+      },
+      get ChevronRight() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"];
+      },
+      get MapPin() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_4__["default"];
+      },
+      get MoreHorizontal() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_5__["default"];
+      }
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js":
 /*!****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js ***!
@@ -23654,6 +23939,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _BannerComponent_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./BannerComponent.vue */ "./resources/js/Pages/BannerComponent.vue");
 /* harmony import */ var _BentogridComponent_vue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./BentogridComponent.vue */ "./resources/js/Pages/BentogridComponent.vue");
 /* harmony import */ var _BlogComponent_vue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./BlogComponent.vue */ "./resources/js/Pages/BlogComponent.vue");
+/* harmony import */ var _BreadcrumbsComponent_vue__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./BreadcrumbsComponent.vue */ "./resources/js/Pages/BreadcrumbsComponent.vue");
+/* harmony import */ var _ProgressbarsComponent_vue__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./ProgressbarsComponent.vue */ "./resources/js/Pages/ProgressbarsComponent.vue");
+/* harmony import */ var _CalenderComponent_vue__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./CalenderComponent.vue */ "./resources/js/Pages/CalenderComponent.vue");
+
+
+
 
 
 
@@ -23675,7 +23966,13 @@ __webpack_require__.r(__webpack_exports__);
     var __expose = _ref.expose;
     __expose();
     var selectedComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)('Button');
-    var components = ['Button', 'Input', 'Radio Groups', 'Header', 'Sidebar Layout', 'Footer', 'About Page', 'Action Panel', 'Alerts', 'Avatars', 'Badges', 'Banners', 'Bento grids', 'Blogs'];
+    var components = ['Button', 'Input', 'Radio Groups', 'Header', 'Sidebar Layout', 'Footer', 'About Page', 'Action Panel', 'Alerts', 'Avatars', 'Badges', 'Banners', 'Bento grids', 'Blogs', 'Breadcrumbs', 'Progress bars', 'Calender'];
+    var searchQuery = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)('');
+    var filteredComponents = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
+      return components.filter(function (component) {
+        return component.toLowerCase().includes(searchQuery.value.toLowerCase());
+      });
+    });
     var componentMap = {
       Button: _ButtonComponent_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
       Input: _InputComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
@@ -23685,12 +23982,15 @@ __webpack_require__.r(__webpack_exports__);
       Footer: _FooterComponent_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
       'About Page': _AboutpageComponent_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
       'Action Panel': _ActionpanelComponent_vue__WEBPACK_IMPORTED_MODULE_8__["default"],
-      'Alerts': _AlertComponent_vue__WEBPACK_IMPORTED_MODULE_9__["default"],
-      'Avatars': _AvatarComponent_vue__WEBPACK_IMPORTED_MODULE_10__["default"],
-      'Badges': _BadgesComponent_vue__WEBPACK_IMPORTED_MODULE_11__["default"],
-      'Banners': _BannerComponent_vue__WEBPACK_IMPORTED_MODULE_12__["default"],
+      Alerts: _AlertComponent_vue__WEBPACK_IMPORTED_MODULE_9__["default"],
+      Avatars: _AvatarComponent_vue__WEBPACK_IMPORTED_MODULE_10__["default"],
+      Badges: _BadgesComponent_vue__WEBPACK_IMPORTED_MODULE_11__["default"],
+      Banners: _BannerComponent_vue__WEBPACK_IMPORTED_MODULE_12__["default"],
       'Bento grids': _BentogridComponent_vue__WEBPACK_IMPORTED_MODULE_13__["default"],
-      'Blogs': _BlogComponent_vue__WEBPACK_IMPORTED_MODULE_14__["default"]
+      Blogs: _BlogComponent_vue__WEBPACK_IMPORTED_MODULE_14__["default"],
+      Breadcrumbs: _BreadcrumbsComponent_vue__WEBPACK_IMPORTED_MODULE_15__["default"],
+      'Progress bars': _ProgressbarsComponent_vue__WEBPACK_IMPORTED_MODULE_16__["default"],
+      Calender: _CalenderComponent_vue__WEBPACK_IMPORTED_MODULE_17__["default"]
     };
     var currentComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
       return componentMap[selectedComponent.value];
@@ -23701,6 +24001,8 @@ __webpack_require__.r(__webpack_exports__);
     var __returned__ = {
       selectedComponent: selectedComponent,
       components: components,
+      searchQuery: searchQuery,
+      filteredComponents: filteredComponents,
       componentMap: componentMap,
       currentComponent: currentComponent,
       selectComponent: selectComponent,
@@ -23719,7 +24021,10 @@ __webpack_require__.r(__webpack_exports__);
       BadgesComponent: _BadgesComponent_vue__WEBPACK_IMPORTED_MODULE_11__["default"],
       BannerComponent: _BannerComponent_vue__WEBPACK_IMPORTED_MODULE_12__["default"],
       BentogridComponent: _BentogridComponent_vue__WEBPACK_IMPORTED_MODULE_13__["default"],
-      BlogComponent: _BlogComponent_vue__WEBPACK_IMPORTED_MODULE_14__["default"]
+      BlogComponent: _BlogComponent_vue__WEBPACK_IMPORTED_MODULE_14__["default"],
+      BreadcrumbsComponent: _BreadcrumbsComponent_vue__WEBPACK_IMPORTED_MODULE_15__["default"],
+      ProgressbarsComponent: _ProgressbarsComponent_vue__WEBPACK_IMPORTED_MODULE_16__["default"],
+      CalenderComponent: _CalenderComponent_vue__WEBPACK_IMPORTED_MODULE_17__["default"]
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -24223,6 +24528,74 @@ __webpack_require__.r(__webpack_exports__);
       variations: variations,
       toggleCode: toggleCode,
       ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ProgressbarsComponent.vue?vue&type=script&setup=true&lang=js":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ProgressbarsComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/check.js");
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  __name: 'ProgressbarsComponent',
+  setup: function setup(__props, _ref) {
+    var __expose = _ref.expose;
+    __expose();
+    var showCode = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
+    var variations = [{
+      name: 'Simple',
+      html: "\n        <div class=\"w-full max-w-3xl mx-auto\">\n          <div class=\"flex justify-between mb-8\">\n            <div class=\"w-1/3\">\n              <div class=\"h-1 bg-indigo-600\"></div>\n              <div class=\"mt-2\">\n                <div class=\"text-xs text-indigo-600 font-medium\">Step 1</div>\n                <div class=\"text-sm font-medium\">Job details</div>\n              </div>\n            </div>\n            <div class=\"w-1/3\">\n              <div class=\"h-1 bg-indigo-600\"></div>\n              <div class=\"mt-2\">\n                <div class=\"text-xs text-indigo-600 font-medium\">Step 2</div>\n                <div class=\"text-sm font-medium\">Application form</div>\n              </div>\n            </div>\n            <div class=\"w-1/3\">\n              <div class=\"h-1 bg-gray-200\"></div>\n              <div class=\"mt-2\">\n                <div class=\"text-xs text-gray-500 font-medium\">Step 3</div>\n                <div class=\"text-sm font-medium\">Preview</div>\n              </div>\n            </div>\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Panels',
+      html: "\n        <div class=\"w-full max-w-3xl mx-auto\">\n          <div class=\"relative flex items-center justify-between\">\n            <div class=\"flex items-center\">\n              <div class=\"w-10 h-10 flex items-center justify-center rounded-full bg-indigo-600 text-white\">\n                <svg class=\"w-6 h-6\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\">\n                  <path d=\"M20 6L9 17L4 12\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n                </svg>\n              </div>\n              <div class=\"ml-3\">\n                <div class=\"text-sm font-medium\">Job details</div>\n              </div>\n            </div>\n            <div class=\"flex-1 mx-4\">\n              <div class=\"h-0.5 bg-indigo-600\"></div>\n            </div>\n            <div class=\"flex items-center\">\n              <div class=\"w-10 h-10 flex items-center justify-center rounded-full border-2 border-indigo-600 text-indigo-600\">\n                <span class=\"text-sm font-medium\">02</span>\n              </div>\n              <div class=\"ml-3\">\n                <div class=\"text-sm font-medium text-indigo-600\">Application form</div>\n              </div>\n            </div>\n            <div class=\"flex-1 mx-4\">\n              <div class=\"h-0.5 bg-gray-200\"></div>\n            </div>\n            <div class=\"flex items-center\">\n              <div class=\"w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-200 text-gray-400\">\n                <span class=\"text-sm font-medium\">03</span>\n              </div>\n              <div class=\"ml-3\">\n                <div class=\"text-sm font-medium text-gray-500\">Preview</div>\n              </div>\n            </div>\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Bullets',
+      html: "\n        <div class=\"w-full max-w-3xl mx-auto\">\n          <div class=\"flex items-center justify-center gap-2\">\n            <div class=\"w-2 h-2 rounded-full bg-indigo-600\"></div>\n            <div class=\"w-2 h-2 rounded-full bg-indigo-600\"></div>\n            <div class=\"w-2 h-2 rounded-full bg-gray-200\"></div>\n            <div class=\"w-2 h-2 rounded-full bg-gray-200\"></div>\n            <div class=\"text-sm text-gray-600 ml-2\">Step 2 of 4</div>\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Panels with border',
+      html: "\n        <div class=\"w-full max-w-3xl mx-auto p-4 border rounded-lg\">\n          <div class=\"relative flex items-center justify-between\">\n            <div class=\"flex items-center\">\n              <div class=\"w-10 h-10 flex items-center justify-center rounded-full bg-indigo-600 text-white\">\n                <svg class=\"w-6 h-6\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\">\n                  <path d=\"M20 6L9 17L4 12\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n                </svg>\n              </div>\n              <div class=\"ml-3\">\n                <div class=\"text-sm font-medium\">Job Details</div>\n                <div class=\"text-xs text-gray-500\">Vitae sed mi luctus laoreet.</div>\n              </div>\n            </div>\n            <div class=\"flex-1 mx-4\">\n              <div class=\"h-0.5 bg-indigo-600\"></div>\n            </div>\n            <div class=\"flex items-center\">\n              <div class=\"w-10 h-10 flex items-center justify-center rounded-full border-2 border-indigo-600 text-indigo-600\">\n                <span class=\"text-sm font-medium\">02</span>\n              </div>\n              <div class=\"ml-3\">\n                <div class=\"text-sm font-medium text-indigo-600\">Application form</div>\n                <div class=\"text-xs text-gray-500\">Cursus semper viverra.</div>\n              </div>\n            </div>\n            <div class=\"flex-1 mx-4\">\n              <div class=\"h-0.5 bg-gray-200\"></div>\n            </div>\n            <div class=\"flex items-center\">\n              <div class=\"w-10 h-10 flex items-center justify-center rounded-full border-2 border-gray-200 text-gray-400\">\n                <span class=\"text-sm font-medium\">03</span>\n              </div>\n              <div class=\"ml-3\">\n                <div class=\"text-sm font-medium text-gray-500\">Preview</div>\n                <div class=\"text-xs text-gray-500\">Penatibus eu quis ante.</div>\n              </div>\n            </div>\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Circles',
+      html: "\n        <div class=\"w-full max-w-3xl mx-auto\">\n          <div class=\"flex items-center justify-center\">\n            <div class=\"w-8 h-8 flex items-center justify-center rounded-full bg-indigo-600 text-white\">\n              <svg class=\"w-5 h-5\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\">\n                <path d=\"M20 6L9 17L4 12\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n              </svg>\n            </div>\n            <div class=\"flex-1 h-0.5 bg-indigo-600\"></div>\n            <div class=\"w-8 h-8 flex items-center justify-center rounded-full bg-indigo-600 text-white\">\n              <svg class=\"w-5 h-5\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\">\n                <path d=\"M20 6L9 17L4 12\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n              </svg>\n            </div>\n            <div class=\"flex-1 h-0.5 bg-indigo-600\"></div>\n            <div class=\"w-8 h-8 flex items-center justify-center rounded-full border-2 border-indigo-600\"></div>\n            <div class=\"flex-1 h-0.5 bg-gray-200\"></div>\n            <div class=\"w-8 h-8 flex items-center justify-center rounded-full border-2 border-gray-200\"></div>\n            <div class=\"flex-1 h-0.5 bg-gray-200\"></div>\n            <div class=\"w-8 h-8 flex items-center justify-center rounded-full border-2 border-gray-200\"></div>\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Bullets and text',
+      html: "\n        <div class=\"w-full max-w-3xl mx-auto space-y-4\">\n          <div class=\"flex items-center\">\n            <div class=\"flex-shrink-0 w-5 h-5 rounded-full bg-indigo-600 flex items-center justify-center\">\n              <svg class=\"w-3 h-3 text-white\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\">\n                <path d=\"M20 6L9 17L4 12\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n              </svg>\n            </div>\n            <div class=\"ml-3 text-sm text-gray-900\">Create account</div>\n          </div>\n          <div class=\"flex items-center\">\n            <div class=\"flex-shrink-0 w-5 h-5 rounded-full border-2 border-indigo-600\"></div>\n            <div class=\"ml-3 text-sm text-indigo-600\">Profile information</div>\n          </div>\n          <div class=\"flex items-center\">\n            <div class=\"flex-shrink-0 w-5 h-5 rounded-full border-2 border-gray-200\"></div>\n            <div class=\"ml-3 text-sm text-gray-500\">Theme</div>\n          </div>\n          <div class=\"flex items-center\">\n            <div class=\"flex-shrink-0 w-5 h-5 rounded-full border-2 border-gray-200\"></div>\n            <div class=\"ml-3 text-sm text-gray-500\">Preview</div>\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Circles with text',
+      html: "\n        <div class=\"w-full max-w-3xl mx-auto\">\n          <div class=\"relative\">\n            <div class=\"absolute left-8 h-full w-0.5 bg-gray-200\"></div>\n            <div class=\"space-y-8\">\n              <div class=\"flex items-center\">\n                <div class=\"flex-shrink-0 w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center\">\n                  <svg class=\"w-5 h-5 text-white\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\">\n                    <path d=\"M20 6L9 17L4 12\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n                  </svg>\n                </div>\n                <div class=\"ml-4\">\n                  <div class=\"text-sm font-medium\">Create account</div>\n                  <div class=\"text-sm text-gray-500\">Vitae sed mi luctus laoreet.</div>\n                </div>\n              </div>\n              <div class=\"flex items-center\">\n                <div class=\"flex-shrink-0 w-8 h-8 border-2 border-indigo-600 rounded-full flex items-center justify-center\"></div>\n                <div class=\"ml-4\">\n                  <div class=\"text-sm font-medium text-indigo-600\">Profile information</div>\n                  <div class=\"text-sm text-gray-500\">Cursus semper viverra facilisis et et some more.</div>\n                </div>\n              </div>\n              <div class=\"flex items-center\">\n                <div class=\"flex-shrink-0 w-8 h-8 border-2 border-gray-200 rounded-full flex items-center justify-center\"></div>\n                <div class=\"ml-4\">\n                  <div class=\"text-sm font-medium text-gray-500\">Business information</div>\n                  <div class=\"text-sm text-gray-500\">Penatibus eu quis ante.</div>\n                </div>\n              </div>\n              <div class=\"flex items-center\">\n                <div class=\"flex-shrink-0 w-8 h-8 border-2 border-gray-200 rounded-full flex items-center justify-center\"></div>\n                <div class=\"ml-4\">\n                  <div class=\"text-sm font-medium text-gray-500\">Theme</div>\n                  <div class=\"text-sm text-gray-500\">Faucibus nec enim leo et.</div>\n                </div>\n              </div>\n              <div class=\"flex items-center\">\n                <div class=\"flex-shrink-0 w-8 h-8 border-2 border-gray-200 rounded-full flex items-center justify-center\"></div>\n                <div class=\"ml-4\">\n                  <div class=\"text-sm font-medium text-gray-500\">Preview</div>\n                  <div class=\"text-sm text-gray-500\">Iusto et officia maiores porro ad non quas.</div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      "
+    }, {
+      name: 'Progress bar',
+      html: "\n        <div class=\"w-full max-w-3xl mx-auto\">\n          <div class=\"mb-4\">\n            <div class=\"text-sm text-gray-700\">Migrating MySQL database...</div>\n          </div>\n          <div class=\"w-full bg-gray-200 rounded-full h-1.5 mb-4\">\n            <div class=\"bg-indigo-600 h-1.5 rounded-full\" style=\"width: 45%\"></div>\n          </div>\n          <div class=\"flex justify-between text-sm\">\n            <div class=\"text-indigo-600\">Copying files</div>\n            <div class=\"text-indigo-600\">Migrating database</div>\n            <div class=\"text-gray-500\">Compiling assets</div>\n            <div class=\"text-gray-500\">Deployed</div>\n          </div>\n        </div>\n      "
+    }];
+    var toggleCode = function toggleCode(index) {
+      showCode.value[index] = !showCode.value[index];
+    };
+    var __returned__ = {
+      showCode: showCode,
+      variations: variations,
+      toggleCode: toggleCode,
+      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref,
+      get Check() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__["default"];
+      }
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -25803,6 +26176,64 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=template&id=6a8c8694&scoped=true":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=template&id=6a8c8694&scoped=true ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "space-y-4"
+};
+var _hoisted_2 = {
+  "class": "p-4 bg-gray-50 border-b"
+};
+var _hoisted_3 = {
+  "class": "text-lg font-semibold text-gray-800"
+};
+var _hoisted_4 = {
+  "class": "p-4"
+};
+var _hoisted_5 = {
+  "class": "mb-4"
+};
+var _hoisted_6 = ["innerHTML"];
+var _hoisted_7 = ["onClick"];
+var _hoisted_8 = {
+  "class": "mt-4"
+};
+var _hoisted_9 = {
+  "class": "p-4 bg-gray-800 rounded-md overflow-x-auto"
+};
+var _hoisted_10 = {
+  "class": "text-sm text-white"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.variations, function (variation, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      key: index,
+      "class": "bg-white rounded-lg shadow-md w-full"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "p-4 bg-gray-50 rounded-md",
+      innerHTML: variation.html
+    }, null, 8 /* PROPS */, _hoisted_6)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $setup.toggleCode(index);
+      },
+      "class": "px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.showCode[index] ? 'Hide Code' : 'Show Code'), 9 /* TEXT, PROPS */, _hoisted_7)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", _hoisted_9, [_cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("              ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("code", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.html), 1 /* TEXT */), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("\n            "))])], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.showCode[index]]])])]);
+  }), 64 /* STABLE_FRAGMENT */))]);
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=template&id=191739d2":
 /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=template&id=191739d2 ***!
@@ -25861,6 +26292,63 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CalenderComponent.vue?vue&type=template&id=5a678a8a&scoped=true":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CalenderComponent.vue?vue&type=template&id=5a678a8a&scoped=true ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "space-y-8 p-8"
+};
+var _hoisted_2 = {
+  "class": "p-4 bg-gray-50 border-b"
+};
+var _hoisted_3 = {
+  "class": "text-lg font-semibold text-gray-800"
+};
+var _hoisted_4 = {
+  "class": "p-4"
+};
+var _hoisted_5 = {
+  "class": "mb-4"
+};
+var _hoisted_6 = {
+  "class": "p-4 bg-gray-50 rounded-md"
+};
+var _hoisted_7 = ["onClick"];
+var _hoisted_8 = {
+  "class": "mt-4"
+};
+var _hoisted_9 = {
+  "class": "p-4 bg-gray-800 rounded-md overflow-x-auto"
+};
+var _hoisted_10 = {
+  "class": "text-sm text-white"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.variations, function (variation, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      key: index,
+      "class": "bg-white rounded-lg shadow-md w-full"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)((0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveDynamicComponent)(variation.component)))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $setup.toggleCode(index);
+      },
+      "class": "px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.showCode[index] ? 'Hide Code' : 'Show Code'), 9 /* TEXT, PROPS */, _hoisted_7)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", _hoisted_9, [_cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("              ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("code", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.code), 1 /* TEXT */), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("\n            "))])], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.showCode[index]]])])]);
+  }), 64 /* STABLE_FRAGMENT */))]);
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2 ***!
@@ -25878,28 +26366,34 @@ var _hoisted_1 = {
   "class": "flex h-screen bg-gray-100 font-sans"
 };
 var _hoisted_2 = {
-  "class": "w-64 bg-white shadow-md"
+  "class": "w-64 bg-white shadow-md flex flex-col"
 };
 var _hoisted_3 = {
-  "class": "mt-4"
+  "class": "mt-4 flex-1 overflow-y-auto"
 };
 var _hoisted_4 = ["onClick"];
 var _hoisted_5 = {
   "class": "flex-1 overflow-x-hidden overflow-y-auto bg-gray-100"
 };
 var _hoisted_6 = {
-  "class": "container mx-auto px-6 py-8"
+  "class": "bg-white px-6 py-4 flex justify-between items-center sticky top-0 z-10 shadow"
 };
 var _hoisted_7 = {
+  "class": "flex items-center space-x-4"
+};
+var _hoisted_8 = {
+  "class": "container mx-auto px-6 py-8"
+};
+var _hoisted_9 = {
   "class": "text-3xl font-bold text-gray-800 mb-6"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Sidebar "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("aside", _hoisted_2, [_cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Sidebar "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("aside", _hoisted_2, [_cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "p-4"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
     "class": "text-2xl font-bold text-gray-800"
-  }, "Components Hub")], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.components, function (component) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+  }, "Components Hub")], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.filteredComponents, function (component) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
       key: component,
       "class": "mb-2"
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
@@ -25908,7 +26402,18 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       },
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(['w-full text-left px-4 py-2 text-sm font-medium transition-colors duration-150 ease-in-out', $setup.selectedComponent === component ? 'bg-blue-500 text-white' : 'text-gray-600 hover:bg-gray-100'])
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(component), 11 /* TEXT, CLASS, PROPS */, _hoisted_4)]);
-  }), 64 /* STABLE_FRAGMENT */))])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Main Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.selectedComponent) + " Variations", 1 /* TEXT */), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)((0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveDynamicComponent)($setup.currentComponent)))])])]);
+  }), 128 /* KEYED_FRAGMENT */))])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Main Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Header "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("header", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    type: "text",
+    placeholder: "Search components...",
+    "class": "px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500",
+    "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
+      return $setup.searchQuery = $event;
+    })
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.searchQuery]])]), _cache[2] || (_cache[2] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    "class": "mr-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+  }, "Login"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    "class": "bg-gray-100 text-gray-800 px-4 py-2 rounded hover:bg-gray-200"
+  }, "Register")], -1 /* HOISTED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.selectedComponent) + " Variations", 1 /* TEXT */), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)((0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveDynamicComponent)($setup.currentComponent)))])])]);
 }
 
 /***/ }),
@@ -26130,6 +26635,64 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/InputComponent.vue?vue&type=template&id=a2794688 ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "space-y-4"
+};
+var _hoisted_2 = {
+  "class": "p-4 bg-gray-50 border-b"
+};
+var _hoisted_3 = {
+  "class": "text-lg font-semibold text-gray-800"
+};
+var _hoisted_4 = {
+  "class": "p-4"
+};
+var _hoisted_5 = {
+  "class": "mb-4"
+};
+var _hoisted_6 = ["innerHTML"];
+var _hoisted_7 = ["onClick"];
+var _hoisted_8 = {
+  "class": "mt-4"
+};
+var _hoisted_9 = {
+  "class": "p-4 bg-gray-800 rounded-md overflow-x-auto"
+};
+var _hoisted_10 = {
+  "class": "text-sm text-white"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.variations, function (variation, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      key: index,
+      "class": "bg-white rounded-lg shadow-md w-full"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "p-4 bg-gray-50 rounded-md",
+      innerHTML: variation.html
+    }, null, 8 /* PROPS */, _hoisted_6)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $setup.toggleCode(index);
+      },
+      "class": "px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.showCode[index] ? 'Hide Code' : 'Show Code'), 9 /* TEXT, PROPS */, _hoisted_7)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", _hoisted_9, [_cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("              ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("code", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.html), 1 /* TEXT */), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("\n            "))])], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.showCode[index]]])])]);
+  }), 64 /* STABLE_FRAGMENT */))]);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ProgressbarsComponent.vue?vue&type=template&id=43759192&scoped=true":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ProgressbarsComponent.vue?vue&type=template&id=43759192&scoped=true ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -26662,6 +27225,78 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n/* Add any additional styles here if
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=style&index=0&id=6a8c8694&scoped=true&lang=css":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=style&index=0&id=6a8c8694&scoped=true&lang=css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n  /* Add any additional styles here if needed */\n  ", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CalenderComponent.vue?vue&type=style&index=0&id=5a678a8a&scoped=true&lang=css":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CalenderComponent.vue?vue&type=style&index=0&id=5a678a8a&scoped=true&lang=css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n  /* Add any additional styles here if needed */\n  ", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&lang=css":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&lang=css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n/* Style the scrollbar for the sidebar */\naside nav::-webkit-scrollbar {\n  width: 8px;\n}\naside nav::-webkit-scrollbar-thumb {\n  background-color: #cbd5e0;\n  border-radius: 4px;\n}\naside nav::-webkit-scrollbar-thumb:hover {\n  background-color: #a0aec0;\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css":
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css ***!
@@ -26714,6 +27349,30 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n  /* Add any additional styles here 
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n  /* Add any additional styles here if needed */\n  ", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ProgressbarsComponent.vue?vue&type=style&index=0&id=43759192&scoped=true&lang=css":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ProgressbarsComponent.vue?vue&type=style&index=0&id=43759192&scoped=true&lang=css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -49044,6 +49703,66 @@ const ChartColumn = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["defaul
 
 /***/ }),
 
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/check.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/check.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Check)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Check = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("CheckIcon", [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]]);
+
+
+//# sourceMappingURL=check.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/chevron-left.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/chevron-left.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ChevronLeft)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const ChevronLeft = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("ChevronLeftIcon", [
+  ["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]
+]);
+
+
+//# sourceMappingURL=chevron-left.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-vue-next/dist/esm/icons/chevron-right.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/lucide-vue-next/dist/esm/icons/chevron-right.js ***!
@@ -49203,6 +49922,39 @@ const CodeXml = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 
 /***/ }),
 
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/ellipsis.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/ellipsis.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Ellipsis)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Ellipsis = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("EllipsisIcon", [
+  ["circle", { cx: "12", cy: "12", r: "1", key: "41hilf" }],
+  ["circle", { cx: "19", cy: "12", r: "1", key: "1wjl8i" }],
+  ["circle", { cx: "5", cy: "12", r: "1", key: "1pcz8c" }]
+]);
+
+
+//# sourceMappingURL=ellipsis.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-vue-next/dist/esm/icons/folder.js":
 /*!***************************************************************!*\
   !*** ./node_modules/lucide-vue-next/dist/esm/icons/folder.js ***!
@@ -49339,6 +50091,44 @@ const Lock = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("L
 
 
 //# sourceMappingURL=lock.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/map-pin.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/map-pin.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ MapPin)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const MapPin = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("MapPinIcon", [
+  [
+    "path",
+    {
+      d: "M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0",
+      key: "1r0f0z"
+    }
+  ],
+  ["circle", { cx: "12", cy: "10", r: "3", key: "ilqhr7" }]
+]);
+
+
+//# sourceMappingURL=map-pin.js.map
 
 
 /***/ }),
@@ -52538,6 +53328,96 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=style&index=0&id=6a8c8694&scoped=true&lang=css":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=style&index=0&id=6a8c8694&scoped=true&lang=css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BreadcrumbsComponent_vue_vue_type_style_index_0_id_6a8c8694_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BreadcrumbsComponent.vue?vue&type=style&index=0&id=6a8c8694&scoped=true&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=style&index=0&id=6a8c8694&scoped=true&lang=css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BreadcrumbsComponent_vue_vue_type_style_index_0_id_6a8c8694_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BreadcrumbsComponent_vue_vue_type_style_index_0_id_6a8c8694_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CalenderComponent.vue?vue&type=style&index=0&id=5a678a8a&scoped=true&lang=css":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CalenderComponent.vue?vue&type=style&index=0&id=5a678a8a&scoped=true&lang=css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CalenderComponent_vue_vue_type_style_index_0_id_5a678a8a_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CalenderComponent.vue?vue&type=style&index=0&id=5a678a8a&scoped=true&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CalenderComponent.vue?vue&type=style&index=0&id=5a678a8a&scoped=true&lang=css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CalenderComponent_vue_vue_type_style_index_0_id_5a678a8a_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CalenderComponent_vue_vue_type_style_index_0_id_5a678a8a_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&lang=css":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&lang=css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_style_index_0_id_844c20b2_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&lang=css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_style_index_0_id_844c20b2_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_style_index_0_id_844c20b2_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css":
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css ***!
@@ -52625,6 +53505,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_HeaderComponent_vue_vue_type_style_index_0_id_ddb9eb52_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ProgressbarsComponent.vue?vue&type=style&index=0&id=43759192&scoped=true&lang=css":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ProgressbarsComponent.vue?vue&type=style&index=0&id=43759192&scoped=true&lang=css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProgressbarsComponent_vue_vue_type_style_index_0_id_43759192_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ProgressbarsComponent.vue?vue&type=style&index=0&id=43759192&scoped=true&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ProgressbarsComponent.vue?vue&type=style&index=0&id=43759192&scoped=true&lang=css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProgressbarsComponent_vue_vue_type_style_index_0_id_43759192_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProgressbarsComponent_vue_vue_type_style_index_0_id_43759192_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -53727,6 +54637,37 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/Pages/BreadcrumbsComponent.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/Pages/BreadcrumbsComponent.vue ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _BreadcrumbsComponent_vue_vue_type_template_id_6a8c8694_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BreadcrumbsComponent.vue?vue&type=template&id=6a8c8694&scoped=true */ "./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=template&id=6a8c8694&scoped=true");
+/* harmony import */ var _BreadcrumbsComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BreadcrumbsComponent.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _BreadcrumbsComponent_vue_vue_type_style_index_0_id_6a8c8694_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BreadcrumbsComponent.vue?vue&type=style&index=0&id=6a8c8694&scoped=true&lang=css */ "./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=style&index=0&id=6a8c8694&scoped=true&lang=css");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+
+
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_BreadcrumbsComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_BreadcrumbsComponent_vue_vue_type_template_id_6a8c8694_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-6a8c8694"],['__file',"resources/js/Pages/BreadcrumbsComponent.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/ButtonComponent.vue":
 /*!************************************************!*\
   !*** ./resources/js/Pages/ButtonComponent.vue ***!
@@ -53755,6 +54696,37 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/Pages/CalenderComponent.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/Pages/CalenderComponent.vue ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _CalenderComponent_vue_vue_type_template_id_5a678a8a_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CalenderComponent.vue?vue&type=template&id=5a678a8a&scoped=true */ "./resources/js/Pages/CalenderComponent.vue?vue&type=template&id=5a678a8a&scoped=true");
+/* harmony import */ var _CalenderComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CalenderComponent.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/CalenderComponent.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _CalenderComponent_vue_vue_type_style_index_0_id_5a678a8a_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CalenderComponent.vue?vue&type=style&index=0&id=5a678a8a&scoped=true&lang=css */ "./resources/js/Pages/CalenderComponent.vue?vue&type=style&index=0&id=5a678a8a&scoped=true&lang=css");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+
+
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_CalenderComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_CalenderComponent_vue_vue_type_template_id_5a678a8a_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-5a678a8a"],['__file',"resources/js/Pages/CalenderComponent.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/ComponentLibrary.vue":
 /*!*************************************************!*\
   !*** ./resources/js/Pages/ComponentLibrary.vue ***!
@@ -53768,13 +54740,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _ComponentLibrary_vue_vue_type_template_id_844c20b2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ComponentLibrary.vue?vue&type=template&id=844c20b2 */ "./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2");
 /* harmony import */ var _ComponentLibrary_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ComponentLibrary.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _ComponentLibrary_vue_vue_type_style_index_0_id_844c20b2_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&lang=css */ "./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&lang=css");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_ComponentLibrary_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ComponentLibrary_vue_vue_type_template_id_844c20b2__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/ComponentLibrary.vue"]])
+
+
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_ComponentLibrary_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ComponentLibrary_vue_vue_type_template_id_844c20b2__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/ComponentLibrary.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -53924,6 +54899,37 @@ __webpack_require__.r(__webpack_exports__);
 
 ;
 const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_InputComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_InputComponent_vue_vue_type_template_id_a2794688__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/InputComponent.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/ProgressbarsComponent.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/Pages/ProgressbarsComponent.vue ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ProgressbarsComponent_vue_vue_type_template_id_43759192_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProgressbarsComponent.vue?vue&type=template&id=43759192&scoped=true */ "./resources/js/Pages/ProgressbarsComponent.vue?vue&type=template&id=43759192&scoped=true");
+/* harmony import */ var _ProgressbarsComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProgressbarsComponent.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/ProgressbarsComponent.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _ProgressbarsComponent_vue_vue_type_style_index_0_id_43759192_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ProgressbarsComponent.vue?vue&type=style&index=0&id=43759192&scoped=true&lang=css */ "./resources/js/Pages/ProgressbarsComponent.vue?vue&type=style&index=0&id=43759192&scoped=true&lang=css");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+
+
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_ProgressbarsComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ProgressbarsComponent_vue_vue_type_template_id_43759192_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-43759192"],['__file',"resources/js/Pages/ProgressbarsComponent.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -54394,6 +55400,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=script&setup=true&lang=js":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BreadcrumbsComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BreadcrumbsComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BreadcrumbsComponent.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=script&setup=true&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/Pages/ButtonComponent.vue?vue&type=script&setup=true&lang=js":
 /*!***********************************************************************************!*\
   !*** ./resources/js/Pages/ButtonComponent.vue?vue&type=script&setup=true&lang=js ***!
@@ -54406,6 +55428,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ButtonComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ButtonComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ButtonComponent.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=script&setup=true&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/CalenderComponent.vue?vue&type=script&setup=true&lang=js":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/Pages/CalenderComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CalenderComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CalenderComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CalenderComponent.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CalenderComponent.vue?vue&type=script&setup=true&lang=js");
  
 
 /***/ }),
@@ -54502,6 +55540,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_InputComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_InputComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./InputComponent.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/InputComponent.vue?vue&type=script&setup=true&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/ProgressbarsComponent.vue?vue&type=script&setup=true&lang=js":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/Pages/ProgressbarsComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProgressbarsComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProgressbarsComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ProgressbarsComponent.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ProgressbarsComponent.vue?vue&type=script&setup=true&lang=js");
  
 
 /***/ }),
@@ -54954,6 +56008,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=template&id=6a8c8694&scoped=true":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=template&id=6a8c8694&scoped=true ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BreadcrumbsComponent_vue_vue_type_template_id_6a8c8694_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BreadcrumbsComponent_vue_vue_type_template_id_6a8c8694_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BreadcrumbsComponent.vue?vue&type=template&id=6a8c8694&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=template&id=6a8c8694&scoped=true");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/ButtonComponent.vue?vue&type=template&id=191739d2":
 /*!******************************************************************************!*\
   !*** ./resources/js/Pages/ButtonComponent.vue?vue&type=template&id=191739d2 ***!
@@ -54966,6 +56036,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ButtonComponent_vue_vue_type_template_id_191739d2__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ButtonComponent_vue_vue_type_template_id_191739d2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ButtonComponent.vue?vue&type=template&id=191739d2 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ButtonComponent.vue?vue&type=template&id=191739d2");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/CalenderComponent.vue?vue&type=template&id=5a678a8a&scoped=true":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/Pages/CalenderComponent.vue?vue&type=template&id=5a678a8a&scoped=true ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CalenderComponent_vue_vue_type_template_id_5a678a8a_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CalenderComponent_vue_vue_type_template_id_5a678a8a_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CalenderComponent.vue?vue&type=template&id=5a678a8a&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CalenderComponent.vue?vue&type=template&id=5a678a8a&scoped=true");
 
 
 /***/ }),
@@ -55066,6 +56152,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/ProgressbarsComponent.vue?vue&type=template&id=43759192&scoped=true":
+/*!************************************************************************************************!*\
+  !*** ./resources/js/Pages/ProgressbarsComponent.vue?vue&type=template&id=43759192&scoped=true ***!
+  \************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProgressbarsComponent_vue_vue_type_template_id_43759192_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProgressbarsComponent_vue_vue_type_template_id_43759192_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ProgressbarsComponent.vue?vue&type=template&id=43759192&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ProgressbarsComponent.vue?vue&type=template&id=43759192&scoped=true");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/RadioComponent.vue?vue&type=template&id=4ccfb82b&scoped=true":
 /*!*****************************************************************************************!*\
   !*** ./resources/js/Pages/RadioComponent.vue?vue&type=template&id=4ccfb82b&scoped=true ***!
@@ -55150,6 +56252,45 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=style&index=0&id=6a8c8694&scoped=true&lang=css":
+/*!*************************************************************************************************************!*\
+  !*** ./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=style&index=0&id=6a8c8694&scoped=true&lang=css ***!
+  \*************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BreadcrumbsComponent_vue_vue_type_style_index_0_id_6a8c8694_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BreadcrumbsComponent.vue?vue&type=style&index=0&id=6a8c8694&scoped=true&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/BreadcrumbsComponent.vue?vue&type=style&index=0&id=6a8c8694&scoped=true&lang=css");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/CalenderComponent.vue?vue&type=style&index=0&id=5a678a8a&scoped=true&lang=css":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/js/Pages/CalenderComponent.vue?vue&type=style&index=0&id=5a678a8a&scoped=true&lang=css ***!
+  \**********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CalenderComponent_vue_vue_type_style_index_0_id_5a678a8a_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CalenderComponent.vue?vue&type=style&index=0&id=5a678a8a&scoped=true&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CalenderComponent.vue?vue&type=style&index=0&id=5a678a8a&scoped=true&lang=css");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&lang=css":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&lang=css ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ComponentLibrary_vue_vue_type_style_index_0_id_844c20b2_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=style&index=0&id=844c20b2&lang=css");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css":
 /*!*****************************************************************************************************************!*\
   !*** ./resources/js/Pages/FlexibleSidebarComponent.vue?vue&type=style&index=0&id=afaf6cd6&scoped=true&lang=css ***!
@@ -55185,6 +56326,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_HeaderComponent_vue_vue_type_style_index_0_id_ddb9eb52_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/HeaderComponent.vue?vue&type=style&index=0&id=ddb9eb52&scoped=true&lang=css");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/ProgressbarsComponent.vue?vue&type=style&index=0&id=43759192&scoped=true&lang=css":
+/*!**************************************************************************************************************!*\
+  !*** ./resources/js/Pages/ProgressbarsComponent.vue?vue&type=style&index=0&id=43759192&scoped=true&lang=css ***!
+  \**************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProgressbarsComponent_vue_vue_type_style_index_0_id_43759192_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ProgressbarsComponent.vue?vue&type=style&index=0&id=43759192&scoped=true&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ProgressbarsComponent.vue?vue&type=style&index=0&id=43759192&scoped=true&lang=css");
 
 
 /***/ }),
@@ -55494,13 +56648,16 @@ var map = {
 	"./BannerComponent.vue": "./resources/js/Pages/BannerComponent.vue",
 	"./BentogridComponent.vue": "./resources/js/Pages/BentogridComponent.vue",
 	"./BlogComponent.vue": "./resources/js/Pages/BlogComponent.vue",
+	"./BreadcrumbsComponent.vue": "./resources/js/Pages/BreadcrumbsComponent.vue",
 	"./ButtonComponent.vue": "./resources/js/Pages/ButtonComponent.vue",
+	"./CalenderComponent.vue": "./resources/js/Pages/CalenderComponent.vue",
 	"./ComponentLibrary.vue": "./resources/js/Pages/ComponentLibrary.vue",
 	"./Dashboard.vue": "./resources/js/Pages/Dashboard.vue",
 	"./FlexibleSidebarComponent.vue": "./resources/js/Pages/FlexibleSidebarComponent.vue",
 	"./FooterComponent.vue": "./resources/js/Pages/FooterComponent.vue",
 	"./HeaderComponent.vue": "./resources/js/Pages/HeaderComponent.vue",
 	"./InputComponent.vue": "./resources/js/Pages/InputComponent.vue",
+	"./ProgressbarsComponent.vue": "./resources/js/Pages/ProgressbarsComponent.vue",
 	"./RadioComponent.vue": "./resources/js/Pages/RadioComponent.vue",
 	"./Welcome.vue": "./resources/js/Pages/Welcome.vue"
 };
