@@ -69,10 +69,12 @@
   const SmallWithMeetings = {
     setup() {
       const dates = ref([
-        ...Array.from({ length: 5 }, (_, i) => ({ day: 27 + i, isPrevMonth: true })),
-        ...Array.from({ length: 31 }, (_, i) => ({ day: i + 1, isPrevMonth: false })),
-        ...Array.from({ length: 6 }, (_, i) => ({ day: i + 1, isNextMonth: true }))
-      ])
+  ...Array.from({ length: 31 }, (_, i) => ({
+    day: i + 1,
+    isPrevMonth: i < 3,
+    isNextMonth: i > 30
+  }))
+])
   
       return { 
         meetings, 
@@ -85,76 +87,90 @@
       }
     },
     template: `
-      <div class="bg-white rounded-lg p-6">
-        <h2 class="text-xl font-semibold text-gray-900 mb-6">Upcoming meetings</h2>
+     <div class="bg-white rounded-lg p-6 border border-gray-200">
+    <h2 class="text-xl font-semibold text-gray-900 mb-6">Upcoming meetings</h2>
+    
+    <div class="flex flex-row-reverse">
+      <!-- Calendar Section -->
+      <div class="w-80 ml-4 border rounded-lg p-4 border-gray-200">
+        <div class="flex items-center justify-between mb-4">
+          <button class="p-1 hover:bg-gray-100 rounded-full">
+            <ChevronLeft class="h-5 w-5 text-gray-500" />
+          </button>
+          <h3 class="text-base font-semibold text-gray-900">January</h3>
+          <button class="p-1 hover:bg-gray-100 rounded-full">
+            <ChevronRight class="h-5 w-5 text-gray-500" />
+          </button>
+        </div>
         
-        <div class="flex flex-row-reverse">
-          <div class="w-64 ml-4">
-            <div class="flex items-center justify-between mb-4">
-              <button class="p-1 hover:bg-gray-100 rounded-full">
-                <ChevronLeft class="h-5 w-5 text-gray-500" />
-              </button>
-              <h3 class="text-base font-semibold text-gray-900">January</h3>
-              <button class="p-1 hover:bg-gray-100 rounded-full">
-                <ChevronRight class="h-5 w-5 text-gray-500" />
-              </button>
-            </div>
-            
-            <div class="grid grid-cols-7 text-center text-xs leading-6 text-gray-500 mb-1">
-              <div>M</div>
-              <div>T</div>
-              <div>W</div>
-              <div>T</div>
-              <div>F</div>
-              <div>S</div>
-              <div>S</div>
-            </div>
-            
-            <div class="grid grid-cols-7 text-sm">
-              <div v-for="(date, i) in dates" :key="i"
-                class="py-1.5 flex items-center justify-center"
-              >
-                <button
-                  :class="[
-                    'w-8 h-8 flex items-center justify-center rounded-full',
-                    date.day === 22 && !date.isPrevMonth && !date.isNextMonth ? 'bg-gray-900 text-white font-semibold' : '',
-                    date.day === 12 && !date.isPrevMonth && !date.isNextMonth ? 'text-indigo-600 font-semibold' : '',
-                    (date.isPrevMonth || date.isNextMonth) ? 'text-gray-400' : 'text-gray-900',
-                  ]"
-                >
-                  {{ date.day }}
-                </button>
-              </div>
-            </div>
-          </div>
-  
-          <div class="flex-1 space-y-4">
-            <div v-for="meeting in meetings" :key="meeting.name" class="flex items-start group">
-              <img :src="meeting.avatar" class="w-10 h-10 rounded-full mr-4 flex-shrink-0" :alt="meeting.name">
-              <div class="flex-1 min-w-0">
-                <h4 class="text-sm font-medium text-gray-900">{{ meeting.name }}</h4>
-                <div class="flex items-center text-sm text-gray-500 mt-1">
-                  <Calendar class="w-4 h-4 mr-1 flex-shrink-0" />
-                  <span>{{ meeting.time }}</span>
-                </div>
-                <div class="flex items-center text-sm text-gray-500 mt-1">
-                  <MapPin class="w-4 h-4 mr-1 flex-shrink-0" />
-                  <span>{{ meeting.location }}</span>
-                </div>
-              </div>
-              <button class="opacity-0 group-hover:opacity-100 transition-opacity p-2 text-gray-500 hover:text-gray-700 rounded-full hover:bg-gray-100">
-                <MoreHorizontal class="w-5 h-5" />
-              </button>
-            </div>
+        <div class="grid grid-cols-7 text-center text-xs leading-6 text-gray-500 mb-1">
+          <div>M</div>
+          <div>T</div>
+          <div>W</div>
+          <div>T</div>
+          <div>F</div>
+          <div>S</div>
+          <div>S</div>
+        </div>
+        
+        <div class="grid grid-cols-7 text-sm">
+          <div v-for="(date, i) in dates" :key="i"
+            class="py-1.5 flex items-center justify-center"
+          >
+            <button
+              :class="[
+                'w-8 h-8 flex items-center justify-center rounded-full',
+                date.day === 22 && !date.isPrevMonth && !date.isNextMonth ? 'bg-gray-900 text-white font-semibold' : '',
+                date.day === 12 && !date.isPrevMonth && !date.isNextMonth ? 'text-indigo-600 font-semibold' : '',
+                (date.isPrevMonth || date.isNextMonth) ? 'text-gray-400' : 'text-gray-900',
+              ]"
+            >
+              {{ date.day }}
+            </button>
           </div>
         </div>
-  
-        <div class="mt-6">
-          <button class="w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-            Add event
+      </div>
+
+      <!-- Meetings List Section -->
+      <div class="flex-1 space-y-6">
+        <div v-for="meeting in meetings" :key="meeting.name" 
+          class="flex items-start group relative"
+        >
+          <img :src="meeting.avatar" :alt="meeting.name" class="w-10 h-10 rounded-full mr-4 flex-shrink-0">
+          <div class="flex-1 min-w-0">
+            <h4 class="text-sm font-medium text-gray-900">{{ meeting.name }}</h4>
+            <div class="flex items-center text-sm text-gray-500 mt-1 space-x-3">
+              <div class="flex items-center">
+                <svg class="w-4 h-4 mr-1.5 flex-shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span>{{ meeting.time }}</span>
+              </div>
+              <div class="h-4 w-px bg-gray-200"></div>
+              <div class="flex items-center">
+                <svg class="w-4 h-4 mr-1.5 flex-shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span>{{ meeting.location }}</span>
+              </div>
+            </div>
+          
+          </div>
+          <button class="opacity-0 group-hover:opacity-100 transition-opacity duration-150 ease-in-out absolute right-0 top-0 p-2 text-gray-400 hover:text-gray-500 rounded-full hover:bg-gray-100">
+            <MoreHorizontal class="w-5 h-5" />
           </button>
         </div>
       </div>
+    </div>
+
+    <div class="mt-6">
+          <button class="w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            Add event
+          </button>
+    </div>
+  </div>
+
     `
   }
   
@@ -279,59 +295,96 @@
   const DayView = {
     setup() {
       return { ChevronLeft, ChevronRight }
+      
     },
+
     template: `
-      <div class="bg-white rounded-lg shadow overflow-hidden min-h-[600px]">
-        <div class="flex items-center justify-between p-4 border-b">
-          <div>
-            <h2 class="text-xl font-semibold">January 22, 2022</h2>
-            <p class="text-sm text-gray-500">Saturday</p>
-          </div>
-          <div class="flex items-center space-x-4">
-            <button class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50">
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 min-h-[600px] flex flex-col">
+    <!-- Header -->
+    <div class="p-4 border-b border-gray-200">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-xl font-semibold text-gray-900">January 22, 2022</h2>
+          <p class="text-sm text-gray-500">Saturday</p>
+        </div>
+        <div class="flex items-center space-x-3">
+          <div class="flex items-center rounded-lg border border-gray-300 p-0.5 shadow-sm">
+            <button class="p-1.5 hover:bg-gray-50 rounded-md">
+              <ChevronLeft class="w-5 h-5 text-gray-500" />
+            </button>
+            <button class="px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-50">
               Today
             </button>
-            <div class="flex">
-              <button class="p-2 hover:bg-gray-100 rounded-l-md">
-                <ChevronLeft class="w-5 h-5" />
-              </button>
-              <button class="p-2 hover:bg-gray-100 rounded-r-md">
-                <ChevronRight class="w-5 h-5" />
-              </button>
-            </div>
-            <select class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md">
-              <option>Day view</option>
-            </select>
-            <button class="px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700">
-              Add event
+            <button class="p-1.5 hover:bg-gray-50 rounded-md">
+              <ChevronRight class="w-5 h-5 text-gray-500" />
             </button>
           </div>
-        </div>
-        <div class="grid grid-cols-[100px_1fr] h-full">
-          <div class="border-r">
-            <div v-for="hour in Array.from({ length: 12 }, (_, i) => i + 5)" :key="hour" 
-              class="h-20 border-t text-right pr-2 text-sm text-gray-500"
+          
+          <div class="relative">
+            <button 
+              @click="toggleViewDropdown"
+              class="flex items-center px-3 py-1.5 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 shadow-sm"
             >
-              {{ hour }}:00 AM
+              Day view
+              <ChevronDown class="ml-2 h-4 w-4" />
+            </button>
+            
+            <div v-if="showViewDropdown" 
+              class="absolute right-0 mt-1 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10"
+            >
+              <div class="py-1">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Month view</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Week view</a>
+                <a href="#" class="block px-4 py-2 text-sm font-medium text-gray-900 bg-gray-50">Day view</a>
+              </div>
             </div>
           </div>
-          <div class="relative">
-            <div class="absolute top-20 left-0 right-0 mx-4">
-              <div class="bg-blue-100 text-blue-700 p-2 text-sm rounded">
-                <div class="font-medium">Breakfast</div>
-                <div>6:00 AM</div>
-              </div>
-            </div>
-            <div class="absolute top-40 left-0 right-0 mx-4">
-              <div class="bg-pink-100 text-pink-700 p-2 text-sm rounded">
-                <div class="font-medium">Flight to Paris</div>
-                <div>7:30 AM</div>
-                <div class="text-sm">John F. Kennedy International Airport</div>
-              </div>
+
+          <button class="px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 shadow-sm">
+            Add event
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Calendar Grid -->
+    <div class="flex flex-1 overflow-hidden">
+      <!-- Time Column -->
+      <div class="w-[100px] border-r border-gray-200 overflow-y-auto bg-white">
+        <div class="relative">
+          <div v-for="hour in 24" :key="hour" class="sticky left-0 bg-white">
+            <div class="h-[60px] border-t border-gray-200 text-right pr-3">
+              <span class="text-sm text-gray-500 relative -top-2.5">
+                {{ formatHour(hour - 1) }}
+              </span>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Events Column -->
+      <div class="flex-1 overflow-y-auto relative">
+        <div class="relative" style="height: 1440px"> <!-- 24 hours * 60px -->
+          <!-- Breakfast Event -->
+          <div class="absolute left-4 right-4 top-[360px]"> <!-- 6:00 AM = 6 * 60px -->
+            <div class="bg-blue-50 text-blue-700 p-3 text-sm rounded-lg border border-blue-100">
+              <div class="font-medium">Breakfast</div>
+              <div class="text-blue-600">6:00 AM</div>
+            </div>
+          </div>
+
+          <!-- Flight Event -->
+          <div class="absolute left-4 right-4 top-[450px]"> <!-- 7:30 AM = 7.5 * 60px -->
+            <div class="bg-pink-50 text-pink-700 p-3 text-sm rounded-lg border border-pink-100">
+              <div class="font-medium">Flight to Paris</div>
+              <div class="text-pink-600">7:30 AM</div>
+              <div class="text-pink-600/90 text-sm">John F. Kennedy International Airport</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     `
   }
   
