@@ -29,7 +29,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted,computed } from 'vue'
 import { Calendar, ChevronLeft, ChevronRight, MapPin, MoreHorizontal, ChevronDown } from 'lucide-vue-next'
 
 const showCode = ref({})
@@ -448,11 +448,77 @@ onMounted(() => {
 
 const YearView = {
   setup() {
-    return { ChevronLeft, ChevronRight }
+    const months = ref([
+      { name: 'January', dates: generateDates(2022, 0) },
+      { name: 'February', dates: generateDates(2022, 1) },
+      { name: 'March', dates: generateDates(2022, 2) },
+      { name: 'April', dates: generateDates(2022, 3) },
+      { name: 'May', dates: generateDates(2022, 4) },
+      { name: 'June', dates: generateDates(2022, 5) },
+      { name: 'July', dates: generateDates(2022, 6) },
+      { name: 'August', dates: generateDates(2022, 7) },
+      { name: 'September', dates: generateDates(2022, 8) },
+      { name: 'October', dates: generateDates(2022, 9) },
+      { name: 'November', dates: generateDates(2022, 10) },
+      { name: 'December', dates: generateDates(2022, 11) },
+    ])
+
+    function generateDates(year, month) {
+      const firstDay = new Date(year, month, 1)
+      const lastDay = new Date(year, month + 1, 0)
+      const daysInMonth = lastDay.getDate()
+      const startingDayOfWeek = firstDay.getDay() || 7 // Convert Sunday (0) to 7
+      
+      const dates = []
+      
+      // Add days from previous month
+      const daysFromPrevMonth = startingDayOfWeek - 1
+      const prevMonth = new Date(year, month - 1, 0)
+      const prevMonthDays = prevMonth.getDate()
+      
+      for (let i = daysFromPrevMonth - 1; i >= 0; i--) {
+        dates.push({
+          value: prevMonthDays - i,
+          isCurrentMonth: false,
+          isToday: false,
+          isSelected: false
+        })
+      }
+      
+      // Add days from current month
+      const today = new Date()
+      const isCurrentYearAndMonth = today.getFullYear() === year && today.getMonth() === month
+      
+      for (let i = 1; i <= daysInMonth; i++) {
+        dates.push({
+          value: i,
+          isCurrentMonth: true,
+          isToday: isCurrentYearAndMonth && today.getDate() === i,
+          isSelected: month === 0 && i === 12 // January 12th selected as example
+        })
+      }
+      
+      // Add days from next month
+      const totalDays = 42 // 6 rows × 7 days
+      const remainingDays = totalDays - dates.length
+      
+      for (let i = 1; i <= remainingDays; i++) {
+        dates.push({
+          value: i,
+          isCurrentMonth: false,
+          isToday: false,
+          isSelected: false
+        })
+      }
+      
+      return dates
+    }
+
+    return { months, ChevronLeft, ChevronRight }
   },
   template: `
     <div class="bg-white rounded-lg shadow overflow-hidden">
-      <div class="flex items-center justify-between p-4 border-b">
+      <div class="flex items-center justify-between p-4 border-b sticky top-0 bg-white z-10">
         <h2 class="text-xl font-semibold">2022</h2>
         <div class="flex items-center space-x-4">
           <button class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50">
@@ -469,25 +535,38 @@ const YearView = {
           <select class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md">
             <option>Year view</option>
           </select>
-          <button class="px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700">
+          <button class="px-4 py-2 text-sm font-medium text-white bg-[#6C5CE7] rounded-md hover:bg-[#5A4BD1]">
             Add event
           </button>
         </div>
       </div>
-      <div class="grid grid-cols-3 gap-4 p-4">
-        <div v-for="month in ['January', 'February', 'March']" :key="month" class="space-y-2">
-          <h3 class="font-medium">{{ month }}</h3>
-          <div class="grid grid-cols-7 text-center text-xs">
-            <div v-for="day in ['M', 'T', 'W', 'T', 'F', 'S', 'S']" :key="day" class="text-gray-500">
-              {{ day }}
+      <div class="grid grid-cols-3 gap-6 p-6 max-h-[calc(100vh-80px)] overflow-y-auto"
+       style="scrollbar-width: thin; scrollbar-color: #E2E8F0 transparent; --scrollbar-width: 6px; --scrollbar-track: transparent; --scrollbar-thumb: #E2E8F0;"
+       :style="{
+         '--webkit-scrollbar': 'width: 6px',
+         '--webkit-scrollbar-track': 'background: transparent',
+         '--webkit-scrollbar-thumb': 'background-color: #E2E8F0; border-radius: 3px'
+       }">
+        <div v-for="month in months" :key="month.name" class="space-y-2">
+          <h3 class="font-medium">{{ month.name }}</h3>
+          <div class="border rounded-lg overflow-hidden">
+            <div class="grid grid-cols-7 text-center text-xs divide-x divide-gray-200 bg-gray-50">
+              <div v-for="day in ['M', 'T', 'W', 'T', 'F', 'S', 'S']" :key="day" 
+                class="text-gray-500 py-2 border-b">
+                {{ day }}
+              </div>
             </div>
-            <div v-for="date in 31" :key="date" 
-              :class="[
-                'py-1',
-                month === 'January' && date === 12 ? 'text-indigo-600 font-semibold' : ''
-              ]"
-            >
-              {{ date }}
+            <div class="grid grid-cols-7 text-center text-sm divide-x divide-gray-200">
+              <div v-for="date in month.dates" :key="date.value" 
+                :class="[
+                  'py-2 border-b last:border-b-0',
+                  date.isCurrentMonth ? 'text-gray-900' : 'text-gray-400',
+                  date.isToday ? 'bg-[#6C5CE7] text-white font-semibold' : '',
+                  date.isSelected ? 'text-[#6C5CE7] font-semibold' : ''
+                ]"
+              >
+                {{ date.value }}
+              </div>
             </div>
           </div>
         </div>
@@ -498,103 +577,300 @@ const YearView = {
 
 const DoubleView = {
   setup() {
-    return { ChevronLeft, ChevronRight }
+    function generateDates(year, month) {
+  const firstDay = new Date(year, month, 1)
+  const lastDay = new Date(year, month + 1, 0)
+  const daysInMonth = lastDay.getDate()
+  const startingDayOfWeek = firstDay.getDay() || 7 // Convert Sunday (0) to 7
+
+  const dates = []
+
+  // Add days from previous month
+  const daysFromPrevMonth = startingDayOfWeek - 1
+  const prevMonth = new Date(year, month - 1, 0)
+  const prevMonthDays = prevMonth.getDate()
+
+  for (let i = daysFromPrevMonth - 1; i >= 0; i--) {
+    dates.push({
+      value: prevMonthDays - i,
+      isCurrentMonth: false,
+      isSelected: false
+    })
+  }
+
+  // Add days from current month
+  for (let i = 1; i <= daysInMonth; i++) {
+    dates.push({
+      value: i,
+      isCurrentMonth: true,
+      isSelected: month === 0 && i === 12 // January 12th selected
+    })
+  }
+
+  // Add days from next month
+  const totalDays = 42 // 6 rows × 7 days
+  const remainingDays = totalDays - dates.length
+
+  for (let i = 1; i <= remainingDays; i++) {
+    dates.push({
+      value: i,
+      isCurrentMonth: false,
+      isSelected: false
+    })
+  }
+
+  return dates
+}
+
+const januaryDates = ref(generateDates(2024, 0))
+const februaryDates = ref(generateDates(2024, 1))
+    return { ChevronLeft, ChevronRight ,januaryDates,februaryDates}
   },
   template: `
-    <div class="bg-white rounded-lg shadow overflow-hidden">
-      <div class="grid grid-cols-2 divide-x">
-        <div class="p-4">
-          <div class="flex items-center justify-between mb-4">
-            <h2 class="text-lg font-semibold">January</h2>
-            <div class="flex">
-              <button class="p-1"><ChevronLeft class="h-5 w-5 text-gray-500" /></button>
-              <button class="p-1"><ChevronRight class="h-5 w-5 text-gray-500" /></button>
-            </div>
-          </div>
-          <div class="grid grid-cols-7 text-center mb-2">
-            <div v-for="day in ['M', 'T', 'W', 'T', 'F', 'S', 'S']" :key="day" class="text-xs font-medium text-gray-500">
-              {{ day }}
-            </div>
-          </div>
-          <div class="grid grid-cols-7 gap-1 text-sm">
-            <div v-for="date in 31" :key="date" 
-              :class="[
-                'h-8 flex items-center justify-center rounded-full',
-                date === 12 ? 'text-indigo-600 font-semibold' : ''
-              ]"
-            >
-              {{ date }}
-            </div>
+ <div class="bg-white rounded-lg shadow-sm overflow-hidden max-w-4xl mx-auto">
+    <div class="grid grid-cols-2 divide-x divide-gray-100">
+      <!-- January -->
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-6">
+          <button class="p-2 hover:bg-gray-50 rounded-full">
+            <ChevronLeft class="h-5 w-5 text-gray-400" />
+          </button>
+          <h2 class="text-base font-semibold text-gray-900">January</h2>
+          <button class="p-2 hover:bg-gray-50 rounded-full">
+            <ChevronRight class="h-5 w-5 text-gray-400" />
+          </button>
+        </div>
+        <div class="grid grid-cols-7 text-center mb-2">
+          <div v-for="day in ['M', 'T', 'W', 'T', 'F', 'S', 'S']" :key="day" 
+            class="text-xs font-medium text-gray-500 mb-1">
+            {{ day }}
           </div>
         </div>
-        <div class="p-4">
-          <div class="flex items-center justify-between mb-4">
-            <h2 class="text-lg font-semibold">February</h2>
-            <div class="flex">
-              <button class="p-1"><ChevronLeft class="h-5 w-5 text-gray-500" /></button>
-              <button class="p-1"><ChevronRight class="h-5 w-5 text-gray-500" /></button>
-            </div>
+        <div class="grid grid-cols-7 gap-0 text-sm border border-gray-100 rounded-lg overflow-hidden">
+          <div v-for="date in januaryDates" :key="date.value" 
+            :class="[
+              'h-10 flex items-center justify-center border border-gray-100',
+              date.isCurrentMonth ? 'text-gray-900' : 'text-gray-400',
+              date.isSelected ? 'bg-[#6C5CE7] text-white font-medium' : ''
+            ]"
+          >
+            {{ date.value }}
           </div>
-          <div class="grid grid-cols-7 text-center mb-2">
-            <div v-for="day in ['M', 'T', 'W', 'T', 'F', 'S', 'S']" :key="day" class="text-xs font-medium text-gray-500">
-              {{ day }}
-            </div>
+        </div>
+      </div>
+
+      <!-- February -->
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-6">
+          <button class="p-2 hover:bg-gray-50 rounded-full">
+            <ChevronLeft class="h-5 w-5 text-gray-400" />
+          </button>
+          <h2 class="text-base font-semibold text-gray-900">February</h2>
+          <button class="p-2 hover:bg-gray-50 rounded-full">
+            <ChevronRight class="h-5 w-5 text-gray-400" />
+          </button>
+        </div>
+        <div class="grid grid-cols-7 text-center mb-2">
+          <div v-for="day in ['M', 'T', 'W', 'T', 'F', 'S', 'S']" :key="day" 
+            class="text-xs font-medium text-gray-500 mb-1">
+            {{ day }}
           </div>
-          <div class="grid grid-cols-7 gap-1 text-sm">
-            <div v-for="date in 28" :key="date" class="h-8 flex items-center justify-center rounded-full">
-              {{ date }}
-            </div>
+        </div>
+        <div class="grid grid-cols-7 gap-0 text-sm border border-gray-100 rounded-lg overflow-hidden">
+          <div v-for="date in februaryDates" :key="date.value" 
+            :class="[
+              'h-10 flex items-center justify-center border border-gray-100',
+              date.isCurrentMonth ? 'text-gray-900' : 'text-gray-400'
+            ]"
+          >
+            {{ date.value }}
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Upcoming Events Section -->
+    <div class="border-t border-gray-100 p-6">
+      <h3 class="text-base font-semibold text-gray-900 mb-4">Upcoming events</h3>
+      <div class="space-y-6">
+        <div class="flex items-start justify-between">
+          <div>
+            <p class="text-sm text-gray-500">Wed, Jan 12</p>
+            <p class="text-sm text-gray-500 mt-1">Nothing on today's schedule</p>
+          </div>
+        </div>
+
+        <div class="flex items-start justify-between">
+          <div>
+            <p class="text-sm text-gray-500">Thu, Jan 13</p>
+            <p class="text-sm text-gray-900 mt-1">View house with real estate agent</p>
+          </div>
+          <p class="text-sm text-gray-500">2:30 PM - 4:30 PM</p>
+        </div>
+
+        <div class="flex items-start justify-between">
+          <div>
+            <p class="text-sm text-gray-500">Fri, Jan 14</p>
+            <p class="text-sm text-gray-900 mt-1">Meeting with bank manager</p>
+          </div>
+          <p class="text-sm text-gray-500">All day</p>
+        </div>
+
+        <div class="flex items-start justify-between">
+          <div>
+            <p class="text-sm text-gray-500">Mon, Jan 17</p>
+            <p class="text-sm text-gray-900 mt-1">Sign paperwork at lawyers</p>
+          </div>
+          <p class="text-sm text-gray-500">10:00 AM - 10:15 AM</p>
+        </div>
+      </div>
+    </div>
+  </div>
   `
 }
 
 const BorderlessStacked = {
   setup() {
-    return { meetings, ChevronLeft, ChevronRight }
+    const meetings = [
+  {
+    name: 'Leslie Alexander',
+    time: '1:00 PM - 2:30 PM',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+  },
+  {
+    name: 'Michael Foster',
+    time: '3:00 PM - 4:30 PM',
+    avatar: 'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+  },
+  {
+    name: 'Dries Vincent',
+    time: '5:00 PM - 6:30 PM',
+    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+  }
+]
+
+const dates = ref(generateDates(2022, 0)) // January 2022
+
+const weeks = computed(() => {
+  const weekArray = []
+  for (let i = 0; i < dates.value.length; i += 7) {
+    weekArray.push(dates.value.slice(i, i + 7))
+  }
+  return weekArray
+})
+
+function generateDates(year, month) {
+  const firstDay = new Date(year, month, 1)
+  const lastDay = new Date(year, month + 1, 0)
+  const daysInMonth = lastDay.getDate()
+  const startingDayOfWeek = firstDay.getDay() || 7 // Convert Sunday (0) to 7
+
+  const dates = []
+
+  // Add days from previous month
+  const daysFromPrevMonth = startingDayOfWeek - 1
+  const prevMonth = new Date(year, month - 1, 0)
+  const prevMonthDays = prevMonth.getDate()
+
+  for (let i = daysFromPrevMonth - 1; i >= 0; i--) {
+    dates.push({
+      value: prevMonthDays - i,
+      isCurrentMonth: false,
+      isSelected: false,
+      isHighlighted: false
+    })
+  }
+
+  // Add days from current month
+  for (let i = 1; i <= daysInMonth; i++) {
+    dates.push({
+      value: i,
+      isCurrentMonth: true,
+      isSelected: i === 21, // January 21st selected
+      isHighlighted: i === 12 // January 12th highlighted
+    })
+  }
+
+  // Add days from next month
+  const totalDays = 42 // 6 rows × 7 days
+  const remainingDays = totalDays - dates.length
+
+  for (let i = 1; i <= remainingDays; i++) {
+    dates.push({
+      value: i,
+      isCurrentMonth: false,
+      isSelected: false,
+      isHighlighted: false
+    })
+  }
+
+  return dates
+}
+    return { meetings, ChevronLeft, ChevronRight,weeks }
   },
   template: `
-    <div class="bg-white rounded-lg shadow overflow-hidden">
-      <div class="p-4">
-        <div class="flex justify-center mb-8">
-          <div class="text-center">
-            <h2 class="text-lg font-semibold mb-4">January 2022</h2>
-            <div class="inline-flex">
-              <button class="p-1"><ChevronLeft class="h-5 w-5 text-gray-500" /></button>
-              <button class="p-1"><ChevronRight class="h-5 w-5 text-gray-500" /></button>
-            </div>
-          </div>
+    <div class="bg-white rounded-lg max-w-md mx-auto">
+    <div class="p-8">
+      <!-- Calendar Header -->
+      <div class="text-center mb-8">
+        <div class="flex items-center justify-center gap-8">
+          <button class="p-2 hover:bg-gray-50 rounded-full">
+            <ChevronLeft class="h-5 w-5 text-gray-400" />
+          </button>
+          <h2 class="text-lg font-medium">January 2022</h2>
+          <button class="p-2 hover:bg-gray-50 rounded-full">
+            <ChevronRight class="h-5 w-5 text-gray-400" />
+          </button>
         </div>
+      </div>
+
+      <!-- Calendar Grid -->
+      <div class="mb-8">
+        <!-- Days Header -->
         <div class="grid grid-cols-7 text-center mb-2">
-          <div v-for="day in ['M', 'T', 'W', 'T', 'F', 'S', 'S']" :key="day" class="text-xs font-medium text-gray-500">
+          <div v-for="day in ['M', 'T', 'W', 'T', 'F', 'S', 'S']" :key="day" 
+            class="text-sm text-gray-600">
             {{ day }}
           </div>
         </div>
-        <div class="grid grid-cols-7 gap-1 text-sm mb-8">
-          <div v-for="date in 31" :key="date" 
-            :class="[
-              'h-8 flex items-center justify-center rounded-full',
-              date === 21 ? 'bg-black text-white' : '',
-              date === 12 ? 'text-indigo-600 font-semibold' : ''
-            ]"
-          >
-            {{ date }}
-          </div>
+
+        <!-- Calendar Dates -->
+        <div class="grid grid-cols-7 text-sm divide-y divide-gray-200 -mx-1">
+          <template v-for="(week, weekIndex) in weeks" :key="weekIndex">
+            <div v-for="date in week" :key="date.value" 
+              :class="[
+                'py-2 flex items-center justify-center',
+                date.isCurrentMonth ? 'text-gray-900' : 'text-gray-400',
+                date.isSelected ? 'bg-gray-900 text-white rounded-full w-8 h-8 flex items-center justify-center' : '',
+                date.isHighlighted ? 'text-[#6C5CE7] font-medium' : '',
+                weekIndex === 0 ? 'border-t border-gray-200' : ''
+              ]"
+            >
+              {{ date.value }}
+            </div>
+          </template>
         </div>
-        <div class="space-y-4">
-          <h3 class="text-lg font-semibold">Schedule for January 21, 2022</h3>
-          <div v-for="meeting in meetings.slice(0, 2)" :key="meeting.name" class="flex items-center">
-            <img :src="meeting.avatar" class="w-10 h-10 rounded-full mr-4" :alt="meeting.name">
+      </div>
+
+      <!-- Schedule Section -->
+      <div class="space-y-6">
+        <h3 class="text-lg font-medium">Schedule for January 21, 2022</h3>
+        <div class="space-y-6">
+          <div v-for="meeting in meetings" :key="meeting.name" class="flex items-center gap-4">
+            <img 
+              :src="meeting.avatar" 
+              :alt="meeting.name"
+              class="w-10 h-10 rounded-full"
+            >
             <div>
-              <h4 class="text-sm font-medium">{{ meeting.name }}</h4>
-              <p class="text-sm text-gray-500">{{ meeting.time }}</p>
+              <div class="font-medium">{{ meeting.name }}</div>
+              <div class="text-sm text-gray-500">{{ meeting.time }}</div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   `
 }
 
