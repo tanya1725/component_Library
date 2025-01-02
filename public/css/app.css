@@ -2155,9 +2155,17 @@ select {
 .tracking-widest {
   letter-spacing: 0.1em;
 }
+.text-\[\#4ADE80\] {
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity, 1));
+}
 .text-\[\#6C5CE7\] {
   --tw-text-opacity: 1;
   color: rgb(108 92 231 / var(--tw-text-opacity, 1));
+}
+.text-\[\#A5B4FC\] {
+  --tw-text-opacity: 1;
+  color: rgb(165 180 252 / var(--tw-text-opacity, 1));
 }
 .text-blue-400 {
   --tw-text-opacity: 1;
@@ -2583,6 +2591,10 @@ select {
 .hover\:text-gray-500:hover {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+.hover\:text-gray-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 .hover\:text-gray-700:hover {
   --tw-text-opacity: 1;
