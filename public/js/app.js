@@ -24124,6 +24124,95 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CardheadingsComponent.vue?vue&type=script&setup=true&lang=js":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CardheadingsComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/users.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/globe.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/phone.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/mail.js");
+/* harmony import */ var lucide_vue_next__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-vue-next */ "./node_modules/lucide-vue-next/dist/esm/icons/ellipsis-vertical.js");
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  __name: 'CardheadingsComponent',
+  setup: function setup(__props, _ref) {
+    var __expose = _ref.expose;
+    __expose();
+    var showCode = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
+    var jobs = [{
+      title: 'Back End Developer',
+      department: 'Engineering'
+    }, {
+      title: 'Front End Developer',
+      department: 'Engineering'
+    }, {
+      title: 'User Interface Designer',
+      department: 'Design'
+    }];
+    var variations = [{
+      name: 'Simple',
+      html: "\n    <div class=\"bg-white rounded-lg shadow-sm\">\n      <div class=\"p-6\">\n        <h2 class=\"text-lg font-semibold text-gray-900\">Job Postings</h2>\n      </div>\n      <div class=\"border-t border-gray-100\">\n        <!-- Job items here -->\n      </div>\n    </div>\n    "
+    }, {
+      name: 'With description',
+      html: "\n    <div class=\"bg-white rounded-lg shadow-sm\">\n      <div class=\"p-6\">\n        <h2 class=\"text-xl font-semibold text-gray-900\">Job Postings</h2>\n        <p class=\"text-gray-500 mt-1\">Lorem ipsum dolor sit amet consectetur adipisicing elit quam corrupti consectetur.</p>\n      </div>\n      <div class=\"border-t border-gray-100\">\n        <!-- Job items here -->\n      </div>\n    </div>\n    "
+    }, {
+      name: 'With action',
+      html: "\n    <div class=\"bg-white rounded-lg shadow-sm\">\n      <div class=\"p-6 flex justify-between items-center\">\n        <h2 class=\"text-lg font-semibold text-gray-900\">Job Postings</h2>\n        <button class=\"px-4 py-2 bg-[#6C5CE7] text-white rounded-md hover:bg-[#5A4BD1] transition-colors\">\n          Create new job\n        </button>\n      </div>\n      <div class=\"border-t border-gray-100\">\n        <!-- Job items here -->\n      </div>\n    </div>\n    "
+    }, {
+      name: 'With description and action',
+      html: "\n    <div class=\"bg-white rounded-lg shadow-sm\">\n      <div class=\"p-6\">\n        <div class=\"flex justify-between items-start mb-4\">\n          <div>\n            <h2 class=\"text-xl font-semibold text-gray-900\">Job Postings</h2>\n            <p class=\"text-gray-500 mt-1\">Lorem ipsum dolor sit amet consectetur adipisicing elit quam corrupti consectetur.</p>\n          </div>\n          <button class=\"px-4 py-2 bg-[#6C5CE7] text-white rounded-md hover:bg-[#5A4BD1] transition-colors\">\n            Create new job\n          </button>\n        </div>\n      </div>\n      <div class=\"border-t border-gray-100\">\n        <!-- Job items here -->\n      </div>\n    </div>\n    "
+    }, {
+      name: 'With avatar and actions',
+      html: "\n    <div class=\"bg-white rounded-lg shadow-sm\">\n      <div class=\"p-6 flex justify-between items-center\">\n        <div class=\"flex items-center\">\n          <img \n            src=\"https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\" \n            alt=\"Tom Cook\"\n            class=\"w-10 h-10 rounded-full mr-4\"\n          />\n          <div>\n            <h2 class=\"text-lg font-semibold text-gray-900\">Tom Cook</h2>\n            <p class=\"text-sm text-gray-500\">@tom_cook</p>\n          </div>\n        </div>\n        <div class=\"flex gap-2\">\n          <button class=\"px-4 py-2 flex items-center gap-2 text-gray-700 bg-white border border-gray-200 rounded-md hover:bg-gray-50\">\n            <Phone class=\"w-4 h-4\" />\n            Phone\n          </button>\n          <button class=\"px-4 py-2 flex items-center gap-2 text-gray-700 bg-white border border-gray-200 rounded-md hover:bg-gray-50\">\n            <Mail class=\"w-4 h-4\" />\n            Email\n          </button>\n        </div>\n      </div>\n      <div class=\"border-t border-gray-100\">\n        <!-- Job items here -->\n      </div>\n    </div>\n    "
+    }, {
+      name: 'With avatar, meta, and dropdown',
+      html: "\n    <div class=\"bg-white rounded-lg shadow-sm\">\n      <div class=\"p-6\">\n        <div class=\"space-y-4\">\n          <div class=\"flex justify-between items-start\">\n            <div class=\"flex items-start space-x-4\">\n              <img \n                src=\"https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80\"\n                alt=\"Chelsea Hagon\"\n                class=\"w-10 h-10 rounded-full\"\n              />\n              <div>\n                <h2 class=\"text-base font-semibold text-gray-900\">Chelsea Hagon</h2>\n                <p class=\"text-sm text-gray-500\">December 9 at 11:43 AM</p>\n              </div>\n            </div>\n            <button class=\"text-gray-400 hover:text-gray-600\">\n              <MoreVertical class=\"w-5 h-5\" />\n            </button>\n          </div>\n          <p class=\"text-gray-600 text-sm\">\n            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo impedit sapiente recusandae iusto officiis dolor? Laborum quibusdam quam, quidem vel assumenda repellat inventore sint nesciunt, ullam asperiores magnam placeat eveniet. Aliquam voluptatibus assumenda distinctio veniam quam tempora modi aperiam nemo voluptate reprehenderit quidem, nisi vero est.\n          </p>\n        </div>\n      </div>\n    </div>\n    "
+    }];
+    var toggleCode = function toggleCode(index) {
+      showCode.value[index] = !showCode.value[index];
+    };
+    var __returned__ = {
+      showCode: showCode,
+      jobs: jobs,
+      variations: variations,
+      toggleCode: toggleCode,
+      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref,
+      get Users() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_1__["default"];
+      },
+      get Globe() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_2__["default"];
+      },
+      get Phone() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_3__["default"];
+      },
+      get Mail() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_4__["default"];
+      },
+      get MoreVertical() {
+        return lucide_vue_next__WEBPACK_IMPORTED_MODULE_5__["default"];
+      }
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js":
 /*!****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js ***!
@@ -24153,6 +24242,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _BreadcrumbsComponent_vue__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./BreadcrumbsComponent.vue */ "./resources/js/Pages/BreadcrumbsComponent.vue");
 /* harmony import */ var _ProgressbarsComponent_vue__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./ProgressbarsComponent.vue */ "./resources/js/Pages/ProgressbarsComponent.vue");
 /* harmony import */ var _CalenderComponent_vue__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./CalenderComponent.vue */ "./resources/js/Pages/CalenderComponent.vue");
+/* harmony import */ var _CardheadingsComponent_vue__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./CardheadingsComponent.vue */ "./resources/js/Pages/CardheadingsComponent.vue");
+
 
 
 
@@ -24177,7 +24268,7 @@ __webpack_require__.r(__webpack_exports__);
     var __expose = _ref.expose;
     __expose();
     var selectedComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)('Button');
-    var components = ['Button', 'Input', 'Radio Groups', 'Header', 'Sidebar Layout', 'Footer', 'About Page', 'Action Panel', 'Alerts', 'Avatars', 'Badges', 'Banners', 'Bento grids', 'Blogs', 'Breadcrumbs', 'Progress bars', 'Calender'];
+    var components = ['Button', 'Input', 'Radio Groups', 'Header', 'Sidebar Layout', 'Footer', 'About Page', 'Action Panel', 'Alerts', 'Avatars', 'Badges', 'Banners', 'Bento grids', 'Blogs', 'Breadcrumbs', 'Progress bars', 'Calender', 'Card headings'];
     var searchQuery = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)('');
     var filteredComponents = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
       return components.filter(function (component) {
@@ -24201,7 +24292,8 @@ __webpack_require__.r(__webpack_exports__);
       Blogs: _BlogComponent_vue__WEBPACK_IMPORTED_MODULE_14__["default"],
       Breadcrumbs: _BreadcrumbsComponent_vue__WEBPACK_IMPORTED_MODULE_15__["default"],
       'Progress bars': _ProgressbarsComponent_vue__WEBPACK_IMPORTED_MODULE_16__["default"],
-      Calender: _CalenderComponent_vue__WEBPACK_IMPORTED_MODULE_17__["default"]
+      Calender: _CalenderComponent_vue__WEBPACK_IMPORTED_MODULE_17__["default"],
+      'Card headings': _CardheadingsComponent_vue__WEBPACK_IMPORTED_MODULE_18__["default"]
     };
     var currentComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
       return componentMap[selectedComponent.value];
@@ -24235,7 +24327,8 @@ __webpack_require__.r(__webpack_exports__);
       BlogComponent: _BlogComponent_vue__WEBPACK_IMPORTED_MODULE_14__["default"],
       BreadcrumbsComponent: _BreadcrumbsComponent_vue__WEBPACK_IMPORTED_MODULE_15__["default"],
       ProgressbarsComponent: _ProgressbarsComponent_vue__WEBPACK_IMPORTED_MODULE_16__["default"],
-      CalenderComponent: _CalenderComponent_vue__WEBPACK_IMPORTED_MODULE_17__["default"]
+      CalenderComponent: _CalenderComponent_vue__WEBPACK_IMPORTED_MODULE_17__["default"],
+      CardheadingsComponent: _CardheadingsComponent_vue__WEBPACK_IMPORTED_MODULE_18__["default"]
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -26555,6 +26648,192 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       },
       "class": "px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.showCode[index] ? 'Hide Code' : 'Show Code'), 9 /* TEXT, PROPS */, _hoisted_7)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", _hoisted_9, [_cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("            ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("code", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.code), 1 /* TEXT */), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("\n          "))])], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.showCode[index]]])])]);
+  }), 64 /* STABLE_FRAGMENT */))]);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CardheadingsComponent.vue?vue&type=template&id=0ad97c63":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CardheadingsComponent.vue?vue&type=template&id=0ad97c63 ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+
+var _hoisted_1 = {
+  "class": "space-y-4"
+};
+var _hoisted_2 = {
+  "class": "p-4 bg-gray-50 border-b"
+};
+var _hoisted_3 = {
+  "class": "text-lg font-semibold text-gray-800"
+};
+var _hoisted_4 = {
+  "class": "p-4"
+};
+var _hoisted_5 = {
+  "class": "mb-4"
+};
+var _hoisted_6 = {
+  "class": "p-4 bg-gray-100 rounded-md"
+};
+var _hoisted_7 = {
+  "class": "bg-white rounded-lg shadow-sm"
+};
+var _hoisted_8 = {
+  "class": "p-6"
+};
+var _hoisted_9 = {
+  key: 0
+};
+var _hoisted_10 = {
+  "class": "flex justify-between items-center"
+};
+var _hoisted_11 = {
+  "class": "flex gap-2"
+};
+var _hoisted_12 = {
+  "class": "px-4 py-2 flex items-center gap-2 text-gray-700 bg-white border border-gray-200 rounded-md hover:bg-gray-50"
+};
+var _hoisted_13 = {
+  "class": "px-4 py-2 flex items-center gap-2 text-gray-700 bg-white border border-gray-200 rounded-md hover:bg-gray-50"
+};
+var _hoisted_14 = {
+  "class": "space-y-4"
+};
+var _hoisted_15 = {
+  "class": "flex justify-between items-start"
+};
+var _hoisted_16 = {
+  "class": "text-gray-400 hover:text-gray-600"
+};
+var _hoisted_17 = {
+  key: 0,
+  "class": "border-t border-gray-100"
+};
+var _hoisted_18 = {
+  "class": "flex items-center space-x-3"
+};
+var _hoisted_19 = {
+  "class": "text-[#A5B4FC] font-medium"
+};
+var _hoisted_20 = {
+  "class": "flex items-center mt-1 text-gray-500"
+};
+var _hoisted_21 = {
+  "class": "text-sm"
+};
+var _hoisted_22 = {
+  "class": "flex items-center space-x-4"
+};
+var _hoisted_23 = {
+  "class": "flex items-center text-gray-500"
+};
+var _hoisted_24 = ["onClick"];
+var _hoisted_25 = {
+  "class": "mt-4"
+};
+var _hoisted_26 = {
+  "class": "p-4 bg-gray-800 rounded-md overflow-x-auto"
+};
+var _hoisted_27 = {
+  "class": "text-sm text-white"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.variations, function (variation, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      key: index,
+      "class": "bg-white rounded-lg shadow-md w-full"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Job Postings Card "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" With description "), variation.name === 'With description' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_9, _toConsumableArray(_cache[0] || (_cache[0] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+      "class": "text-xl font-semibold text-gray-900"
+    }, "Job Postings", -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+      "class": "text-gray-500 mt-1"
+    }, "Lorem ipsum dolor sit amet consectetur adipisicing elit quam corrupti consectetur.", -1 /* HOISTED */)])))) : variation.name === 'With description and action' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+      key: 1
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" With description and action "), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "flex justify-between items-start mb-4"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+      "class": "text-xl font-semibold text-gray-900"
+    }, "Job Postings"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+      "class": "text-gray-500 mt-1"
+    }, "Lorem ipsum dolor sit amet consectetur adipisicing elit quam corrupti consectetur.")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      "class": "px-4 py-2 bg-[#6C5CE7] text-white rounded-md hover:bg-[#5A4BD1] transition-colors"
+    }, " Create new job ")], -1 /* HOISTED */))], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */)) : variation.name === 'With avatar and actions' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+      key: 2
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" With avatar and actions "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [_cache[4] || (_cache[4] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "flex items-center"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+      src: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      alt: "Tom Cook",
+      "class": "w-10 h-10 rounded-full mr-4"
+    }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+      "class": "text-lg font-semibold text-gray-900"
+    }, "Tom Cook"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+      "class": "text-sm text-gray-500"
+    }, "@tom_cook")])], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Phone"], {
+      "class": "w-4 h-4"
+    }), _cache[2] || (_cache[2] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Phone "))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Mail"], {
+      "class": "w-4 h-4"
+    }), _cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Email "))])])])], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */)) : variation.name === 'With avatar, meta, and dropdown' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+      key: 3
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" With avatar, meta, and dropdown "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [_cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "flex items-start space-x-4"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+      src: "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      alt: "Chelsea Hagon",
+      "class": "w-10 h-10 rounded-full"
+    }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+      "class": "text-base font-semibold text-gray-900"
+    }, "Chelsea Hagon"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+      "class": "text-sm text-gray-500"
+    }, "December 9 at 11:43 AM")])], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["MoreVertical"], {
+      "class": "w-5 h-5"
+    })])]), _cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+      "class": "text-gray-600 text-sm"
+    }, " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo impedit sapiente recusandae iusto officiis dolor? Laborum quibusdam quam, quidem vel assumenda repellat inventore sint nesciunt, ullam asperiores magnam placeat eveniet. Aliquam voluptatibus assumenda distinctio veniam quam tempora modi aperiam nemo voluptate reprehenderit quidem, nisi vero est. ", -1 /* HOISTED */))])], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */)) : variation.name === 'With action' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+      key: 4
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" With action "), _cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "flex justify-between items-center"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+      "class": "text-lg font-semibold text-gray-900"
+    }, "Job Postings"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      "class": "px-4 py-2 bg-[#6C5CE7] text-white rounded-md hover:bg-[#5A4BD1] transition-colors"
+    }, " Create new job ")], -1 /* HOISTED */))], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+      key: 5
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Simple "), _cache[8] || (_cache[8] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+      "class": "text-lg font-semibold text-gray-900"
+    }, "Job Postings", -1 /* HOISTED */))], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Job listings for all variations except the avatar meta one "), variation.name !== 'With avatar, meta, and dropdown' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_17, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.jobs, function (job) {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+        key: job.title,
+        "class": "flex items-center justify-between p-6 hover:bg-gray-50"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(job.title), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Users"], {
+        "class": "w-4 h-4 mr-2"
+      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(job.department), 1 /* TEXT */)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [_cache[10] || (_cache[10] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+        "class": "text-sm text-[#4ADE80]"
+      }, "Full-time", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Globe"], {
+        "class": "w-4 h-4 mr-2"
+      }), _cache[9] || (_cache[9] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+        "class": "text-sm"
+      }, "Remote", -1 /* HOISTED */))])])]);
+    }), 64 /* STABLE_FRAGMENT */))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $setup.toggleCode(index);
+      },
+      "class": "px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.showCode[index] ? 'Hide Code' : 'Show Code'), 9 /* TEXT, PROPS */, _hoisted_24)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", _hoisted_26, [_cache[11] || (_cache[11] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("            ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("code", _hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.html), 1 /* TEXT */), _cache[12] || (_cache[12] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("\n          "))])], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.showCode[index]]])])]);
   }), 64 /* STABLE_FRAGMENT */))]);
 }
 
@@ -50164,6 +50443,39 @@ const CodeXml = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 
 /***/ }),
 
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/ellipsis-vertical.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/ellipsis-vertical.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ EllipsisVertical)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const EllipsisVertical = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("EllipsisVerticalIcon", [
+  ["circle", { cx: "12", cy: "12", r: "1", key: "41hilf" }],
+  ["circle", { cx: "12", cy: "5", r: "1", key: "gxeob9" }],
+  ["circle", { cx: "12", cy: "19", r: "1", key: "lyex9k" }]
+]);
+
+
+//# sourceMappingURL=ellipsis-vertical.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-vue-next/dist/esm/icons/ellipsis.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/lucide-vue-next/dist/esm/icons/ellipsis.js ***!
@@ -50230,6 +50542,39 @@ const Folder = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
 
 
 //# sourceMappingURL=folder.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/globe.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/globe.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Globe)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Globe = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("GlobeIcon", [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20", key: "13o1zl" }],
+  ["path", { d: "M2 12h20", key: "9i4pu4" }]
+]);
+
+
+//# sourceMappingURL=globe.js.map
 
 
 /***/ }),
@@ -50337,6 +50682,38 @@ const Lock = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("L
 
 /***/ }),
 
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/mail.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/mail.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Mail)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Mail = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("MailIcon", [
+  ["rect", { width: "20", height: "16", x: "2", y: "4", rx: "2", key: "18n3k1" }],
+  ["path", { d: "m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7", key: "1ocrg3" }]
+]);
+
+
+//# sourceMappingURL=mail.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-vue-next/dist/esm/icons/map-pin.js":
 /*!****************************************************************!*\
   !*** ./node_modules/lucide-vue-next/dist/esm/icons/map-pin.js ***!
@@ -50404,6 +50781,43 @@ const Menu = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("M
 
 
 //# sourceMappingURL=menu.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-vue-next/dist/esm/icons/phone.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/lucide-vue-next/dist/esm/icons/phone.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Phone)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-vue-next/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-vue-next v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const Phone = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("PhoneIcon", [
+  [
+    "path",
+    {
+      d: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z",
+      key: "foiqr5"
+    }
+  ]
+]);
+
+
+//# sourceMappingURL=phone.js.map
 
 
 /***/ }),
@@ -54969,6 +55383,34 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/Pages/CardheadingsComponent.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/Pages/CardheadingsComponent.vue ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _CardheadingsComponent_vue_vue_type_template_id_0ad97c63__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CardheadingsComponent.vue?vue&type=template&id=0ad97c63 */ "./resources/js/Pages/CardheadingsComponent.vue?vue&type=template&id=0ad97c63");
+/* harmony import */ var _CardheadingsComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardheadingsComponent.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/CardheadingsComponent.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_CardheadingsComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_CardheadingsComponent_vue_vue_type_template_id_0ad97c63__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/CardheadingsComponent.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/ComponentLibrary.vue":
 /*!*************************************************!*\
   !*** ./resources/js/Pages/ComponentLibrary.vue ***!
@@ -55690,6 +56132,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/CardheadingsComponent.vue?vue&type=script&setup=true&lang=js":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/Pages/CardheadingsComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CardheadingsComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CardheadingsComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CardheadingsComponent.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CardheadingsComponent.vue?vue&type=script&setup=true&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js":
 /*!************************************************************************************!*\
   !*** ./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js ***!
@@ -56298,6 +56756,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/CardheadingsComponent.vue?vue&type=template&id=0ad97c63":
+/*!************************************************************************************!*\
+  !*** ./resources/js/Pages/CardheadingsComponent.vue?vue&type=template&id=0ad97c63 ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CardheadingsComponent_vue_vue_type_template_id_0ad97c63__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CardheadingsComponent_vue_vue_type_template_id_0ad97c63__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CardheadingsComponent.vue?vue&type=template&id=0ad97c63 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CardheadingsComponent.vue?vue&type=template&id=0ad97c63");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2":
 /*!*******************************************************************************!*\
   !*** ./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2 ***!
@@ -56893,6 +57367,7 @@ var map = {
 	"./BreadcrumbsComponent.vue": "./resources/js/Pages/BreadcrumbsComponent.vue",
 	"./ButtonComponent.vue": "./resources/js/Pages/ButtonComponent.vue",
 	"./CalenderComponent.vue": "./resources/js/Pages/CalenderComponent.vue",
+	"./CardheadingsComponent.vue": "./resources/js/Pages/CardheadingsComponent.vue",
 	"./ComponentLibrary.vue": "./resources/js/Pages/ComponentLibrary.vue",
 	"./Dashboard.vue": "./resources/js/Pages/Dashboard.vue",
 	"./FlexibleSidebarComponent.vue": "./resources/js/Pages/FlexibleSidebarComponent.vue",
