@@ -71,6 +71,8 @@ import BreadcrumbsComponent from './BreadcrumbsComponent.vue';
 import ProgressbarsComponent from './ProgressbarsComponent.vue';
 import CalenderComponent from './CalenderComponent.vue';
 import CardheadingsComponent from './CardheadingsComponent.vue';
+import CardComponent from './CardComponent.vue';
+import CategoryfilterComponent from './CategoryfilterComponent.vue';
 
 const selectedComponent = ref('Button');
 const components = [
@@ -91,7 +93,9 @@ const components = [
   'Breadcrumbs',
   'Progress bars',
   'Calender',
-  'Card headings'
+  'Card headings',
+  'Cards',
+  'Category filters'
 ];
 
 const searchQuery = ref('');
@@ -119,7 +123,9 @@ const componentMap = {
   Breadcrumbs: BreadcrumbsComponent,
   'Progress bars':ProgressbarsComponent,
   Calender:CalenderComponent,
-  'Card headings':CardheadingsComponent
+  'Card headings':CardheadingsComponent,
+  'Cards':CardComponent,
+  'Category filters':CategoryfilterComponent
 };
 
 const currentComponent = computed(() => componentMap[selectedComponent.value]);
