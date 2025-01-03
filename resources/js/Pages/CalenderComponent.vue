@@ -20,7 +20,7 @@
         </div>
         <div v-show="showCode[index]" class="mt-4">
           <pre class="p-4 bg-gray-800 rounded-md overflow-x-auto">
-            <code class="text-sm text-white">{{ variation.code }}</code>
+            <code class="text-sm text-white">{{ variation.html }}</code>
           </pre>
         </div>
       </div>
