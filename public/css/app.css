@@ -1165,6 +1165,9 @@ select {
 .h-96 {
   height: 24rem;
 }
+.h-\[300px\] {
+  height: 300px;
+}
 .h-\[60px\] {
   height: 60px;
 }
@@ -1473,6 +1476,9 @@ select {
 .gap-x-8 {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+}
+.gap-y-12 {
+  row-gap: 3rem;
 }
 .gap-y-2 {
   row-gap: 0.5rem;
@@ -1914,6 +1920,10 @@ select {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 .p-0 {
   padding: 0px;
@@ -2996,6 +3006,11 @@ select {
     justify-content: space-between;
   }
 
+  .sm\:gap-x-6 {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+
   .sm\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -3264,6 +3279,11 @@ select {
 
   .xl\:gap-8 {
     gap: 2rem;
+  }
+
+  .xl\:gap-x-8 {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 
   .xl\:text-center {

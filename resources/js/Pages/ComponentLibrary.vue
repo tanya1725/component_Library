@@ -73,6 +73,7 @@ import CalenderComponent from './CalenderComponent.vue';
 import CardheadingsComponent from './CardheadingsComponent.vue';
 import CardComponent from './CardComponent.vue';
 import CategoryfilterComponent from './CategoryfilterComponent.vue';
+import CategorypreviewsComponent from './CategorypreviewsComponent.vue';
 
 const selectedComponent = ref('Button');
 const components = [
@@ -95,7 +96,8 @@ const components = [
   'Calender',
   'Card headings',
   'Cards',
-  'Category filters'
+  'Category filters',
+  'Category previews'
 ];
 
 const searchQuery = ref('');
@@ -125,7 +127,8 @@ const componentMap = {
   Calender:CalenderComponent,
   'Card headings':CardheadingsComponent,
   'Cards':CardComponent,
-  'Category filters':CategoryfilterComponent
+  'Category filters':CategoryfilterComponent,
+  'Category previews':CategorypreviewsComponent
 };
 
 const currentComponent = computed(() => componentMap[selectedComponent.value]);
