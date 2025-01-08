@@ -74,6 +74,7 @@ import CardheadingsComponent from './CardheadingsComponent.vue';
 import CardComponent from './CardComponent.vue';
 import CategoryfilterComponent from './CategoryfilterComponent.vue';
 import CategorypreviewsComponent from './CategorypreviewsComponent.vue';
+import CheckboxComponent from './CheckboxComponent.vue';
 
 const selectedComponent = ref('Button');
 const components = [
@@ -97,7 +98,8 @@ const components = [
   'Card headings',
   'Cards',
   'Category filters',
-  'Category previews'
+  'Category previews',
+  'Checkboxes'
 ];
 
 const searchQuery = ref('');
@@ -128,7 +130,8 @@ const componentMap = {
   'Card headings':CardheadingsComponent,
   'Cards':CardComponent,
   'Category filters':CategoryfilterComponent,
-  'Category previews':CategorypreviewsComponent
+  'Category previews':CategorypreviewsComponent,
+  'Checkboxes':CheckboxComponent
 };
 
 const currentComponent = computed(() => componentMap[selectedComponent.value]);

@@ -24449,6 +24449,57 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CheckboxComponent.vue?vue&type=script&setup=true&lang=js":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CheckboxComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  __name: 'CheckboxComponent',
+  setup: function setup(__props, _ref) {
+    var __expose = _ref.expose;
+    __expose();
+    var showCode = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
+    var variations = [{
+      name: 'List with description',
+      html: "\n        <fieldset>\n          <legend class=\"text-base font-semibold text-gray-900\">Notifications</legend>\n          <div class=\"mt-4 space-y-4\">\n            <div class=\"relative flex items-start\">\n              <div class=\"flex h-6 items-center\">\n                <input id=\"comments\" name=\"comments\" type=\"checkbox\" class=\"h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600\">\n              </div>\n              <div class=\"ml-3 text-sm leading-6\">\n                <label for=\"comments\" class=\"font-medium text-gray-900\">Comments</label>\n                <p class=\"text-gray-500\">Get notified when someones posts a comment on a posting.</p>\n              </div>\n            </div>\n            <div class=\"relative flex items-start\">\n              <div class=\"flex h-6 items-center\">\n                <input id=\"candidates\" name=\"candidates\" type=\"checkbox\" class=\"h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600\">\n              </div>\n              <div class=\"ml-3 text-sm leading-6\">\n                <label for=\"candidates\" class=\"font-medium text-gray-900\">Candidates</label>\n                <p class=\"text-gray-500\">Get notified when a candidate applies for a job.</p>\n              </div>\n            </div>\n            <div class=\"relative flex items-start\">\n              <div class=\"flex h-6 items-center\">\n                <input id=\"offers\" name=\"offers\" type=\"checkbox\" class=\"h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600\">\n              </div>\n              <div class=\"ml-3 text-sm leading-6\">\n                <label for=\"offers\" class=\"font-medium text-gray-900\">Offers</label>\n                <p class=\"text-gray-500\">Get notified when a candidate accepts or rejects an offer.</p>\n              </div>\n            </div>\n          </div>\n        </fieldset>\n      "
+    }, {
+      name: 'List with inline description',
+      html: "\n        <fieldset>\n          <legend class=\"text-base font-semibold text-gray-900\">Notifications</legend>\n          <div class=\"mt-4 space-y-4\">\n            <div class=\"flex items-center\">\n              <input id=\"push-everything\" name=\"push-notifications\" type=\"checkbox\" class=\"h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600\">\n              <label for=\"push-everything\" class=\"ml-3 block text-sm font-medium leading-6 text-gray-900\">\n                Everything\n              </label>\n            </div>\n            <div class=\"flex items-center\">\n              <input id=\"push-email\" name=\"push-notifications\" type=\"checkbox\" class=\"h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600\">\n              <label for=\"push-email\" class=\"ml-3 block text-sm font-medium leading-6 text-gray-900\">\n                Same as email\n              </label>\n            </div>\n            <div class=\"flex items-center\">\n              <input id=\"push-nothing\" name=\"push-notifications\" type=\"checkbox\" class=\"h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600\">\n              <label for=\"push-nothing\" class=\"ml-3 block text-sm font-medium leading-6 text-gray-900\">\n                No push notifications\n              </label>\n            </div>\n          </div>\n        </fieldset>\n      "
+    }, {
+      name: 'List with checkbox on right',
+      html: "\n        <fieldset>\n          <legend class=\"text-base font-semibold text-gray-900\">Privacy settings</legend>\n          <div class=\"mt-4 space-y-4\">\n            <div class=\"flex items-center justify-between\">\n              <label for=\"comments\" class=\"text-sm font-medium leading-6 text-gray-900\">Comments</label>\n              <input id=\"comments\" name=\"comments\" type=\"checkbox\" class=\"h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600\">\n            </div>\n            <div class=\"flex items-center justify-between\">\n              <label for=\"candidates\" class=\"text-sm font-medium leading-6 text-gray-900\">Candidates</label>\n              <input id=\"candidates\" name=\"candidates\" type=\"checkbox\" class=\"h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600\">\n            </div>\n            <div class=\"flex items-center justify-between\">\n              <label for=\"offers\" class=\"text-sm font-medium leading-6 text-gray-900\">Offers</label>\n              <input id=\"offers\" name=\"offers\" type=\"checkbox\" class=\"h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600\">\n            </div>\n          </div>\n        </fieldset>\n      "
+    }, {
+      name: 'Simple list with heading',
+      html: "\n        <fieldset>\n          <legend class=\"text-sm font-semibold leading-6 text-gray-900\">By Email</legend>\n          <div class=\"mt-4 space-y-4\">\n            <div class=\"relative flex items-start\">\n              <div class=\"flex h-6 items-center\">\n                <input id=\"comments\" name=\"comments\" type=\"checkbox\" class=\"h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600\">\n              </div>\n              <div class=\"ml-3 text-sm leading-6\">\n                <label for=\"comments\" class=\"font-medium text-gray-900\">Comments</label>\n              </div>\n            </div>\n            <div class=\"relative flex items-start\">\n              <div class=\"flex h-6 items-center\">\n                <input id=\"candidates\" name=\"candidates\" type=\"checkbox\" class=\"h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600\">\n              </div>\n              <div class=\"ml-3 text-sm leading-6\">\n                <label for=\"candidates\" class=\"font-medium text-gray-900\">Candidates</label>\n              </div>\n            </div>\n            <div class=\"relative flex items-start\">\n              <div class=\"flex h-6 items-center\">\n                <input id=\"offers\" name=\"offers\" type=\"checkbox\" class=\"h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600\">\n              </div>\n              <div class=\"ml-3 text-sm leading-6\">\n                <label for=\"offers\" class=\"font-medium text-gray-900\">Offers</label>\n              </div>\n            </div>\n          </div>\n        </fieldset>\n      "
+    }];
+    var toggleCode = function toggleCode(index) {
+      showCode.value[index] = !showCode.value[index];
+    };
+    var __returned__ = {
+      showCode: showCode,
+      variations: variations,
+      toggleCode: toggleCode,
+      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js":
 /*!****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js ***!
@@ -24482,6 +24533,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CardComponent_vue__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./CardComponent.vue */ "./resources/js/Pages/CardComponent.vue");
 /* harmony import */ var _CategoryfilterComponent_vue__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./CategoryfilterComponent.vue */ "./resources/js/Pages/CategoryfilterComponent.vue");
 /* harmony import */ var _CategorypreviewsComponent_vue__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./CategorypreviewsComponent.vue */ "./resources/js/Pages/CategorypreviewsComponent.vue");
+/* harmony import */ var _CheckboxComponent_vue__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./CheckboxComponent.vue */ "./resources/js/Pages/CheckboxComponent.vue");
+
 
 
 
@@ -24510,7 +24563,7 @@ __webpack_require__.r(__webpack_exports__);
     var __expose = _ref.expose;
     __expose();
     var selectedComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)('Button');
-    var components = ['Button', 'Input', 'Radio Groups', 'Header', 'Sidebar Layout', 'Footer', 'About Page', 'Action Panel', 'Alerts', 'Avatars', 'Badges', 'Banners', 'Bento grids', 'Blogs', 'Breadcrumbs', 'Progress bars', 'Calender', 'Card headings', 'Cards', 'Category filters', 'Category previews'];
+    var components = ['Button', 'Input', 'Radio Groups', 'Header', 'Sidebar Layout', 'Footer', 'About Page', 'Action Panel', 'Alerts', 'Avatars', 'Badges', 'Banners', 'Bento grids', 'Blogs', 'Breadcrumbs', 'Progress bars', 'Calender', 'Card headings', 'Cards', 'Category filters', 'Category previews', 'Checkboxes'];
     var searchQuery = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)('');
     var filteredComponents = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
       return components.filter(function (component) {
@@ -24538,7 +24591,8 @@ __webpack_require__.r(__webpack_exports__);
       'Card headings': _CardheadingsComponent_vue__WEBPACK_IMPORTED_MODULE_18__["default"],
       'Cards': _CardComponent_vue__WEBPACK_IMPORTED_MODULE_19__["default"],
       'Category filters': _CategoryfilterComponent_vue__WEBPACK_IMPORTED_MODULE_20__["default"],
-      'Category previews': _CategorypreviewsComponent_vue__WEBPACK_IMPORTED_MODULE_21__["default"]
+      'Category previews': _CategorypreviewsComponent_vue__WEBPACK_IMPORTED_MODULE_21__["default"],
+      'Checkboxes': _CheckboxComponent_vue__WEBPACK_IMPORTED_MODULE_22__["default"]
     };
     var currentComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
       return componentMap[selectedComponent.value];
@@ -24576,7 +24630,8 @@ __webpack_require__.r(__webpack_exports__);
       CardheadingsComponent: _CardheadingsComponent_vue__WEBPACK_IMPORTED_MODULE_18__["default"],
       CardComponent: _CardComponent_vue__WEBPACK_IMPORTED_MODULE_19__["default"],
       CategoryfilterComponent: _CategoryfilterComponent_vue__WEBPACK_IMPORTED_MODULE_20__["default"],
-      CategorypreviewsComponent: _CategorypreviewsComponent_vue__WEBPACK_IMPORTED_MODULE_21__["default"]
+      CategorypreviewsComponent: _CategorypreviewsComponent_vue__WEBPACK_IMPORTED_MODULE_21__["default"],
+      CheckboxComponent: _CheckboxComponent_vue__WEBPACK_IMPORTED_MODULE_22__["default"]
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -27307,6 +27362,64 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CategorypreviewsComponent.vue?vue&type=template&id=b3c8620a&scoped=true ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "space-y-4"
+};
+var _hoisted_2 = {
+  "class": "p-4 bg-gray-50 border-b"
+};
+var _hoisted_3 = {
+  "class": "text-lg font-semibold text-gray-800"
+};
+var _hoisted_4 = {
+  "class": "p-4"
+};
+var _hoisted_5 = {
+  "class": "mb-4"
+};
+var _hoisted_6 = ["innerHTML"];
+var _hoisted_7 = ["onClick"];
+var _hoisted_8 = {
+  "class": "mt-4"
+};
+var _hoisted_9 = {
+  "class": "p-4 bg-gray-800 rounded-md overflow-x-auto"
+};
+var _hoisted_10 = {
+  "class": "text-sm text-white"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.variations, function (variation, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      key: index,
+      "class": "bg-white rounded-lg shadow-md w-full"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "p-4 bg-gray-50 rounded-md",
+      innerHTML: variation.html
+    }, null, 8 /* PROPS */, _hoisted_6)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $setup.toggleCode(index);
+      },
+      "class": "px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.showCode[index] ? 'Hide Code' : 'Show Code'), 9 /* TEXT, PROPS */, _hoisted_7)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", _hoisted_9, [_cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("              ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("code", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(variation.html), 1 /* TEXT */), _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("\n            "))])], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.showCode[index]]])])]);
+  }), 64 /* STABLE_FRAGMENT */))]);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CheckboxComponent.vue?vue&type=template&id=c0a8fdbe":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CheckboxComponent.vue?vue&type=template&id=c0a8fdbe ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -56074,6 +56187,34 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/Pages/CheckboxComponent.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/Pages/CheckboxComponent.vue ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _CheckboxComponent_vue_vue_type_template_id_c0a8fdbe__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CheckboxComponent.vue?vue&type=template&id=c0a8fdbe */ "./resources/js/Pages/CheckboxComponent.vue?vue&type=template&id=c0a8fdbe");
+/* harmony import */ var _CheckboxComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CheckboxComponent.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Pages/CheckboxComponent.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_CheckboxComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_CheckboxComponent_vue_vue_type_template_id_c0a8fdbe__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/CheckboxComponent.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/ComponentLibrary.vue":
 /*!*************************************************!*\
   !*** ./resources/js/Pages/ComponentLibrary.vue ***!
@@ -56859,6 +57000,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/CheckboxComponent.vue?vue&type=script&setup=true&lang=js":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/Pages/CheckboxComponent.vue?vue&type=script&setup=true&lang=js ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CheckboxComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CheckboxComponent_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CheckboxComponent.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CheckboxComponent.vue?vue&type=script&setup=true&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js":
 /*!************************************************************************************!*\
   !*** ./resources/js/Pages/ComponentLibrary.vue?vue&type=script&setup=true&lang=js ***!
@@ -57531,6 +57688,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/CheckboxComponent.vue?vue&type=template&id=c0a8fdbe":
+/*!********************************************************************************!*\
+  !*** ./resources/js/Pages/CheckboxComponent.vue?vue&type=template&id=c0a8fdbe ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CheckboxComponent_vue_vue_type_template_id_c0a8fdbe__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_CheckboxComponent_vue_vue_type_template_id_c0a8fdbe__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./CheckboxComponent.vue?vue&type=template&id=c0a8fdbe */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/CheckboxComponent.vue?vue&type=template&id=c0a8fdbe");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2":
 /*!*******************************************************************************!*\
   !*** ./resources/js/Pages/ComponentLibrary.vue?vue&type=template&id=844c20b2 ***!
@@ -58143,6 +58316,7 @@ var map = {
 	"./CardheadingsComponent.vue": "./resources/js/Pages/CardheadingsComponent.vue",
 	"./CategoryfilterComponent.vue": "./resources/js/Pages/CategoryfilterComponent.vue",
 	"./CategorypreviewsComponent.vue": "./resources/js/Pages/CategorypreviewsComponent.vue",
+	"./CheckboxComponent.vue": "./resources/js/Pages/CheckboxComponent.vue",
 	"./ComponentLibrary.vue": "./resources/js/Pages/ComponentLibrary.vue",
 	"./Dashboard.vue": "./resources/js/Pages/Dashboard.vue",
 	"./FlexibleSidebarComponent.vue": "./resources/js/Pages/FlexibleSidebarComponent.vue",
